@@ -1,26 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { getLaunches } from './api';
+import { getNumberOfSuccess, getNumberOfFail } from './launches';
+import Launch from './Launch';
 
 class App extends Component {
+  state = {
+    launches: [],
+    isLoadingLaunches: false,
+    error: null
+  };
+
+  async componentDidMount() {
+    this.setState({ isLoadingLaunches: true });
+    try {
+      const launches = await getLaunches();
+      this.setState({ launches, isLoadingLaunches: false });
+    } catch (error) {
+      this.setState({ error, isLoadingLaunches: false });
+    }
+  }
+
   render() {
+    const { launches, isLoadingLaunches } = this.state;
+
+    if (isLoadingLaunches) {
+      return (
+        <>
+          <CssBaseline />
+          <div>Loading...</div>
+        </>
+      );
+    }
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <CssBaseline />
+        <div>Total launches: {launches.length}</div>
+        <div>Successful launches: {getNumberOfSuccess(launches)}</div>
+        <div>Failed launches: {getNumberOfFail(launches)}</div>
+        {launches.map(launch => (
+          <Launch key={launch.flightNumber} launch={launch} />
+        ))}
+      </>
     );
   }
 }
