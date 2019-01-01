@@ -11,10 +11,10 @@ const theme = createMuiTheme({
       contrastText: '#fff',
       dark: '#087f23',
       light: '#80e27e',
-      main: '#4CAF50'
-    }
+      main: '#4CAF50',
+    },
   },
-  typography: { useNextVariants: true }
+  typography: { useNextVariants: true },
 });
 
 ReactDOM.render(

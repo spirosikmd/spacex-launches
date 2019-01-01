@@ -5,15 +5,15 @@ function sanitizeLaunchesResponse(launches) {
     isSuccessful: launch.launch_success,
     isUpcoming: launch.upcoming,
     details: launch.details,
-    missionName: launch.mission_name
+    missionName: launch.mission_name,
   }));
 }
 
 export async function getLaunches() {
   const response = await fetch('https://api.spacexdata.com/v3/launches', {
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   });
   const launches = await response.json();
   return sanitizeLaunchesResponse(launches);

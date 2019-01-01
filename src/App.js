@@ -10,21 +10,21 @@ import Launch from './Launch';
 const styles = theme => ({
   main: {
     height: '100%',
-    padding: theme.spacing.unit * 2
+    padding: theme.spacing.unit * 2,
   },
   loader: {
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 });
 
 class App extends Component {
   state = {
     launches: [],
     isLoadingLaunches: false,
-    error: null
+    error: null,
   };
 
   async componentDidMount() {

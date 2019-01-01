@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import {
   getNumberOfSuccessful,
   getNumberOfFailed,
-  getNumberOfUpcoming
+  getNumberOfUpcoming,
 } from './launches';
 
 const GeneralInfo = React.memo(({ launches }) => {
