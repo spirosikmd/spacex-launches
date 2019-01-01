@@ -34,8 +34,8 @@ const styles = theme => ({
 
 const Launch = React.memo(({ classes, launch }) => {
   const statusClassName = classnames(classes.status, {
-    [classes.success]: launch.isSuccessful && !launch.isUpcoming,
-    [classes.fail]: !launch.isSuccessful && !launch.isUpcoming,
+    [classes.success]: launch.isSuccessful,
+    [classes.fail]: launch.isFailed,
     [classes.upcoming]: launch.isUpcoming,
   });
 

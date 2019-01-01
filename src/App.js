@@ -6,6 +6,8 @@ import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
 import GeneralInfo from './GeneralInfo';
 import Launch from './Launch';
+import StatusFilter from './StatusFilter';
+import { processLaunches } from './launches';
 
 const styles = theme => ({
   main: {
@@ -25,6 +27,9 @@ class App extends Component {
     launches: [],
     isLoadingLaunches: false,
     error: null,
+    showUpcoming: true,
+    showSuccessful: true,
+    showFailed: true,
   };
 
   async componentDidMount() {
@@ -37,9 +42,19 @@ class App extends Component {
     }
   }
 
+  handleChange = event => {
+    this.setState({ [event.currentTarget.value]: event.currentTarget.checked });
+  };
+
   render() {
     const { classes } = this.props;
-    const { launches, isLoadingLaunches } = this.state;
+    const {
+      launches,
+      isLoadingLaunches,
+      showUpcoming,
+      showSuccessful,
+      showFailed,
+    } = this.state;
 
     if (isLoadingLaunches) {
       return (
@@ -52,6 +67,12 @@ class App extends Component {
       );
     }
 
+    const processedLaunches = processLaunches(launches, {
+      showUpcoming,
+      showSuccessful,
+      showFailed,
+    });
+
     return (
       <main className={classes.main}>
         <CssBaseline />
@@ -60,7 +81,15 @@ class App extends Component {
             <GeneralInfo launches={launches} />
           </Grid>
           <Grid item xs={12}>
-            {launches.map(launch => (
+            <StatusFilter
+              showFailed={showFailed}
+              showSuccessful={showSuccessful}
+              showUpcoming={showUpcoming}
+              onChange={this.handleChange}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            {processedLaunches.map(launch => (
               <Launch key={launch.flightNumber} launch={launch} />
             ))}
           </Grid>
