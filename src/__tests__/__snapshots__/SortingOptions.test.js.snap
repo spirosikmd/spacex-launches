@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortingOptions renders sorting options 1`] = `
+<WithStyles(FormControl)
+  component="fieldset"
+>
+  <WithStyles(FormGroup)>
+    <WithStyles(WithFormControlContext(InputLabel))
+      htmlFor="date-sort-order"
+    >
+      Sort date
+    </WithStyles(WithFormControlContext(InputLabel))>
+    <WithStyles(WithFormControlContext(Select))
+      inputProps={
+        Object {
+          "id": "date-sort-order",
+          "name": "dateSortOrder",
+        }
+      }
+      native={true}
+      onChange={[MockFunction]}
+      value="desc"
+    >
+      <option
+        value="asc"
+      >
+        old to new (upcoming)
+      </option>
+      <option
+        value="desc"
+      >
+        new (upcoming) to old
+      </option>
+    </WithStyles(WithFormControlContext(Select))>
+  </WithStyles(FormGroup)>
+</WithStyles(FormControl)>
+`;

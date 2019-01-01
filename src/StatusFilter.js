@@ -15,7 +15,7 @@ export const StatusFilter = ({
   return (
     <FormControl component="fieldset">
       <FormLabel component="legend">Show launches</FormLabel>
-      <FormGroup>
+      <FormGroup row>
         <FormControlLabel
           control={
             <Switch
