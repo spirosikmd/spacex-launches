@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -7,19 +8,41 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = theme => ({
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
+  status: {
+    height: '8px',
+    width: '8px',
+    borderRadius: '50%',
+    marginRight: theme.spacing.unit
+  },
+  upcoming: {
+    backgroundColor: theme.palette.grey['300']
+  },
+  success: {
+    backgroundColor: theme.palette.success.main
+  },
+  fail: {
+    backgroundColor: theme.palette.error.main
+  },
+  wrapper: {
+    display: 'flex',
+    alignItems: 'center'
   }
 });
 
-const Launch = React.memo(({ launch, classes }) => {
+const Launch = React.memo(({ classes, launch }) => {
+  const statusClassName = classnames(classes.status, {
+    [classes.success]: launch.isSuccessful && !launch.isUpcoming,
+    [classes.fail]: !launch.isSuccessful && !launch.isUpcoming,
+    [classes.upcoming]: launch.isUpcoming
+  });
+
   return (
     <ExpansionPanel>
       <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography className={classes.heading}>
-          {launch.missionName}
-        </Typography>
+        <div className={classes.wrapper}>
+          <span className={statusClassName} />
+          <Typography>{launch.missionName}</Typography>
+        </div>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
         <Typography>{launch.details}</Typography>

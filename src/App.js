@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
-import { getNumberOfSuccess, getNumberOfFail } from './launches';
+import GeneralInfo from './GeneralInfo';
 import Launch from './Launch';
+
+const styles = theme => ({
+  main: {
+    height: '100%',
+    padding: theme.spacing.unit * 2
+  },
+  loader: {
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
 
 class App extends Component {
   state = {
@@ -22,29 +38,36 @@ class App extends Component {
   }
 
   render() {
+    const { classes } = this.props;
     const { launches, isLoadingLaunches } = this.state;
 
     if (isLoadingLaunches) {
       return (
-        <>
+        <main className={classes.main}>
           <CssBaseline />
-          <div>Loading...</div>
-        </>
+          <div className={classes.loader}>
+            <CircularProgress />
+          </div>
+        </main>
       );
     }
 
     return (
-      <>
+      <main className={classes.main}>
         <CssBaseline />
-        <div>Total launches: {launches.length}</div>
-        <div>Successful launches: {getNumberOfSuccess(launches)}</div>
-        <div>Failed launches: {getNumberOfFail(launches)}</div>
-        {launches.map(launch => (
-          <Launch key={launch.flightNumber} launch={launch} />
-        ))}
-      </>
+        <Grid container spacing={16}>
+          <Grid item xs={12}>
+            <GeneralInfo launches={launches} />
+          </Grid>
+          <Grid item xs={12}>
+            {launches.map(launch => (
+              <Launch key={launch.flightNumber} launch={launch} />
+            ))}
+          </Grid>
+        </Grid>
+      </main>
     );
   }
 }
 
-export default App;
+export default withStyles(styles)(App);

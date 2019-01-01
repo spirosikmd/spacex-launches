@@ -3,6 +3,7 @@ function sanitizeLaunchesResponse(launches) {
     flightNumber: launch.flight_number,
     utcDate: new Date(launch.launch_date_utc),
     isSuccessful: launch.launch_success,
+    isUpcoming: launch.upcoming,
     details: launch.details,
     missionName: launch.mission_name
   }));
