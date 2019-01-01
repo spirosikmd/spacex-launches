@@ -32,7 +32,7 @@ const styles = theme => ({
   },
 });
 
-const Launch = React.memo(({ classes, launch }) => {
+export const Launch = ({ classes, launch }) => {
   const statusClassName = classnames(classes.status, {
     [classes.success]: launch.isSuccessful,
     [classes.fail]: launch.isFailed,
@@ -57,6 +57,6 @@ const Launch = React.memo(({ classes, launch }) => {
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );
-});
+};
 
-export default withStyles(styles)(Launch);
+export default withStyles(styles)(React.memo(Launch));

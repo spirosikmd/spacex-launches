@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchList when there are launches renders a list of launches 1`] = `
+Array [
+  <WithStyles(Component)
+    key="1"
+    launch={
+      Object {
+        "flightNumber": 1,
+      }
+    }
+  />,
+  <WithStyles(Component)
+    key="2"
+    launch={
+      Object {
+        "flightNumber": 2,
+      }
+    }
+  />,
+]
+`;
+
+exports[`LaunchList when there are no launches renders a message 1`] = `
+<WithStyles(Typography)>
+  No launches...
+</WithStyles(Typography)>
+`;

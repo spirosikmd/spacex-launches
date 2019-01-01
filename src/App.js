@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
 import GeneralInfo from './GeneralInfo';
-import Launch from './Launch';
+import LaunchList from './LaunchList';
 import StatusFilter from './StatusFilter';
 import { processLaunches } from './launches';
 
@@ -89,9 +89,7 @@ class App extends Component {
             />
           </Grid>
           <Grid item xs={12}>
-            {processedLaunches.map(launch => (
-              <Launch key={launch.flightNumber} launch={launch} />
-            ))}
+            <LaunchList launches={processedLaunches} />
           </Grid>
         </Grid>
       </main>
