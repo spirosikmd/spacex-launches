@@ -6,50 +6,50 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormLabel from '@material-ui/core/FormLabel';
 import Switch from '@material-ui/core/Switch';
 
-const StatusFilter = React.memo(
-  ({ showFailed, showSuccessful, showUpcoming, onChange }) => {
-    return (
-      <FormControl component="fieldset">
-        <FormLabel component="legend">Show launches</FormLabel>
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={showFailed}
-                onChange={onChange}
-                value="showFailed"
-                color="default"
-              />
-            }
-            label="Failed"
-          />
-          <FormControlLabel
-            control={
-              <Switch
-                checked={showSuccessful}
-                onChange={onChange}
-                value="showSuccessful"
-                color="default"
-              />
-            }
-            label="Successful"
-          />
-          <FormControlLabel
-            control={
-              <Switch
-                checked={showUpcoming}
-                onChange={onChange}
-                value="showUpcoming"
-                color="default"
-              />
-            }
-            label="Upcoming"
-          />
-        </FormGroup>
-      </FormControl>
-    );
-  }
-);
+export const StatusFilter = ({
+  showFailed,
+  showSuccessful,
+  showUpcoming,
+  onChange,
+}) => {
+  return (
+    <FormControl component="fieldset">
+      <FormLabel component="legend">Show launches</FormLabel>
+      <FormGroup>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={showFailed}
+              onChange={onChange}
+              value="showFailed"
+            />
+          }
+          label="Failed"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={showSuccessful}
+              onChange={onChange}
+              value="showSuccessful"
+            />
+          }
+          label="Successful"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={showUpcoming}
+              onChange={onChange}
+              value="showUpcoming"
+            />
+          }
+          label="Upcoming"
+        />
+      </FormGroup>
+    </FormControl>
+  );
+};
 
 StatusFilter.propTypes = {
   showFailed: PropTypes.bool.isRequired,
@@ -58,4 +58,4 @@ StatusFilter.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
 
-export default StatusFilter;
+export default React.memo(StatusFilter);

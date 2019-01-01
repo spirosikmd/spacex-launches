@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusFilter renders status filters 1`] = `
+<WithStyles(FormControl)
+  component="fieldset"
+>
+  <WithStyles(WithFormControlContext(FormLabel))
+    component="legend"
+  >
+    Show launches
+  </WithStyles(WithFormControlContext(FormLabel))>
+  <WithStyles(FormGroup)>
+    <WithStyles(WithFormControlContext(FormControlLabel))
+      control={
+        <WithStyles(Switch)
+          checked={true}
+          onChange={[MockFunction]}
+          value="showFailed"
+        />
+      }
+      label="Failed"
+    />
+    <WithStyles(WithFormControlContext(FormControlLabel))
+      control={
+        <WithStyles(Switch)
+          checked={true}
+          onChange={[MockFunction]}
+          value="showSuccessful"
+        />
+      }
+      label="Successful"
+    />
+    <WithStyles(WithFormControlContext(FormControlLabel))
+      control={
+        <WithStyles(Switch)
+          checked={true}
+          onChange={[MockFunction]}
+          value="showUpcoming"
+        />
+      }
+      label="Upcoming"
+    />
+  </WithStyles(FormGroup)>
+</WithStyles(FormControl)>
+`;
