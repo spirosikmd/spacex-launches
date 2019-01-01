@@ -12,28 +12,31 @@ const styles = theme => ({
     height: '8px',
     width: '8px',
     borderRadius: '50%',
-    marginRight: theme.spacing.unit
+    marginRight: theme.spacing.unit,
   },
   upcoming: {
-    backgroundColor: theme.palette.grey['300']
+    backgroundColor: theme.palette.grey['300'],
   },
   success: {
-    backgroundColor: theme.palette.success.main
+    backgroundColor: theme.palette.success.main,
   },
   fail: {
-    backgroundColor: theme.palette.error.main
+    backgroundColor: theme.palette.error.main,
   },
   wrapper: {
     display: 'flex',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
+  missionName: {
+    marginRight: theme.spacing.unit * 2,
+  },
 });
 
 const Launch = React.memo(({ classes, launch }) => {
   const statusClassName = classnames(classes.status, {
     [classes.success]: launch.isSuccessful && !launch.isUpcoming,
     [classes.fail]: !launch.isSuccessful && !launch.isUpcoming,
-    [classes.upcoming]: launch.isUpcoming
+    [classes.upcoming]: launch.isUpcoming,
   });
 
   return (
@@ -41,7 +44,12 @@ const Launch = React.memo(({ classes, launch }) => {
       <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
         <div className={classes.wrapper}>
           <span className={statusClassName} />
-          <Typography>{launch.missionName}</Typography>
+          <Typography className={classes.missionName}>
+            {launch.missionName}
+          </Typography>
+          <Typography color="textSecondary">
+            {launch.utcDate.toLocaleString()}
+          </Typography>
         </div>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
