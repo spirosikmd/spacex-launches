@@ -1,5 +1,5 @@
-import { StatusFilter } from '../StatusFilter';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { StatusFilter } from '../StatusFilter';
 
 describe('StatusFilter', () => {
   let props;

@@ -6,8 +6,10 @@ import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
 import GeneralInfo from './GeneralInfo';
 import LaunchList from './LaunchList';
+import SortingOptions from './SortingOptions';
 import StatusFilter from './StatusFilter';
 import { processLaunches } from './launches';
+import { DESC } from './constants';
 
 const styles = theme => ({
   main: {
@@ -30,6 +32,7 @@ class App extends Component {
     showUpcoming: true,
     showSuccessful: true,
     showFailed: true,
+    dateSortOrder: DESC,
   };
 
   async componentDidMount() {
@@ -46,6 +49,10 @@ class App extends Component {
     this.setState({ [event.currentTarget.value]: event.currentTarget.checked });
   };
 
+  handleSortChange = event => {
+    this.setState({ [event.currentTarget.name]: event.currentTarget.value });
+  };
+
   render() {
     const { classes } = this.props;
     const {
@@ -54,6 +61,7 @@ class App extends Component {
       showUpcoming,
       showSuccessful,
       showFailed,
+      dateSortOrder,
     } = this.state;
 
     if (isLoadingLaunches) {
@@ -67,11 +75,17 @@ class App extends Component {
       );
     }
 
-    const processedLaunches = processLaunches(launches, {
-      showUpcoming,
-      showSuccessful,
-      showFailed,
-    });
+    const processedLaunches = processLaunches(
+      launches,
+      {
+        showUpcoming,
+        showSuccessful,
+        showFailed,
+      },
+      {
+        dateSortOrder,
+      }
+    );
 
     return (
       <main className={classes.main}>
@@ -86,6 +100,12 @@ class App extends Component {
               showSuccessful={showSuccessful}
               showUpcoming={showUpcoming}
               onChange={this.handleChange}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <SortingOptions
+              dateSortOrder={dateSortOrder}
+              onSortChange={this.handleSortChange}
             />
           </Grid>
           <Grid item xs={12}>

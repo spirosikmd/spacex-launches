@@ -32,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/spirosikmd/spacex-launches/issues"
   },
-  "homepage": "https://github.com/spirosikmd/spacex-launches#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
