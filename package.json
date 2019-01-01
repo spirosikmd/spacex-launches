@@ -1,6 +1,7 @@
 {
   "name": "spacex-launches",
   "version": "0.0.0",
+  "description": "SpaceX Launches 🚀",
   "dependencies": {
     "@material-ui/core": "^3.8.1",
     "@material-ui/icons": "^3.0.1",
@@ -16,6 +17,22 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "keywords": [
+    "spacex",
+    "launches",
+    "react",
+    "create-react-app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spirosikmd/spacex-launches.git"
+  },
+  "author": "Spyros Ioakeimidis <spyrosikmd@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spirosikmd/spacex-launches/issues"
+  },
+  "homepage": "https://github.com/spirosikmd/spacex-launches#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
