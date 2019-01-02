@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Launch from './Launch';
+import Launch, { LaunchPropType } from './Launch';
 import { Typography } from '@material-ui/core';
 
 export const LaunchList = ({ launches }) => {
@@ -14,7 +14,7 @@ export const LaunchList = ({ launches }) => {
 };
 
 LaunchList.propTypes = {
-  launches: PropTypes.arrayOf(PropTypes.object).isRequired,
+  launches: PropTypes.arrayOf(PropTypes.shape(LaunchPropType)).isRequired,
 };
 
 export default React.memo(LaunchList);

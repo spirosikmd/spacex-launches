@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralInfo renders general info about launches 1`] = `
+<Fragment>
+  <WithStyles(Typography)>
+    Total: 
+    3
+  </WithStyles(Typography)>
+  <WithStyles(Typography)>
+    Successful: 
+    1
+  </WithStyles(Typography)>
+  <WithStyles(Typography)>
+    Failed: 
+    1
+  </WithStyles(Typography)>
+  <WithStyles(Typography)>
+    Upcoming: 
+    1
+  </WithStyles(Typography)>
+</Fragment>
+`;

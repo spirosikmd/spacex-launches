@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import {
   getNumberOfSuccessful,
   getNumberOfFailed,
   getNumberOfUpcoming,
 } from './launches';
+import { LaunchPropType } from './Launch';
 
-const GeneralInfo = React.memo(({ launches }) => {
+export const GeneralInfo = ({ launches }) => {
   return (
     <>
       <Typography>Total: {launches.length}</Typography>
@@ -15,6 +17,10 @@ const GeneralInfo = React.memo(({ launches }) => {
       <Typography>Upcoming: {getNumberOfUpcoming(launches)}</Typography>
     </>
   );
-});
+};
 
-export default GeneralInfo;
+GeneralInfo.propTypes = {
+  launches: PropTypes.arrayOf(PropTypes.shape(LaunchPropType)).isRequired,
+};
+
+export default React.memo(GeneralInfo);

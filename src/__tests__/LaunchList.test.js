@@ -1,4 +1,5 @@
 import { LaunchList } from '../LaunchList';
+import { createLaunch } from '../__fixtures__/launch';
 
 describe('LaunchList', () => {
   let props;
@@ -17,14 +18,7 @@ describe('LaunchList', () => {
 
   describe('when there are launches', () => {
     beforeEach(() => {
-      props.launches = [
-        {
-          flightNumber: 1,
-        },
-        {
-          flightNumber: 2,
-        },
-      ];
+      props.launches = [createLaunch(), createLaunch({ flightNumber: 2 })];
     });
 
     it('renders a list of launches', () => {
