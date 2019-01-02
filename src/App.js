@@ -29,7 +29,7 @@ class App extends Component {
     launches: [],
     isLoadingLaunches: false,
     error: null,
-    showUpcoming: true,
+    showUpcoming: false,
     showSuccessful: true,
     showFailed: true,
     dateSortOrder: DESC,
