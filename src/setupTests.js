@@ -13,3 +13,9 @@ expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }));
 global.shallow = (Component, props = {}) => {
   return shallow(<Component {...props} />);
 };
+
+global.Date = jest.fn().mockImplementation(date => {
+  return {
+    toLocaleString: jest.fn().mockReturnValue(date),
+  };
+});

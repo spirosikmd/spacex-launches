@@ -17,7 +17,7 @@ exports[`Launch when a launch does not have details renders it without details 1
       <WithStyles(Typography)
         color="textSecondary"
       >
-        2019-1-1 00:00:00
+        2019-01-01
       </WithStyles(Typography)>
     </div>
   </WithStyles(ExpansionPanelSummary)>
@@ -58,7 +58,7 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
       <WithStyles(Typography)
         color="textSecondary"
       >
-        2019-1-1 00:00:00
+        2019-01-01
       </WithStyles(Typography)>
     </div>
   </WithStyles(ExpansionPanelSummary)>
@@ -97,7 +97,7 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
       <WithStyles(Typography)
         color="textSecondary"
       >
-        2019-1-1 00:00:00
+        2019-01-01
       </WithStyles(Typography)>
     </div>
   </WithStyles(ExpansionPanelSummary)>
@@ -136,7 +136,7 @@ exports[`Launch when a launch is tentative renders the tentative info 1`] = `
       <WithStyles(Typography)
         color="textSecondary"
       >
-        2019-1-1 00:00:00
+        2019-01-01
       </WithStyles(Typography)>
     </div>
   </WithStyles(ExpansionPanelSummary)>
@@ -190,7 +190,7 @@ exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
       <WithStyles(Typography)
         color="textSecondary"
       >
-        2019-1-1 00:00:00
+        2019-01-01
       </WithStyles(Typography)>
     </div>
   </WithStyles(ExpansionPanelSummary)>

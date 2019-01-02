@@ -13,7 +13,9 @@ Array [
         "isTentative": false,
         "isUpcoming": false,
         "missionName": "Test",
-        "utcDate": 2019-01-01T00:00:00.000Z,
+        "utcDate": Object {
+          "toLocaleString": [MockFunction],
+        },
       }
     }
   />,
@@ -28,7 +30,9 @@ Array [
         "isTentative": false,
         "isUpcoming": false,
         "missionName": "Test",
-        "utcDate": 2019-01-01T00:00:00.000Z,
+        "utcDate": Object {
+          "toLocaleString": [MockFunction],
+        },
       }
     }
   />,
