@@ -21,7 +21,7 @@ const styles = theme => ({
   },
 });
 
-class App extends PureComponent {
+export class App extends PureComponent {
   state = {
     launches: [],
     isLoadingLaunches: false,
@@ -45,8 +45,8 @@ class App extends PureComponent {
     }
   }
 
-  handleChange = event => {
-    this.setState({ [event.currentTarget.value]: event.currentTarget.checked });
+  handleChange = (value, checked) => {
+    this.setState({ [value]: checked });
   };
 
   handleSortChange = (name, value) => {

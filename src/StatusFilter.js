@@ -12,6 +12,10 @@ export const StatusFilter = ({
   showUpcoming,
   onChange,
 }) => {
+  const handleChange = event => {
+    onChange(event.currentTarget.value, event.currentTarget.checked);
+  };
+
   return (
     <FormControl component="fieldset">
       <FormLabel component="legend">Show launches</FormLabel>
@@ -20,7 +24,7 @@ export const StatusFilter = ({
           control={
             <Switch
               checked={showFailed}
-              onChange={onChange}
+              onChange={handleChange}
               value="showFailed"
             />
           }
@@ -30,7 +34,7 @@ export const StatusFilter = ({
           control={
             <Switch
               checked={showSuccessful}
-              onChange={onChange}
+              onChange={handleChange}
               value="showSuccessful"
             />
           }
@@ -40,7 +44,7 @@ export const StatusFilter = ({
           control={
             <Switch
               checked={showUpcoming}
-              onChange={onChange}
+              onChange={handleChange}
               value="showUpcoming"
             />
           }

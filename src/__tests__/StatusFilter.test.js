@@ -24,8 +24,13 @@ describe('StatusFilter', () => {
       filters
         .at(0)
         .props()
-        .control.props.onChange();
-      expect(props.onChange).toHaveBeenCalled();
+        .control.props.onChange({
+          currentTarget: {
+            value: 'value',
+            checked: 'checked',
+          },
+        });
+      expect(props.onChange).toBeCalledWith('value', 'checked');
     });
   });
 });

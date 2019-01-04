@@ -16,7 +16,7 @@ exports[`StatusFilter renders status filters 1`] = `
       control={
         <WithStyles(Switch)
           checked={true}
-          onChange={[MockFunction]}
+          onChange={[Function]}
           value="showFailed"
         />
       }
@@ -26,7 +26,7 @@ exports[`StatusFilter renders status filters 1`] = `
       control={
         <WithStyles(Switch)
           checked={true}
-          onChange={[MockFunction]}
+          onChange={[Function]}
           value="showSuccessful"
         />
       }
@@ -36,7 +36,7 @@ exports[`StatusFilter renders status filters 1`] = `
       control={
         <WithStyles(Switch)
           checked={true}
-          onChange={[MockFunction]}
+          onChange={[Function]}
           value="showUpcoming"
         />
       }
