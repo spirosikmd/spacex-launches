@@ -12,8 +12,7 @@ export function getNumberOfFailed(launches) {
 
 export function processLaunches(
   launches,
-  { showUpcoming, showSuccessful, showFailed },
-  { dateSortOrder }
+  { showUpcoming, showSuccessful, showFailed }
 ) {
   let processedLaunches = [...launches];
 
@@ -29,14 +28,6 @@ export function processLaunches(
 
   if (!showFailed) {
     processedLaunches = processedLaunches.filter(launch => !launch.isFailed);
-  }
-
-  if (dateSortOrder) {
-    processedLaunches = processedLaunches.sort((launchA, launchB) =>
-      dateSortOrder === 'asc'
-        ? launchA.utcDate - launchB.utcDate
-        : launchB.utcDate - launchA.utcDate
-    );
   }
 
   return processedLaunches;

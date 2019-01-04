@@ -11,12 +11,15 @@ function sanitizeLaunchesResponse(launches) {
   }));
 }
 
-export async function getLaunches() {
-  const response = await fetch('https://api.spacexdata.com/v3/launches', {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+export async function getLaunches({ sortOrder, sortField }) {
+  const response = await fetch(
+    `https://api.spacexdata.com/v3/launches?sort=${sortField}&order=${sortOrder}`,
+    {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
   const launches = await response.json();
   return sanitizeLaunchesResponse(launches);
 }

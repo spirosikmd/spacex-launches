@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import React, { PureComponent } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
@@ -8,37 +7,38 @@ import GeneralInfo from './GeneralInfo';
 import LaunchList from './LaunchList';
 import SortingOptions from './SortingOptions';
 import StatusFilter from './StatusFilter';
+import Loader from './Loader';
 import { processLaunches } from './launches';
-import { DESC } from './constants';
+import { DESC, UTC_DATE_FIELD } from './constants';
 
 const styles = theme => ({
   main: {
     height: '100%',
     padding: theme.spacing.unit * 2,
   },
-  loader: {
-    height: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+  updatingLoader: {
+    paddingTop: theme.spacing.unit * 8,
   },
 });
 
-class App extends Component {
+class App extends PureComponent {
   state = {
     launches: [],
     isLoadingLaunches: false,
+    isUpdatingLaunches: false,
     error: null,
     showUpcoming: false,
     showSuccessful: true,
     showFailed: true,
-    dateSortOrder: DESC,
+    sortOrder: DESC,
+    sortField: UTC_DATE_FIELD,
   };
 
   async componentDidMount() {
     this.setState({ isLoadingLaunches: true });
     try {
-      const launches = await getLaunches();
+      const { sortField, sortOrder } = this.state;
+      const launches = await getLaunches({ sortField, sortOrder });
       this.setState({ launches, isLoadingLaunches: false });
     } catch (error) {
       this.setState({ error, isLoadingLaunches: false });
@@ -49,8 +49,18 @@ class App extends Component {
     this.setState({ [event.currentTarget.value]: event.currentTarget.checked });
   };
 
-  handleSortChange = event => {
-    this.setState({ [event.currentTarget.name]: event.currentTarget.value });
+  handleSortChange = (name, value) => {
+    this.setState(
+      {
+        [name]: value,
+        isUpdatingLaunches: true,
+      },
+      async () => {
+        const { sortField, sortOrder } = this.state;
+        const launches = await getLaunches({ sortField, sortOrder });
+        this.setState({ launches, isUpdatingLaunches: false });
+      }
+    );
   };
 
   render() {
@@ -58,34 +68,28 @@ class App extends Component {
     const {
       launches,
       isLoadingLaunches,
+      isUpdatingLaunches,
       showUpcoming,
       showSuccessful,
       showFailed,
-      dateSortOrder,
+      sortOrder,
+      sortField,
     } = this.state;
 
     if (isLoadingLaunches) {
       return (
         <main className={classes.main}>
           <CssBaseline />
-          <div className={classes.loader}>
-            <CircularProgress />
-          </div>
+          <Loader />
         </main>
       );
     }
 
-    const processedLaunches = processLaunches(
-      launches,
-      {
-        showUpcoming,
-        showSuccessful,
-        showFailed,
-      },
-      {
-        dateSortOrder,
-      }
-    );
+    const processedLaunches = processLaunches(launches, {
+      showUpcoming,
+      showSuccessful,
+      showFailed,
+    });
 
     return (
       <main className={classes.main}>
@@ -104,12 +108,19 @@ class App extends Component {
           </Grid>
           <Grid item xs={12}>
             <SortingOptions
-              dateSortOrder={dateSortOrder}
+              sortField={sortField}
+              sortOrder={sortOrder}
               onSortChange={this.handleSortChange}
             />
           </Grid>
           <Grid item xs={12}>
-            <LaunchList launches={processedLaunches} />
+            {isUpdatingLaunches ? (
+              <div className={classes.updatingLoader}>
+                <Loader />
+              </div>
+            ) : (
+              <LaunchList launches={processedLaunches} />
+            )}
           </Grid>
         </Grid>
       </main>
