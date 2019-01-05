@@ -2,84 +2,98 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import BallotIcon from '@material-ui/icons/Ballot';
-import Grid from '@material-ui/core/Grid';
+import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
 
 const styles = theme => ({
   status: {
-    height: '8px',
-    width: '8px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: '50%',
-    marginRight: theme.spacing.unit,
+    padding: theme.spacing.unit / 2,
+    marginRight: `${-theme.spacing.unit - 4}px`,
+    zIndex: '1',
+  },
+  statusIcon: {
+    fontSize: 16,
+  },
+  statusReverse: {
+    marginRight: '0',
+    marginLeft: `${-theme.spacing.unit - 4}px`,
   },
   upcoming: {
-    backgroundColor: theme.palette.grey['500'],
+    color: theme.palette.grey['500'],
   },
   success: {
-    backgroundColor: theme.palette.success.main,
+    color: theme.palette.success.main,
   },
   fail: {
-    backgroundColor: theme.palette.error.main,
+    color: theme.palette.error.main,
   },
-  wrapper: {
+  root: {
     display: 'flex',
     alignItems: 'center',
+  },
+  rootReverse: {
+    flexDirection: 'row-reverse',
+  },
+  launch: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing.unit * 2,
+    flexGrow: 4,
+    '&:hover': {
+      cursor: 'pointer',
+      boxShadow: theme.shadows[4],
+    },
+    [theme.breakpoints.up('xs')]: {
+      maxWidth: '200px',
+    },
+    [theme.breakpoints.up('sm')]: {
+      maxWidth: '280px',
+    },
+    [theme.breakpoints.up('md')]: {
+      maxWidth: '100%',
+    },
   },
   missionName: {
     marginRight: theme.spacing.unit * 2,
   },
-  tentative: {
-    marginRight: theme.spacing.unit,
+  divider: {
+    flexGrow: 1,
+    border: `0.5px dashed ${theme.palette.secondary.main}`,
+    marginTop: '1px',
   },
 });
 
-export const Launch = ({ classes, launch }) => {
+export const Launch = ({ classes, launch, reverse }) => {
+  const rootClassName = classnames(classes.root, {
+    [classes.rootReverse]: reverse,
+  });
   const statusClassName = classnames(classes.status, {
     [classes.success]: launch.isSuccessful,
     [classes.fail]: launch.isFailed,
     [classes.upcoming]: launch.isUpcoming,
+    [classes.statusReverse]: reverse,
   });
 
   return (
-    <ExpansionPanel>
-      <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-        <div className={classes.wrapper}>
-          <span className={statusClassName} />
-          <Typography className={classes.missionName}>
-            {launch.missionName}
-          </Typography>
-          <Typography color="textSecondary">
-            {launch.utcDate.toLocaleString()}
-          </Typography>
-        </div>
-      </ExpansionPanelSummary>
-      <ExpansionPanelDetails>
-        <Grid container spacing={8}>
-          {launch.isTentative && (
-            <Grid item xs={12}>
-              <div className={classes.wrapper}>
-                <BallotIcon color="disabled" className={classes.tentative} />
-                <Typography>Tentative</Typography>
-              </div>
-            </Grid>
-          )}
-          <Grid item xs={12}>
-            {launch.details ? (
-              <Typography>{launch.details}</Typography>
-            ) : (
-              <Typography color="textSecondary">
-                No details have been published yet.
-              </Typography>
-            )}
-          </Grid>
-        </Grid>
-      </ExpansionPanelDetails>
-    </ExpansionPanel>
+    <div className={rootClassName}>
+      <Paper className={classes.launch}>
+        <Typography className={classes.missionName} noWrap>
+          {launch.missionName}
+        </Typography>
+        <Typography color="textSecondary" noWrap>
+          {launch.utcDate.toLocaleString()}
+        </Typography>
+      </Paper>
+      <div className={classes.divider} />
+      <Paper className={statusClassName} elevation={1}>
+        <GroupWorkRoundedIcon className={classes.statusIcon} />
+      </Paper>
+    </div>
   );
 };
 
@@ -96,6 +110,7 @@ export const LaunchPropType = {
 Launch.propTypes = {
   classes: PropTypes.object.isRequired,
   launch: PropTypes.shape(LaunchPropType).isRequired,
+  reverse: PropTypes.bool.isRequired,
 };
 
 export default withStyles(styles)(React.memo(Launch));

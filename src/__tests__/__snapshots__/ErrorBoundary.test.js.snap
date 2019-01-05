@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary when there is error renders an error message 1`] = `
+<Fragment>
+  <WithStyles(CssBaseline) />
+  <WithStyles(Typography)>
+    Something unexpected happened! Refresh the page!
+  </WithStyles(Typography)>
+</Fragment>
+`;
+
+exports[`ErrorBoundary when there is no error renders children 1`] = `
+<div>
+  Test
+</div>
+`;

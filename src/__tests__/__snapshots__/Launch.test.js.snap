@@ -1,213 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Launch when a launch does not have details renders it without details 1`] = `
-<WithStyles(ExpansionPanel)>
-  <WithStyles(ExpansionPanelSummary)
-    expandIcon={<pure(ExpandMoreIcon) />}
-  >
-    <div
-      className="wrapper"
-    >
-      <span
-        className="status success"
-      />
-      <WithStyles(Typography)>
-        Test
-      </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-      >
-        2019-01-01
-      </WithStyles(Typography)>
-    </div>
-  </WithStyles(ExpansionPanelSummary)>
-  <WithStyles(ExpansionPanelDetails)>
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          No details have been published yet.
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(ExpansionPanelDetails)>
-</WithStyles(ExpansionPanel)>
-`;
-
 exports[`Launch when a launch is failed renders it failed 1`] = `
-<WithStyles(ExpansionPanel)>
-  <WithStyles(ExpansionPanelSummary)
-    expandIcon={<pure(ExpandMoreIcon) />}
+<div
+  className="root"
+>
+  <WithStyles(Paper)
+    className="launch"
   >
-    <div
-      className="wrapper"
+    <WithStyles(Typography)
+      className="missionName"
+      noWrap={true}
     >
-      <span
-        className="status fail"
-      />
-      <WithStyles(Typography)>
-        Test
-      </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-      >
-        2019-01-01
-      </WithStyles(Typography)>
-    </div>
-  </WithStyles(ExpansionPanelSummary)>
-  <WithStyles(ExpansionPanelDetails)>
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
+      Test
+    </WithStyles(Typography)>
+    <WithStyles(Typography)
+      color="textSecondary"
+      noWrap={true}
     >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(ExpansionPanelDetails)>
-</WithStyles(ExpansionPanel)>
+      2019-01-01
+    </WithStyles(Typography)>
+  </WithStyles(Paper)>
+  <div
+    className="divider"
+  />
+  <WithStyles(Paper)
+    className="status fail"
+    elevation={1}
+  >
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+</div>
 `;
 
 exports[`Launch when a launch is successful renders it successful 1`] = `
-<WithStyles(ExpansionPanel)>
-  <WithStyles(ExpansionPanelSummary)
-    expandIcon={<pure(ExpandMoreIcon) />}
+<div
+  className="root"
+>
+  <WithStyles(Paper)
+    className="launch"
   >
-    <div
-      className="wrapper"
+    <WithStyles(Typography)
+      className="missionName"
+      noWrap={true}
     >
-      <span
-        className="status success"
-      />
-      <WithStyles(Typography)>
-        Test
-      </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-      >
-        2019-01-01
-      </WithStyles(Typography)>
-    </div>
-  </WithStyles(ExpansionPanelSummary)>
-  <WithStyles(ExpansionPanelDetails)>
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
+      Test
+    </WithStyles(Typography)>
+    <WithStyles(Typography)
+      color="textSecondary"
+      noWrap={true}
     >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(ExpansionPanelDetails)>
-</WithStyles(ExpansionPanel)>
-`;
-
-exports[`Launch when a launch is tentative renders the tentative info 1`] = `
-<WithStyles(ExpansionPanel)>
-  <WithStyles(ExpansionPanelSummary)
-    expandIcon={<pure(ExpandMoreIcon) />}
+      2019-01-01
+    </WithStyles(Typography)>
+  </WithStyles(Paper)>
+  <div
+    className="divider"
+  />
+  <WithStyles(Paper)
+    className="status success"
+    elevation={1}
   >
-    <div
-      className="wrapper"
-    >
-      <span
-        className="status success"
-      />
-      <WithStyles(Typography)>
-        Test
-      </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-      >
-        2019-01-01
-      </WithStyles(Typography)>
-    </div>
-  </WithStyles(ExpansionPanelSummary)>
-  <WithStyles(ExpansionPanelDetails)>
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <div
-          className="wrapper"
-        >
-          <pure(BallotIcon)
-            color="disabled"
-          />
-          <WithStyles(Typography)>
-            Tentative
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(ExpansionPanelDetails)>
-</WithStyles(ExpansionPanel)>
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+</div>
 `;
 
 exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
-<WithStyles(ExpansionPanel)>
-  <WithStyles(ExpansionPanelSummary)
-    expandIcon={<pure(ExpandMoreIcon) />}
+<div
+  className="root"
+>
+  <WithStyles(Paper)
+    className="launch"
   >
-    <div
-      className="wrapper"
+    <WithStyles(Typography)
+      className="missionName"
+      noWrap={true}
     >
-      <span
-        className="status upcoming"
-      />
-      <WithStyles(Typography)>
-        Test
-      </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-      >
-        2019-01-01
-      </WithStyles(Typography)>
-    </div>
-  </WithStyles(ExpansionPanelSummary)>
-  <WithStyles(ExpansionPanelDetails)>
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
+      Test
+    </WithStyles(Typography)>
+    <WithStyles(Typography)
+      color="textSecondary"
+      noWrap={true}
     >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(ExpansionPanelDetails)>
-</WithStyles(ExpansionPanel)>
+      2019-01-01
+    </WithStyles(Typography)>
+  </WithStyles(Paper)>
+  <div
+    className="divider"
+  />
+  <WithStyles(Paper)
+    className="status upcoming"
+    elevation={1}
+  >
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+</div>
+`;
+
+exports[`Launch when reverse renders it reverse 1`] = `
+<div
+  className="root rootReverse"
+>
+  <WithStyles(Paper)
+    className="launch"
+  >
+    <WithStyles(Typography)
+      className="missionName"
+      noWrap={true}
+    >
+      Test
+    </WithStyles(Typography)>
+    <WithStyles(Typography)
+      color="textSecondary"
+      noWrap={true}
+    >
+      2019-01-01
+    </WithStyles(Typography)>
+  </WithStyles(Paper)>
+  <div
+    className="divider"
+  />
+  <WithStyles(Paper)
+    className="status success statusReverse"
+    elevation={1}
+  >
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+</div>
 `;

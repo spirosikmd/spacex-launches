@@ -57,7 +57,7 @@ exports[`App renders info, filters, sorting options and list of launches 1`] = `
       item={true}
       xs={12}
     >
-      <React.Memo
+      <WithStyles(Component)
         launches={
           Array [
             Object {

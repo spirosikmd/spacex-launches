@@ -7,6 +7,13 @@ describe('LaunchList', () => {
   beforeEach(() => {
     props = {
       launches: [],
+      classes: {
+        root: 'root',
+        line: 'line',
+        launchRoot: 'launchRoot',
+        launch: 'launch',
+        reverse: 'reverse',
+      },
     };
   });
 

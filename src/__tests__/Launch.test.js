@@ -8,12 +8,19 @@ describe('Launch', () => {
     props = {
       classes: {
         status: 'status',
-        wrapper: 'wrapper',
+        statusIcon: 'statusIcon',
+        statusReverse: 'statusReverse',
         success: 'success',
         fail: 'fail',
         upcoming: 'upcoming',
+        root: 'root',
+        rootReverse: 'rootReverse',
+        launch: 'launch',
+        missionName: 'missionName',
+        divider: 'divider',
       },
       launch: createLaunch(),
+      reverse: false,
     };
   });
 
@@ -39,16 +46,9 @@ describe('Launch', () => {
     });
   });
 
-  describe('when a launch does not have details', () => {
-    it('renders it without details', () => {
-      props.launch.details = null;
-      expect(shallow(Launch, props)).toMatchSnapshot();
-    });
-  });
-
-  describe('when a launch is tentative', () => {
-    it('renders the tentative info', () => {
-      props.launch.isTentative = true;
+  describe('when reverse', () => {
+    it('renders it reverse', () => {
+      props.reverse = true;
       expect(shallow(Launch, props)).toMatchSnapshot();
     });
   });

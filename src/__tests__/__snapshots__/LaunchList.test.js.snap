@@ -1,42 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LaunchList when there are launches renders a list of launches 1`] = `
-Array [
-  <WithStyles(Component)
+<div
+  className="root"
+>
+  <div
+    className="line"
+  />
+  <div
+    className="launchRoot"
     key="1"
-    launch={
-      Object {
-        "details": "Details",
-        "flightNumber": 1,
-        "isFailed": false,
-        "isSuccessful": true,
-        "isTentative": false,
-        "isUpcoming": false,
-        "missionName": "Test",
-        "utcDate": Object {
-          "toLocaleString": [MockFunction],
-        },
-      }
-    }
-  />,
-  <WithStyles(Component)
+  >
+    <div
+      className="launch"
+    >
+      <WithStyles(Component)
+        launch={
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          }
+        }
+        reverse={false}
+      />
+    </div>
+  </div>
+  <div
+    className="launchRoot reverse"
     key="2"
-    launch={
-      Object {
-        "details": "Details",
-        "flightNumber": 2,
-        "isFailed": false,
-        "isSuccessful": true,
-        "isTentative": false,
-        "isUpcoming": false,
-        "missionName": "Test",
-        "utcDate": Object {
-          "toLocaleString": [MockFunction],
-        },
-      }
-    }
-  />,
-]
+  >
+    <div
+      className="launch"
+    >
+      <WithStyles(Component)
+        launch={
+          Object {
+            "details": "Details",
+            "flightNumber": 2,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          }
+        }
+        reverse={true}
+      />
+    </div>
+  </div>
+</div>
 `;
 
 exports[`LaunchList when there are no launches renders a message 1`] = `

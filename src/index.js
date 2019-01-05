@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import App from './App';
+import ErrorBoundary from './ErrorBoundary';
 import * as serviceWorker from './serviceWorker';
 
 const theme = createMuiTheme({
@@ -18,7 +19,9 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </MuiThemeProvider>,
   document.getElementById('root')
 );
