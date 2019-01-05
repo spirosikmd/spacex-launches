@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders 1`] = `
+<WithStyles(Grid)
+  container={true}
+  spacing={16}
+>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      launches={
+        Array [
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": true,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": true,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+        ]
+      }
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      showFailed={true}
+      showSuccessful={true}
+      showUpcoming={false}
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      sortField="flight_number"
+      sortOrder="desc"
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <WithStyles(Component)
+      launches={
+        Array [
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": true,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+        ]
+      }
+    />
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
+`;
+
+exports[`Home when is loading launches renders a loader 1`] = `
+<div
+  className="loader"
+>
+  <WithStyles(Component) />
+</div>
+`;
+
+exports[`Home when is not loading launches when is updating launches renders info, filters, sorting options, and a loader 1`] = `
+<WithStyles(Grid)
+  container={true}
+  spacing={16}
+>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      launches={
+        Array [
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": true,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": true,
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+        ]
+      }
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      showFailed={true}
+      showSuccessful={true}
+      showUpcoming={false}
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      sortField="flight_number"
+      sortOrder="desc"
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <div
+      className="loader"
+    >
+      <WithStyles(Component) />
+    </div>
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
+`;

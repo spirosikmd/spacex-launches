@@ -1,6 +1,6 @@
+import { Router } from '@reach/router';
 import { App } from '../App';
-import StatusFilter from '../StatusFilter';
-import SortingOptions from '../SortingOptions';
+import Home from '../Home';
 import { getLaunches } from '../api';
 import { processLaunches } from '../utils';
 import { createLaunch } from '../__fixtures__/launch';
@@ -29,15 +29,18 @@ describe('App', () => {
     processLaunches.mockReturnValue(launches);
   });
 
-  it('renders info, filters, sorting options and list of launches', async () => {
+  it('renders', async () => {
     expect(await shallow(App, props)).toMatchSnapshot();
   });
 
   describe('when any status filter changes', () => {
     it('sets the value and checked in the state', async () => {
       const app = await shallow(App, props);
-      const statusFilter = app.find(StatusFilter);
-      statusFilter.prop('onChange')('value', 'checked');
+      const home = app
+        .find(Router)
+        .children()
+        .at(1);
+      home.prop('onChange')('value', 'checked');
       expect(app.state().value).toBe('checked');
     });
   });
@@ -45,34 +48,16 @@ describe('App', () => {
   describe('when sorting options change', () => {
     it('gets launches with new sorting options', async () => {
       const app = await shallow(App, props);
-      const sortingOptions = app.find(SortingOptions);
-      await sortingOptions.prop('onSortChange')(
-        'sortField',
-        FLIGHT_NUMBER_FIELD
-      );
+      const home = app
+        .find(Router)
+        .children()
+        .at(1);
+      await home.prop('onSortChange')('sortField', FLIGHT_NUMBER_FIELD);
       const state = app.state();
       expect(state.isUpdatingLaunches).toBe(false);
       expect(getLaunches).toBeCalledWith({
         sortField: FLIGHT_NUMBER_FIELD,
         sortOrder: DESC,
-      });
-    });
-  });
-
-  describe('when is loading launches', () => {
-    it('renders a loader', async () => {
-      const app = await shallow(App, props);
-      app.setState({ isLoadingLaunches: true });
-      expect(app).toMatchSnapshot();
-    });
-  });
-
-  describe('when is not loading launches', () => {
-    describe('when is updating launches', () => {
-      it('renders info, filters, sorting options, and a loader', async () => {
-        const app = await shallow(App, props);
-        app.setState({ isUpdatingLaunches: true });
-        expect(app).toMatchSnapshot();
       });
     });
   });

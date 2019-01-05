@@ -1,24 +1,20 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Suspense } from 'react';
+import { Router } from '@reach/router';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
-import GeneralInfo from './GeneralInfo';
-import LaunchList from './LaunchList';
-import SortingOptions from './SortingOptions';
-import StatusFilter from './StatusFilter';
-import Loader from './Loader';
 import { processLaunches } from './utils';
 import { DESC, UTC_DATE_FIELD } from './constants';
+import Loader from './Loader';
 import TopBar from './TopBar';
+
+const Home = React.lazy(() => import('./Home'));
+const NotFound = React.lazy(() => import('./NotFound'));
 
 const styles = theme => ({
   main: {
     height: '100%',
     padding: theme.spacing.unit * 2,
-  },
-  updatingLoader: {
-    paddingTop: theme.spacing.unit * 8,
   },
 });
 
@@ -77,15 +73,6 @@ export class App extends PureComponent {
       sortField,
     } = this.state;
 
-    if (isLoadingLaunches) {
-      return (
-        <main className={classes.main}>
-          <CssBaseline />
-          <Loader />
-        </main>
-      );
-    }
-
     const processedLaunches = processLaunches(launches, {
       showUpcoming,
       showSuccessful,
@@ -97,35 +84,25 @@ export class App extends PureComponent {
         <TopBar />
         <main className={classes.main}>
           <CssBaseline />
-          <Grid container spacing={16}>
-            <Grid item xs={12}>
-              <GeneralInfo launches={launches} />
-            </Grid>
-            <Grid item xs={12}>
-              <StatusFilter
+          <Suspense fallback={<Loader />}>
+            <Router>
+              <NotFound default />
+              <Home
+                path="/"
+                launches={launches}
+                processedLaunches={processedLaunches}
                 showFailed={showFailed}
                 showSuccessful={showSuccessful}
                 showUpcoming={showUpcoming}
-                onChange={this.handleChange}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <SortingOptions
                 sortField={sortField}
                 sortOrder={sortOrder}
+                isUpdatingLaunches={isUpdatingLaunches}
+                isLoadingLaunches={isLoadingLaunches}
+                onChange={this.handleChange}
                 onSortChange={this.handleSortChange}
               />
-            </Grid>
-            <Grid item xs={12}>
-              {isUpdatingLaunches ? (
-                <div className={classes.updatingLoader}>
-                  <Loader />
-                </div>
-              ) : (
-                <LaunchList launches={processedLaunches} />
-              )}
-            </Grid>
-          </Grid>
+            </Router>
+          </Suspense>
         </main>
       </>
     );
