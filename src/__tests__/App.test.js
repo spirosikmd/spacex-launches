@@ -2,7 +2,7 @@ import { App } from '../App';
 import StatusFilter from '../StatusFilter';
 import SortingOptions from '../SortingOptions';
 import { getLaunches } from '../api';
-import { processLaunches } from '../launches';
+import { processLaunches } from '../utils';
 import { createLaunch } from '../__fixtures__/launch';
 import { FLIGHT_NUMBER_FIELD, DESC } from '../constants';
 
@@ -10,7 +10,7 @@ jest.mock('../api', () => ({
   getLaunches: jest.fn(),
 }));
 
-jest.mock('../launches', () => ({
+jest.mock('../utils', () => ({
   processLaunches: jest.fn(),
 }));
 

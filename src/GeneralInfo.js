@@ -5,7 +5,7 @@ import {
   getNumberOfSuccessful,
   getNumberOfFailed,
   getNumberOfUpcoming,
-} from './launches';
+} from './utils';
 import { LaunchPropType } from './Launch';
 
 export const GeneralInfo = ({ launches }) => {

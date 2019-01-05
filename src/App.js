@@ -8,7 +8,7 @@ import LaunchList from './LaunchList';
 import SortingOptions from './SortingOptions';
 import StatusFilter from './StatusFilter';
 import Loader from './Loader';
-import { processLaunches } from './launches';
+import { processLaunches } from './utils';
 import { DESC, UTC_DATE_FIELD } from './constants';
 import TopBar from './TopBar';
 

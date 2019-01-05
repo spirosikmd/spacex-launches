@@ -4,6 +4,32 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import { ASC, DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from './constants';
 
+function getSortOrderOptions(sortField) {
+  switch (sortField) {
+    case FLIGHT_NUMBER_FIELD:
+      return (
+        <>
+          <option value={ASC}>smaller to bigger</option>
+          <option value={DESC}>bigger to smaller</option>
+        </>
+      );
+    case UTC_DATE_FIELD:
+      return (
+        <>
+          <option value={ASC}>old to recent/upcoming</option>
+          <option value={DESC}>recent/upcoming to old</option>
+        </>
+      );
+    default:
+      return (
+        <>
+          <option value={ASC}>ascending</option>
+          <option value={DESC}>descending</option>
+        </>
+      );
+  }
+}
+
 export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
   const handleSortChange = event => {
     onSortChange(event.currentTarget.name, event.currentTarget.value);
@@ -43,8 +69,7 @@ export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
           margin="normal"
           variant="outlined"
         >
-          <option value={ASC}>ascending</option>
-          <option value={DESC}>descending</option>
+          {getSortOrderOptions(sortField)}
         </TextField>
       </Grid>
     </Grid>
