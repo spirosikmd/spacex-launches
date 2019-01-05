@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopBar renders app bar and title 1`] = `
+<WithStyles(AppBar)
+  position="static"
+>
+  <WithStyles(Toolbar)>
+    <WithStyles(Typography)
+      color="inherit"
+      variant="h6"
+    >
+      SpaceX Launches
+    </WithStyles(Typography)>
+  </WithStyles(Toolbar)>
+</WithStyles(AppBar)>
+`;

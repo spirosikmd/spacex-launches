@@ -10,6 +10,7 @@ import StatusFilter from './StatusFilter';
 import Loader from './Loader';
 import { processLaunches } from './launches';
 import { DESC, UTC_DATE_FIELD } from './constants';
+import TopBar from './TopBar';
 
 const styles = theme => ({
   main: {
@@ -92,38 +93,41 @@ export class App extends PureComponent {
     });
 
     return (
-      <main className={classes.main}>
-        <CssBaseline />
-        <Grid container spacing={16}>
-          <Grid item xs={12}>
-            <GeneralInfo launches={launches} />
+      <>
+        <TopBar />
+        <main className={classes.main}>
+          <CssBaseline />
+          <Grid container spacing={16}>
+            <Grid item xs={12}>
+              <GeneralInfo launches={launches} />
+            </Grid>
+            <Grid item xs={12}>
+              <StatusFilter
+                showFailed={showFailed}
+                showSuccessful={showSuccessful}
+                showUpcoming={showUpcoming}
+                onChange={this.handleChange}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <SortingOptions
+                sortField={sortField}
+                sortOrder={sortOrder}
+                onSortChange={this.handleSortChange}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              {isUpdatingLaunches ? (
+                <div className={classes.updatingLoader}>
+                  <Loader />
+                </div>
+              ) : (
+                <LaunchList launches={processedLaunches} />
+              )}
+            </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <StatusFilter
-              showFailed={showFailed}
-              showSuccessful={showSuccessful}
-              showUpcoming={showUpcoming}
-              onChange={this.handleChange}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <SortingOptions
-              sortField={sortField}
-              sortOrder={sortOrder}
-              onSortChange={this.handleSortChange}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            {isUpdatingLaunches ? (
-              <div className={classes.updatingLoader}>
-                <Loader />
-              </div>
-            ) : (
-              <LaunchList launches={processedLaunches} />
-            )}
-          </Grid>
-        </Grid>
-      </main>
+        </main>
+      </>
     );
   }
 }
