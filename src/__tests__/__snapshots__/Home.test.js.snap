@@ -67,7 +67,6 @@ exports[`Home renders 1`] = `
     xs={12}
   >
     <React.Memo
-      showUpcoming={false}
       sortField="flight_number"
       sortOrder="desc"
     />
@@ -185,7 +184,6 @@ exports[`Home when is not loading launches when is updating launches renders inf
     xs={12}
   >
     <React.Memo
-      showUpcoming={false}
       sortField="flight_number"
       sortOrder="desc"
     />

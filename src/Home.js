@@ -53,7 +53,6 @@ export const Home = ({
         <SortingOptions
           sortField={sortField}
           sortOrder={sortOrder}
-          showUpcoming={showUpcoming}
           onSortChange={onSortChange}
         />
       </Grid>

@@ -9,7 +9,6 @@ describe('SortingOptions', () => {
     props = {
       sortOrder: DESC,
       sortField: FLIGHT_NUMBER_FIELD,
-      showUpcoming: false,
       onSortChange: jest.fn(),
     };
   });
@@ -23,14 +22,6 @@ describe('SortingOptions', () => {
   describe('when sorting field is utc date', () => {
     it('renders sorting options with date specific text', () => {
       props.sortField = UTC_DATE_FIELD;
-      expect(shallow(SortingOptions, props)).toMatchSnapshot();
-    });
-  });
-
-  describe('when shows upcoming', () => {
-    it('renders upcoming text in the options', () => {
-      props.sortField = UTC_DATE_FIELD;
-      props.showUpcoming = true;
       expect(shallow(SortingOptions, props)).toMatchSnapshot();
     });
   });
