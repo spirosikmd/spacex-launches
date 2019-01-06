@@ -1,10 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopBar renders app bar and title 1`] = `
+exports[`TopBar renders 1`] = `
 <WithStyles(AppBar)
   position="static"
 >
   <WithStyles(Toolbar)>
+    <pure(GroupWorkRoundedIcon)
+      className="logo"
+    />
     <WithStyles(Typography)
       color="inherit"
       variant="h6"

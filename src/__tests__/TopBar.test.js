@@ -1,7 +1,17 @@
 import { TopBar } from '../TopBar';
 
 describe('TopBar', () => {
-  it('renders app bar and title', () => {
-    expect(shallow(TopBar, {})).toMatchSnapshot();
+  let props;
+
+  beforeEach(() => {
+    props = {
+      classes: {
+        logo: 'logo',
+      },
+    };
+  });
+
+  it('renders', () => {
+    expect(shallow(TopBar, props)).toMatchSnapshot();
   });
 });

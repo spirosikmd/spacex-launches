@@ -2,7 +2,7 @@
 
 exports[`App renders 1`] = `
 <Fragment>
-  <React.Memo />
+  <WithStyles(Component) />
   <main
     className="main"
   >
