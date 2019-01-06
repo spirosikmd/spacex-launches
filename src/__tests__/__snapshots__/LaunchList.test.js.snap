@@ -2,62 +2,52 @@
 
 exports[`LaunchList when there are launches renders a list of launches 1`] = `
 <div
-  className="root"
+  className="launchList"
 >
   <div
-    className="line"
+    className="timeline"
   />
   <div
-    className="launchRoot"
+    className="launchItem"
     key="1"
   >
-    <div
-      className="launch"
-    >
-      <WithStyles(Component)
-        launch={
-          Object {
-            "details": "Details",
-            "flightNumber": 1,
-            "isFailed": false,
-            "isSuccessful": true,
-            "isTentative": false,
-            "isUpcoming": false,
-            "missionName": "Test",
-            "utcDate": Object {
-              "toLocaleString": [MockFunction],
-            },
-          }
+    <WithStyles(Component)
+      launch={
+        Object {
+          "details": "Details",
+          "flightNumber": 1,
+          "isFailed": false,
+          "isSuccessful": true,
+          "isTentative": false,
+          "isUpcoming": false,
+          "missionName": "Test",
+          "utcDate": Object {
+            "toLocaleString": [MockFunction],
+          },
         }
-        reverse={false}
-      />
-    </div>
+      }
+    />
   </div>
   <div
-    className="launchRoot reverse"
+    className="launchItem"
     key="2"
   >
-    <div
-      className="launch"
-    >
-      <WithStyles(Component)
-        launch={
-          Object {
-            "details": "Details",
-            "flightNumber": 2,
-            "isFailed": false,
-            "isSuccessful": true,
-            "isTentative": false,
-            "isUpcoming": false,
-            "missionName": "Test",
-            "utcDate": Object {
-              "toLocaleString": [MockFunction],
-            },
-          }
+    <WithStyles(Component)
+      launch={
+        Object {
+          "details": "Details",
+          "flightNumber": 2,
+          "isFailed": false,
+          "isSuccessful": true,
+          "isTentative": false,
+          "isUpcoming": false,
+          "missionName": "Test",
+          "utcDate": Object {
+            "toLocaleString": [MockFunction],
+          },
         }
-        reverse={true}
-      />
-    </div>
+      }
+    />
   </div>
 </div>
 `;

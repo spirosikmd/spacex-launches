@@ -8,11 +8,9 @@ describe('LaunchList', () => {
     props = {
       launches: [],
       classes: {
-        root: 'root',
-        line: 'line',
-        launchRoot: 'launchRoot',
-        launch: 'launch',
-        reverse: 'reverse',
+        launchList: 'launchList',
+        timeline: 'timeline',
+        launchItem: 'launchItem',
       },
     };
   });
