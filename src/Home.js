@@ -10,6 +10,7 @@ import Loader from './Loader';
 const styles = theme => ({
   loader: {
     paddingTop: theme.spacing.unit * 8,
+    paddingBottom: theme.spacing.unit * 8,
   },
 });
 
