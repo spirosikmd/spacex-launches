@@ -13,9 +13,25 @@ const styles = theme => ({
   timeline: {
     borderLeft: `1px solid ${theme.palette.grey[300]}`,
     position: 'absolute',
-    top: '0',
-    bottom: '0',
+    top: '6px',
+    bottom: '6px',
     left: `${theme.spacing.unit + 4}px`,
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      borderLeft: `1px dashed ${theme.palette.grey[300]}`,
+      top: '-13px',
+      left: '-1px',
+      height: '12px',
+    },
+    '&::after': {
+      position: 'absolute',
+      content: '""',
+      borderLeft: `1px dashed ${theme.palette.grey[300]}`,
+      bottom: '-13px',
+      left: '-1px',
+      height: '12px',
+    },
   },
   launchItem: {
     padding: `${theme.spacing.unit * 2}px 0`,
