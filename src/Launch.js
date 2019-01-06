@@ -66,9 +66,11 @@ export const Launch = ({ classes, launch }) => {
               {launch.utcDate.toLocaleString()}
             </Typography>
           </Grid>
-          <Grid item xs={12}>
-            <Typography>{launch.details}</Typography>
-          </Grid>
+          {launch.details && (
+            <Grid item xs={12}>
+              <Typography>{launch.details}</Typography>
+            </Grid>
+          )}
         </Grid>
       </Paper>
     </div>

@@ -42,4 +42,11 @@ describe('Launch', () => {
       expect(shallow(Launch, props)).toMatchSnapshot();
     });
   });
+
+  describe('when launch does not have details', () => {
+    it('does not render the details section', () => {
+      props.launch = createLaunch({ details: null });
+      expect(shallow(Launch, props)).toMatchSnapshot();
+    });
+  });
 });
