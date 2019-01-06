@@ -49,4 +49,11 @@ describe('Launch', () => {
       expect(shallow(Launch, props)).toMatchSnapshot();
     });
   });
+
+  describe('when launch does not have mission ids', () => {
+    it('does not render the mission ids info', () => {
+      props.launch = createLaunch({ missionIds: [] });
+      expect(shallow(Launch, props)).toMatchSnapshot();
+    });
+  });
 });

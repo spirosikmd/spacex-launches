@@ -19,6 +19,9 @@ exports[`Home renders 1`] = `
             "isSuccessful": true,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -31,6 +34,9 @@ exports[`Home renders 1`] = `
             "isSuccessful": false,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -43,6 +49,9 @@ exports[`Home renders 1`] = `
             "isSuccessful": false,
             "isTentative": false,
             "isUpcoming": true,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -85,6 +94,9 @@ exports[`Home renders 1`] = `
             "isSuccessful": true,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -97,6 +109,9 @@ exports[`Home renders 1`] = `
             "isSuccessful": false,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -136,6 +151,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             "isSuccessful": true,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -148,6 +166,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             "isSuccessful": false,
             "isTentative": false,
             "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],
@@ -160,6 +181,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             "isSuccessful": false,
             "isTentative": false,
             "isUpcoming": true,
+            "missionIds": Array [
+              "id1",
+            ],
             "missionName": "Test",
             "utcDate": Object {
               "toLocaleString": [MockFunction],

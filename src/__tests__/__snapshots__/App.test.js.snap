@@ -26,6 +26,9 @@ exports[`App renders 1`] = `
                 "isSuccessful": true,
                 "isTentative": false,
                 "isUpcoming": false,
+                "missionIds": Array [
+                  "id1",
+                ],
                 "missionName": "Test",
                 "utcDate": Object {
                   "toLocaleString": [MockFunction],
@@ -45,6 +48,9 @@ exports[`App renders 1`] = `
                 "isSuccessful": true,
                 "isTentative": false,
                 "isUpcoming": false,
+                "missionIds": Array [
+                  "id1",
+                ],
                 "missionName": "Test",
                 "utcDate": Object {
                   "toLocaleString": [MockFunction],

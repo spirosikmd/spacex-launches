@@ -26,9 +26,18 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
         item={true}
         xs={12}
       >
-        <WithStyles(Typography)>
-          Test
-        </WithStyles(Typography)>
+        <div>
+          <WithStyles(Typography)>
+            Test
+          </WithStyles(Typography)>
+          <WithStyles(Typography)
+            align="right"
+            color="textSecondary"
+            variant="caption"
+          >
+            id1
+          </WithStyles(Typography)>
+        </div>
       </WithStyles(Grid)>
       <WithStyles(Grid)
         item={true}
@@ -79,9 +88,18 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
         item={true}
         xs={12}
       >
-        <WithStyles(Typography)>
-          Test
-        </WithStyles(Typography)>
+        <div>
+          <WithStyles(Typography)>
+            Test
+          </WithStyles(Typography)>
+          <WithStyles(Typography)
+            align="right"
+            color="textSecondary"
+            variant="caption"
+          >
+            id1
+          </WithStyles(Typography)>
+        </div>
       </WithStyles(Grid)>
       <WithStyles(Grid)
         item={true}
@@ -132,9 +150,18 @@ exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
         item={true}
         xs={12}
       >
-        <WithStyles(Typography)>
-          Test
-        </WithStyles(Typography)>
+        <div>
+          <WithStyles(Typography)>
+            Test
+          </WithStyles(Typography)>
+          <WithStyles(Typography)
+            align="right"
+            color="textSecondary"
+            variant="caption"
+          >
+            id1
+          </WithStyles(Typography)>
+        </div>
       </WithStyles(Grid)>
       <WithStyles(Grid)
         item={true}
@@ -185,9 +212,18 @@ exports[`Launch when launch does not have details does not render the details se
         item={true}
         xs={12}
       >
-        <WithStyles(Typography)>
-          Test
-        </WithStyles(Typography)>
+        <div>
+          <WithStyles(Typography)>
+            Test
+          </WithStyles(Typography)>
+          <WithStyles(Typography)
+            align="right"
+            color="textSecondary"
+            variant="caption"
+          >
+            id1
+          </WithStyles(Typography)>
+        </div>
       </WithStyles(Grid)>
       <WithStyles(Grid)
         item={true}
@@ -197,6 +233,61 @@ exports[`Launch when launch does not have details does not render the details se
           color="textSecondary"
         >
           2019-01-01
+        </WithStyles(Typography)>
+      </WithStyles(Grid)>
+    </WithStyles(Grid)>
+  </WithStyles(Paper)>
+</div>
+`;
+
+exports[`Launch when launch does not have mission ids does not render the mission ids info 1`] = `
+<div
+  className="launch"
+>
+  <WithStyles(Paper)
+    className="status success"
+    elevation={1}
+  >
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+  <div
+    className="connector"
+  />
+  <WithStyles(Paper)
+    className="launchInfo"
+  >
+    <WithStyles(Grid)
+      container={true}
+      spacing={8}
+    >
+      <WithStyles(Grid)
+        item={true}
+        xs={12}
+      >
+        <div>
+          <WithStyles(Typography)>
+            Test
+          </WithStyles(Typography)>
+        </div>
+      </WithStyles(Grid)>
+      <WithStyles(Grid)
+        item={true}
+        xs={12}
+      >
+        <WithStyles(Typography)
+          color="textSecondary"
+        >
+          2019-01-01
+        </WithStyles(Typography)>
+      </WithStyles(Grid)>
+      <WithStyles(Grid)
+        item={true}
+        xs={12}
+      >
+        <WithStyles(Typography)>
+          Details
         </WithStyles(Typography)>
       </WithStyles(Grid)>
     </WithStyles(Grid)>

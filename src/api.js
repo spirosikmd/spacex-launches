@@ -8,6 +8,7 @@ function sanitizeLaunchesResponse(launches) {
     isTentative: launch.is_tentative === true,
     details: launch.details,
     missionName: launch.mission_name,
+    missionIds: launch.mission_id || [],
   }));
 }
 

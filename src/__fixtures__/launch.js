@@ -8,6 +8,7 @@ export function createLaunch(data) {
     isUpcoming: false,
     isTentative: false,
     details: 'Details',
+    missionIds: ['id1'],
     ...data,
   };
 }

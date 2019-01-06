@@ -36,6 +36,11 @@ const styles = theme => ({
     padding: theme.spacing.unit * 2,
     flexGrow: 1,
   },
+  launchInfoHead: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   connector: {
     minWidth: theme.spacing.unit * 2,
     border: `0.5px dashed ${theme.palette.secondary.dark}`,
@@ -59,7 +64,18 @@ export const Launch = ({ classes, launch }) => {
       <Paper className={classes.launchInfo}>
         <Grid container spacing={8}>
           <Grid item xs={12}>
-            <Typography>{launch.missionName}</Typography>
+            <div className={classes.launchInfoHead}>
+              <Typography>{launch.missionName}</Typography>
+              {launch.missionIds.length > 0 && (
+                <Typography
+                  color="textSecondary"
+                  variant="caption"
+                  align="right"
+                >
+                  {launch.missionIds.join(', ')}
+                </Typography>
+              )}
+            </div>
           </Grid>
           <Grid item xs={12}>
             <Typography color="textSecondary">
@@ -85,6 +101,7 @@ export const LaunchPropType = {
   missionName: PropTypes.string.isRequired,
   utcDate: PropTypes.object.isRequired,
   details: PropTypes.string,
+  missionIds: PropTypes.array.isRequired,
 };
 
 Launch.propTypes = {
