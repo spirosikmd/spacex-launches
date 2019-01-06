@@ -224,3 +224,85 @@ exports[`Home when is not loading launches when is updating launches renders inf
   </WithStyles(Grid)>
 </WithStyles(Grid)>
 `;
+
+exports[`Home when there are no processed launches does not render the sorting options 1`] = `
+<WithStyles(Grid)
+  container={true}
+  spacing={16}
+>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      launches={
+        Array [
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": true,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": true,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": false,
+            "missionIds": Array [
+              "id1",
+            ],
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+          Object {
+            "details": "Details",
+            "flightNumber": 1,
+            "isFailed": false,
+            "isSuccessful": false,
+            "isTentative": false,
+            "isUpcoming": true,
+            "missionIds": Array [
+              "id1",
+            ],
+            "missionName": "Test",
+            "utcDate": Object {
+              "toLocaleString": [MockFunction],
+            },
+          },
+        ]
+      }
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <React.Memo
+      showFailed={true}
+      showSuccessful={true}
+      showUpcoming={false}
+    />
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+    xs={12}
+  >
+    <WithStyles(Component)
+      launches={Array []}
+    />
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
+`;

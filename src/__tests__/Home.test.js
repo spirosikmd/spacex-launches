@@ -34,18 +34,25 @@ describe('Home', () => {
   });
 
   describe('when is loading launches', () => {
-    it('renders a loader', async () => {
+    it('renders a loader', () => {
       props.isLoadingLaunches = true;
-      expect(await shallow(Home, props)).toMatchSnapshot();
+      expect(shallow(Home, props)).toMatchSnapshot();
     });
   });
 
   describe('when is not loading launches', () => {
     describe('when is updating launches', () => {
-      it('renders info, filters, sorting options, and a loader', async () => {
+      it('renders info, filters, sorting options, and a loader', () => {
         props.isUpdatingLaunches = true;
-        expect(await shallow(Home, props)).toMatchSnapshot();
+        expect(shallow(Home, props)).toMatchSnapshot();
       });
+    });
+  });
+
+  describe('when there are no processed launches', () => {
+    it('does not render the sorting options', () => {
+      props.processedLaunches = [];
+      expect(shallow(Home, props)).toMatchSnapshot();
     });
   });
 });

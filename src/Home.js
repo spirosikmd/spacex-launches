@@ -49,13 +49,15 @@ export const Home = ({
           onChange={onChange}
         />
       </Grid>
-      <Grid item xs={12}>
-        <SortingOptions
-          sortField={sortField}
-          sortOrder={sortOrder}
-          onSortChange={onSortChange}
-        />
-      </Grid>
+      {processedLaunches.length > 0 && (
+        <Grid item xs={12}>
+          <SortingOptions
+            sortField={sortField}
+            sortOrder={sortOrder}
+            onSortChange={onSortChange}
+          />
+        </Grid>
+      )}
       <Grid item xs={12}>
         {isUpdatingLaunches ? (
           <div className={classes.loader}>
