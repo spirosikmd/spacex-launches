@@ -9,10 +9,9 @@ describe('Launch', () => {
       classes: {
         status: 'status',
         statusIcon: 'statusIcon',
-        statusReverse: 'statusReverse',
+        upcoming: 'upcoming',
         success: 'success',
         fail: 'fail',
-        upcoming: 'upcoming',
         launch: 'launch',
         launchInfo: 'launchInfo',
         connector: 'connector',

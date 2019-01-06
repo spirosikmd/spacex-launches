@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
 
 const styles = theme => ({
   status: {
@@ -33,13 +35,7 @@ const styles = theme => ({
     alignItems: 'center',
   },
   launchInfo: {
-    padding: theme.spacing.unit * 2,
     flexGrow: 1,
-  },
-  launchInfoHead: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
   },
   connector: {
     minWidth: theme.spacing.unit * 2,
@@ -55,40 +51,38 @@ export const Launch = ({ classes, launch }) => {
     [classes.upcoming]: launch.isUpcoming,
   });
 
+  const hadMissionIds = launch.missionIds.length > 0;
+  const hasContent = launch.details || hadMissionIds;
+
   return (
     <div className={classes.launch}>
       <Paper className={statusClassName} elevation={1}>
         <GroupWorkRoundedIcon className={classes.statusIcon} />
       </Paper>
       <div className={classes.connector} />
-      <Paper className={classes.launchInfo}>
-        <Grid container spacing={8}>
-          <Grid item xs={12}>
-            <div className={classes.launchInfoHead}>
-              <Typography>{launch.missionName}</Typography>
-              {launch.missionIds.length > 0 && (
-                <Typography
-                  color="textSecondary"
-                  variant="caption"
-                  align="right"
-                >
-                  {launch.missionIds.join(', ')}
+      <Card className={classes.launchInfo}>
+        <CardHeader
+          title={launch.missionName}
+          subheader={launch.utcDate.toLocaleString()}
+        />
+        {hasContent && (
+          <CardContent>
+            {launch.details &&
+              (hadMissionIds > 0 ? (
+                <Typography component="p" gutterBottom>
+                  {launch.details}
                 </Typography>
-              )}
-            </div>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography color="textSecondary">
-              {launch.utcDate.toLocaleString()}
-            </Typography>
-          </Grid>
-          {launch.details && (
-            <Grid item xs={12}>
-              <Typography>{launch.details}</Typography>
-            </Grid>
-          )}
-        </Grid>
-      </Paper>
+              ) : (
+                <Typography component="p">{launch.details}</Typography>
+              ))}
+            {hadMissionIds > 0 && (
+              <Typography color="textSecondary" component="p">
+                ID: {launch.missionIds.join(', ')}
+              </Typography>
+            )}
+          </CardContent>
+        )}
+      </Card>
     </div>
   );
 };

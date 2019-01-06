@@ -128,12 +128,12 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
       <option
         value="asc"
       >
-        old to recent
+        old to new
       </option>
       <option
         value="desc"
       >
-        recent to old
+        new to old
       </option>
     </TextField>
   </WithStyles(Grid)>

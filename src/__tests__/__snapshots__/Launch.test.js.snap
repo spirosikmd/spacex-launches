@@ -15,50 +15,29 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
   <div
     className="connector"
   />
-  <WithStyles(Paper)
+  <WithStyles(Card)
     className="launchInfo"
   >
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+    <WithStyles(CardHeader)
+      subheader="2019-01-01"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
+        gutterBottom={true}
       >
-        <div>
-          <WithStyles(Typography)>
-            Test
-          </WithStyles(Typography)>
-          <WithStyles(Typography)
-            align="right"
-            color="textSecondary"
-            variant="caption"
-          >
-            id1
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+        Details
+      </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
       >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          2019-01-01
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(Paper)>
+        ID: 
+        id1
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;
 
@@ -77,50 +56,29 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
   <div
     className="connector"
   />
-  <WithStyles(Paper)
+  <WithStyles(Card)
     className="launchInfo"
   >
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+    <WithStyles(CardHeader)
+      subheader="2019-01-01"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
+        gutterBottom={true}
       >
-        <div>
-          <WithStyles(Typography)>
-            Test
-          </WithStyles(Typography)>
-          <WithStyles(Typography)
-            align="right"
-            color="textSecondary"
-            variant="caption"
-          >
-            id1
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+        Details
+      </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
       >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          2019-01-01
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(Paper)>
+        ID: 
+        id1
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;
 
@@ -139,50 +97,29 @@ exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
   <div
     className="connector"
   />
-  <WithStyles(Paper)
+  <WithStyles(Card)
     className="launchInfo"
   >
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+    <WithStyles(CardHeader)
+      subheader="2019-01-01"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
+        gutterBottom={true}
       >
-        <div>
-          <WithStyles(Typography)>
-            Test
-          </WithStyles(Typography)>
-          <WithStyles(Typography)
-            align="right"
-            color="textSecondary"
-            variant="caption"
-          >
-            id1
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+        Details
+      </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
       >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          2019-01-01
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(Paper)>
+        ID: 
+        id1
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;
 
@@ -201,42 +138,23 @@ exports[`Launch when launch does not have details does not render the details se
   <div
     className="connector"
   />
-  <WithStyles(Paper)
+  <WithStyles(Card)
     className="launchInfo"
   >
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+    <WithStyles(CardHeader)
+      subheader="2019-01-01"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
       >
-        <div>
-          <WithStyles(Typography)>
-            Test
-          </WithStyles(Typography)>
-          <WithStyles(Typography)
-            align="right"
-            color="textSecondary"
-            variant="caption"
-          >
-            id1
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          2019-01-01
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(Paper)>
+        ID: 
+        id1
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;
 
@@ -255,42 +173,20 @@ exports[`Launch when launch does not have mission ids does not render the missio
   <div
     className="connector"
   />
-  <WithStyles(Paper)
+  <WithStyles(Card)
     className="launchInfo"
   >
-    <WithStyles(Grid)
-      container={true}
-      spacing={8}
-    >
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
+    <WithStyles(CardHeader)
+      subheader="2019-01-01"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
       >
-        <div>
-          <WithStyles(Typography)>
-            Test
-          </WithStyles(Typography)>
-        </div>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)
-          color="textSecondary"
-        >
-          2019-01-01
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-      <WithStyles(Grid)
-        item={true}
-        xs={12}
-      >
-        <WithStyles(Typography)>
-          Details
-        </WithStyles(Typography)>
-      </WithStyles(Grid)>
-    </WithStyles(Grid)>
-  </WithStyles(Paper)>
+        Details
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;

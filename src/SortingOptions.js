@@ -16,8 +16,8 @@ function getSortOrderOptions(sortField) {
     case UTC_DATE_FIELD:
       return (
         <>
-          <option value={ASC}>old to recent</option>
-          <option value={DESC}>recent to old</option>
+          <option value={ASC}>old to new</option>
+          <option value={DESC}>new to old</option>
         </>
       );
     default:
