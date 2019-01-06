@@ -11,8 +11,5 @@ action "Install" {
 action "Test" {
   uses = "borales/actions-yarn@master"
   needs = ["Install"]
-  args = "test"
-  env = {
-    CI = "true"
-  }
+  args = "test --ci --coverage"
 }
