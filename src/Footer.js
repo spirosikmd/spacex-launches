@@ -7,6 +7,7 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
     padding: theme.spacing.unit * 2,
   },
 });
@@ -16,6 +17,10 @@ export const Footer = ({ classes }) => {
     <div className={classes.root}>
       <Typography>
         SpaceX Launches | <a href="https://spyros.io">spyros.io</a>
+      </Typography>
+      <Typography>
+        Made possible by the{' '}
+        <a href="https://github.com/r-spacex/SpaceX-API">SpaceX API</a>
       </Typography>
     </div>
   );
