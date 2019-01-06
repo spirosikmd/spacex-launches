@@ -65,10 +65,8 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
 `;
 
 exports[`LaunchList when there are no launches renders a message 1`] = `
-<div>
-  <img
-    alt="No launches..."
-    src="emptyList.png"
-  />
-</div>
+<WithStyles(Component)
+  alt="No launches..."
+  src="emptyList.png"
+/>
 `;

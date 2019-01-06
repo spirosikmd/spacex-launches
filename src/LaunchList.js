@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Launch, { LaunchPropType } from './Launch';
+import Image from './Image';
 import emptyListImage from './emptyList.png';
 
 const styles = theme => ({
@@ -36,30 +37,11 @@ const styles = theme => ({
   launchItem: {
     padding: `${theme.spacing.unit * 2}px 0`,
   },
-  emptyListImageWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  emptyListImage: {
-    width: '400px',
-    [theme.breakpoints.down('xs')]: {
-      width: '300px',
-    },
-  },
 });
 
 export const LaunchList = ({ classes, launches }) => {
   if (launches.length === 0) {
-    return (
-      <div className={classes.emptyListImageWrapper}>
-        <img
-          src={emptyListImage}
-          alt="No launches..."
-          className={classes.emptyListImage}
-        />
-      </div>
-    );
+    return <Image src={emptyListImage} alt="No launches..." />;
   }
 
   return (

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import Image from './Image';
+import notFoundImage from './notFound.png';
 
 export const NotFound = () => {
-  return <Typography>Not found!</Typography>;
+  return <Image alt="Not found" src={notFoundImage} />;
 };
 
 export default React.memo(NotFound);

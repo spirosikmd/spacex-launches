@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound renders 1`] = `
-<WithStyles(Typography)>
-  Not found!
-</WithStyles(Typography)>
+<WithStyles(Component)
+  alt="Not found"
+  src="notFound.png"
+/>
 `;
