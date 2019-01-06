@@ -63,7 +63,7 @@ const styles = theme => ({
   },
   divider: {
     flexGrow: 1,
-    border: `0.5px dashed ${theme.palette.secondary.main}`,
+    border: `0.5px dashed ${theme.palette.secondary.dark}`,
     marginTop: '1px',
   },
 });

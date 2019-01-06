@@ -7,13 +7,13 @@ import { processLaunches } from './utils';
 import { DESC, UTC_DATE_FIELD } from './constants';
 import Loader from './Loader';
 import TopBar from './TopBar';
+import Footer from './Footer';
 
 const Home = React.lazy(() => import('./Home'));
 const NotFound = React.lazy(() => import('./NotFound'));
 
 const styles = theme => ({
   main: {
-    height: '100%',
     padding: theme.spacing.unit * 2,
   },
 });
@@ -104,6 +104,7 @@ export class App extends PureComponent {
             </Router>
           </Suspense>
         </main>
+        <Footer />
       </>
     );
   }

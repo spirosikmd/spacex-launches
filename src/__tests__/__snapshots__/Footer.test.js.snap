@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders 1`] = `
+<div
+  className="root"
+>
+  <WithStyles(Typography)>
+    SpaceX Launches | 
+    <a
+      href="https://spyros.io"
+    >
+      spyros.io
+    </a>
+  </WithStyles(Typography)>
+</div>
+`;
