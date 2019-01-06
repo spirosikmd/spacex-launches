@@ -24,6 +24,9 @@ exports[`Home renders 1`] = `
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -39,6 +42,9 @@ exports[`Home renders 1`] = `
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -54,6 +60,9 @@ exports[`Home renders 1`] = `
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -99,6 +108,9 @@ exports[`Home renders 1`] = `
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -114,6 +126,9 @@ exports[`Home renders 1`] = `
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -156,6 +171,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -171,6 +189,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -186,6 +207,9 @@ exports[`Home when is not loading launches when is updating launches renders inf
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -249,6 +273,9 @@ exports[`Home when there are no processed launches does not render the sorting o
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -264,6 +291,9 @@ exports[`Home when there are no processed launches does not render the sorting o
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },
@@ -279,6 +309,9 @@ exports[`Home when there are no processed launches does not render the sorting o
             ],
             "missionName": "Test",
             "utcDate": Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
               "toLocaleString": [MockFunction],
             },
           },

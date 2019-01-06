@@ -44,6 +44,21 @@ const styles = theme => ({
   },
 });
 
+function padDate(date) {
+  return ('0' + date).slice(-2);
+}
+
+function getDateTime(utcDate, isLaunchTentative) {
+  if (isLaunchTentative) {
+    const day = padDate(utcDate.getDate() + 1);
+    const month = padDate(utcDate.getMonth() + 1);
+    const year = utcDate.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+
+  return utcDate.toLocaleString();
+}
+
 export const Launch = ({ classes, launch }) => {
   const statusClassName = classnames(classes.status, {
     [classes.success]: launch.isSuccessful,
@@ -63,7 +78,7 @@ export const Launch = ({ classes, launch }) => {
       <Card className={classes.launchInfo}>
         <CardHeader
           title={launch.missionName}
-          subheader={launch.utcDate.toLocaleString()}
+          subheader={getDateTime(launch.utcDate, launch.isTentative)}
         />
         {hasContent && (
           <CardContent>

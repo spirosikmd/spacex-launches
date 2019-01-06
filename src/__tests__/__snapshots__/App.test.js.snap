@@ -31,6 +31,9 @@ exports[`App renders 1`] = `
                 ],
                 "missionName": "Test",
                 "utcDate": Object {
+                  "getDate": [MockFunction],
+                  "getFullYear": [MockFunction],
+                  "getMonth": [MockFunction],
                   "toLocaleString": [MockFunction],
                 },
               },
@@ -53,6 +56,9 @@ exports[`App renders 1`] = `
                 ],
                 "missionName": "Test",
                 "utcDate": Object {
+                  "getDate": [MockFunction],
+                  "getFullYear": [MockFunction],
+                  "getMonth": [MockFunction],
                   "toLocaleString": [MockFunction],
                 },
               },

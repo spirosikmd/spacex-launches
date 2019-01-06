@@ -25,6 +25,9 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
           ],
           "missionName": "Test",
           "utcDate": Object {
+            "getDate": [MockFunction],
+            "getFullYear": [MockFunction],
+            "getMonth": [MockFunction],
             "toLocaleString": [MockFunction],
           },
         }
@@ -49,6 +52,9 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
           ],
           "missionName": "Test",
           "utcDate": Object {
+            "getDate": [MockFunction],
+            "getFullYear": [MockFunction],
+            "getMonth": [MockFunction],
             "toLocaleString": [MockFunction],
           },
         }

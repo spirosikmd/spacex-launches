@@ -55,4 +55,11 @@ describe('Launch', () => {
       expect(shallow(Launch, props)).toMatchSnapshot();
     });
   });
+
+  describe('when launch is tentative', () => {
+    it('renders date without time', () => {
+      props.launch = createLaunch({ isTentative: true });
+      expect(shallow(Launch, props)).toMatchSnapshot();
+    });
+  });
 });

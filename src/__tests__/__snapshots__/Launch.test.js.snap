@@ -19,7 +19,7 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="2019-01-01"
+      subheader="04/11/2019, 21:43:00"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -60,7 +60,7 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="2019-01-01"
+      subheader="04/11/2019, 21:43:00"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -101,7 +101,7 @@ exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="2019-01-01"
+      subheader="04/11/2019, 21:43:00"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -142,7 +142,7 @@ exports[`Launch when launch does not have details does not render the details se
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="2019-01-01"
+      subheader="04/11/2019, 21:43:00"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -177,7 +177,7 @@ exports[`Launch when launch does not have mission ids does not render the missio
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="2019-01-01"
+      subheader="04/11/2019, 21:43:00"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -185,6 +185,47 @@ exports[`Launch when launch does not have mission ids does not render the missio
         component="p"
       >
         Details
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
+</div>
+`;
+
+exports[`Launch when launch is tentative renders date without time 1`] = `
+<div
+  className="launch"
+>
+  <WithStyles(Paper)
+    className="status success"
+    elevation={1}
+  >
+    <pure(GroupWorkRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+  <div
+    className="connector"
+  />
+  <WithStyles(Card)
+    className="launchInfo"
+  >
+    <WithStyles(CardHeader)
+      subheader="04/11/2019"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
+        gutterBottom={true}
+      >
+        Details
+      </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
+      >
+        ID: 
+        id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
   </WithStyles(Card)>

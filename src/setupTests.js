@@ -16,6 +16,9 @@ global.shallow = (Component, props = {}) => {
 
 global.Date = jest.fn().mockImplementation(date => {
   return {
-    toLocaleString: jest.fn().mockReturnValue(date),
+    toLocaleString: jest.fn().mockReturnValue('04/11/2019, 21:43:00'),
+    getDate: jest.fn().mockReturnValue(3),
+    getMonth: jest.fn().mockReturnValue(10),
+    getFullYear: jest.fn().mockReturnValue(2019),
   };
 });
