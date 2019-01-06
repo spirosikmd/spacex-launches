@@ -12,9 +12,9 @@ function sanitizeLaunchesResponse(launches) {
   }));
 }
 
-export async function getLaunches({ sortOrder, sortField }) {
+export async function getLaunches({ sortOrder, sortField, filter }) {
   const response = await fetch(
-    `https://api.spacexdata.com/v3/launches?sort=${sortField}&order=${sortOrder}`,
+    `https://api.spacexdata.com/v3/launches?filter=${filter}&sort=${sortField}&order=${sortOrder}`,
     {
       headers: {
         'Content-Type': 'application/json',

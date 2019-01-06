@@ -68,7 +68,7 @@ exports[`LaunchList when there are no launches renders a message 1`] = `
 <div>
   <img
     alt="No launches..."
-    src="emptyList.webp"
+    src="emptyList.png"
   />
 </div>
 `;

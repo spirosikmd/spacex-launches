@@ -1,10 +1,9 @@
 import { Router } from '@reach/router';
 import { App } from '../App';
-import Home from '../Home';
 import { getLaunches } from '../api';
 import { processLaunches } from '../utils';
 import { createLaunch } from '../__fixtures__/launch';
-import { FLIGHT_NUMBER_FIELD, DESC } from '../constants';
+import { FLIGHT_NUMBER_FIELD, DESC, FIELDS } from '../constants';
 
 jest.mock('../api', () => ({
   getLaunches: jest.fn(),
@@ -58,6 +57,7 @@ describe('App', () => {
       expect(getLaunches).toBeCalledWith({
         sortField: FLIGHT_NUMBER_FIELD,
         sortOrder: DESC,
+        filter: FIELDS,
       });
     });
   });

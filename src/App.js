@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { withStyles } from '@material-ui/core/styles';
 import { getLaunches } from './api';
 import { processLaunches } from './utils';
-import { DESC, UTC_DATE_FIELD } from './constants';
+import { DESC, UTC_DATE_FIELD, FIELDS } from './constants';
 import Loader from './Loader';
 import TopBar from './TopBar';
 import Footer from './Footer';
@@ -35,7 +35,11 @@ export class App extends PureComponent {
     this.setState({ isLoadingLaunches: true });
     try {
       const { sortField, sortOrder } = this.state;
-      const launches = await getLaunches({ sortField, sortOrder });
+      const launches = await getLaunches({
+        sortField,
+        sortOrder,
+        filter: FIELDS,
+      });
       this.setState({ launches, isLoadingLaunches: false });
     } catch (error) {
       this.setState({ error, isLoadingLaunches: false });
@@ -54,7 +58,11 @@ export class App extends PureComponent {
       },
       async () => {
         const { sortField, sortOrder } = this.state;
-        const launches = await getLaunches({ sortField, sortOrder });
+        const launches = await getLaunches({
+          sortField,
+          sortOrder,
+          filter: FIELDS,
+        });
         this.setState({ launches, isUpdatingLaunches: false });
       }
     );
