@@ -1,5 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SortingOptions when shows upcoming renders upcoming text in the options 1`] = `
+<WithStyles(Grid)
+  container={true}
+  spacing={8}
+>
+  <WithStyles(Grid)
+    item={true}
+  >
+    <TextField
+      SelectProps={
+        Object {
+          "name": "sortField",
+          "native": true,
+        }
+      }
+      id="sort-field"
+      label="Sort field"
+      margin="normal"
+      onChange={[Function]}
+      required={false}
+      select={true}
+      value="launch_date_utc"
+      variant="outlined"
+    >
+      <option
+        value="flight_number"
+      >
+        flight number
+      </option>
+      <option
+        value="launch_date_utc"
+      >
+        utc date
+      </option>
+    </TextField>
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+  >
+    <TextField
+      SelectProps={
+        Object {
+          "name": "sortOrder",
+          "native": true,
+        }
+      }
+      id="sort-order"
+      label="Sort order"
+      margin="normal"
+      onChange={[Function]}
+      required={false}
+      select={true}
+      value="desc"
+      variant="outlined"
+    >
+      <option
+        value="asc"
+      >
+        old to 
+        upcoming
+      </option>
+      <option
+        value="desc"
+      >
+        upcoming
+         to old
+      </option>
+    </TextField>
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
+`;
+
 exports[`SortingOptions when sorting field is flight number renders sorting options with flight number specific text 1`] = `
 <WithStyles(Grid)
   container={true}
@@ -128,12 +200,14 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
       <option
         value="asc"
       >
-        old to recent/upcoming
+        old to 
+        recent
       </option>
       <option
         value="desc"
       >
-        recent/upcoming to old
+        recent
+         to old
       </option>
     </TextField>
   </WithStyles(Grid)>

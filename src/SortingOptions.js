@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import { ASC, DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from './constants';
 
-function getSortOrderOptions(sortField) {
+function getSortOrderOptions(sortField, showUpcoming) {
   switch (sortField) {
     case FLIGHT_NUMBER_FIELD:
       return (
@@ -16,8 +16,12 @@ function getSortOrderOptions(sortField) {
     case UTC_DATE_FIELD:
       return (
         <>
-          <option value={ASC}>old to recent/upcoming</option>
-          <option value={DESC}>recent/upcoming to old</option>
+          <option value={ASC}>
+            old to {showUpcoming ? 'upcoming' : 'recent'}
+          </option>
+          <option value={DESC}>
+            {showUpcoming ? 'upcoming' : 'recent'} to old
+          </option>
         </>
       );
     default:
@@ -30,7 +34,12 @@ function getSortOrderOptions(sortField) {
   }
 }
 
-export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
+export const SortingOptions = ({
+  sortField,
+  sortOrder,
+  showUpcoming,
+  onSortChange,
+}) => {
   const handleSortChange = event => {
     onSortChange(event.currentTarget.name, event.currentTarget.value);
   };
@@ -69,7 +78,7 @@ export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
           margin="normal"
           variant="outlined"
         >
-          {getSortOrderOptions(sortField)}
+          {getSortOrderOptions(sortField, showUpcoming)}
         </TextField>
       </Grid>
     </Grid>
@@ -79,6 +88,7 @@ export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
 SortingOptions.propTypes = {
   sortField: PropTypes.string.isRequired,
   sortOrder: PropTypes.string.isRequired,
+  showUpcoming: PropTypes.bool.isRequired,
   onSortChange: PropTypes.func.isRequired,
 };
 
