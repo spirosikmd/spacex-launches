@@ -8,12 +8,16 @@ exports[`TopBar renders 1`] = `
     <pure(GroupWorkRoundedIcon)
       className="logo"
     />
-    <WithStyles(Typography)
-      color="inherit"
-      variant="h6"
+    <ForwardRef
+      to="/"
     >
-      SpaceX Launches
-    </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="inherit"
+        variant="h6"
+      >
+        SpaceX Launches
+      </WithStyles(Typography)>
+    </ForwardRef>
   </WithStyles(Toolbar)>
 </WithStyles(AppBar)>
 `;

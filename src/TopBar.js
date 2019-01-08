@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@reach/router';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -10,6 +11,10 @@ const styles = theme => ({
     marginLeft: -theme.spacing.unit,
     marginRight: theme.spacing.unit,
   },
+  link: {
+    textDecoration: 'none',
+    color: theme.palette.common.white,
+  },
 });
 
 export const TopBar = ({ classes }) => {
@@ -17,9 +22,11 @@ export const TopBar = ({ classes }) => {
     <AppBar position="static">
       <Toolbar>
         <GroupWorkRoundedIcon className={classes.logo} />
-        <Typography variant="h6" color="inherit">
-          SpaceX Launches
-        </Typography>
+        <Link to="/" className={classes.link}>
+          <Typography variant="h6" color="inherit">
+            SpaceX Launches
+          </Typography>
+        </Link>
       </Toolbar>
     </AppBar>
   );
