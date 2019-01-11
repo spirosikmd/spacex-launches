@@ -11,6 +11,7 @@ import Footer from './Footer';
 
 const Home = React.lazy(() => import('./Home'));
 const NotFound = React.lazy(() => import('./NotFound'));
+const LaunchPage = React.lazy(() => import('./LaunchPage'));
 
 const styles = theme => ({
   main: {
@@ -21,7 +22,7 @@ const styles = theme => ({
 export class App extends PureComponent {
   state = {
     launches: [],
-    isLoadingLaunches: false,
+    isLoadingLaunches: true,
     isUpdatingLaunches: false,
     error: null,
     showUpcoming: false,
@@ -32,7 +33,6 @@ export class App extends PureComponent {
   };
 
   async componentDidMount() {
-    this.setState({ isLoadingLaunches: true });
     try {
       const { sortField, sortOrder } = this.state;
       const launches = await getLaunches({
@@ -109,6 +109,7 @@ export class App extends PureComponent {
                 onChange={this.handleChange}
                 onSortChange={this.handleSortChange}
               />
+              <LaunchPage path="/launches/:flightNumber" />
             </Router>
           </Suspense>
         </main>

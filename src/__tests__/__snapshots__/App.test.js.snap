@@ -70,6 +70,9 @@ exports[`App renders 1`] = `
           sortField="launch_date_utc"
           sortOrder="desc"
         />
+        <React.Lazy
+          path="/launches/:flightNumber"
+        />
       </Router>
     </React.Suspense>
   </main>

@@ -1,5 +1,8 @@
-function sanitizeLaunchesResponse(launches) {
-  return launches.map(launch => ({
+const BASE = 'https://api.spacexdata.com/v3';
+const LAUNCHES_BASE = `${BASE}/launches`;
+
+function sanitizeLaunchResponse(launch) {
+  return {
     flightNumber: launch.flight_number,
     utcDate: new Date(launch.launch_date_utc),
     isSuccessful: launch.launch_success === true && launch.upcoming === false,
@@ -9,18 +12,34 @@ function sanitizeLaunchesResponse(launches) {
     details: launch.details,
     missionName: launch.mission_name,
     missionIds: launch.mission_id || [],
-  }));
+  };
+}
+
+function sanitizeLaunchesResponse(launches) {
+  return launches.map(sanitizeLaunchResponse);
+}
+
+function getHeaders() {
+  return {
+    'Content-Type': 'application/json',
+  };
 }
 
 export async function getLaunches({ sortOrder, sortField, filter }) {
   const response = await fetch(
-    `https://api.spacexdata.com/v3/launches?filter=${filter}&sort=${sortField}&order=${sortOrder}`,
+    `${LAUNCHES_BASE}?filter=${filter}&sort=${sortField}&order=${sortOrder}`,
     {
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: getHeaders(),
     }
   );
   const launches = await response.json();
   return sanitizeLaunchesResponse(launches);
+}
+
+export async function getLaunch({ flightNumber }) {
+  const response = await fetch(`${LAUNCHES_BASE}/${flightNumber}`, {
+    headers: getHeaders(),
+  });
+  const launch = await response.json();
+  return sanitizeLaunchResponse(launch);
 }

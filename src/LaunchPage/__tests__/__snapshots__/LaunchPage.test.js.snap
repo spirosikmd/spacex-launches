@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchPage renders 1`] = `
+<Fragment>
+  <div>
+    Test
+  </div>
+  <div>
+    Details
+  </div>
+</Fragment>
+`;
+
+exports[`LaunchPage when is loading launch renders a loader 1`] = `<WithStyles(Component) />`;

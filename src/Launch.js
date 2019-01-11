@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import { Link } from '@reach/router';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
 
 const styles = theme => ({
   status: {
@@ -97,6 +100,16 @@ export const Launch = ({ classes, launch }) => {
             )}
           </CardContent>
         )}
+        <CardActions>
+          <Button
+            size="small"
+            color="primary"
+            component={Link}
+            to={`/launches/${launch.flightNumber}`}
+          >
+            explore
+          </Button>
+        </CardActions>
       </Card>
     </div>
   );
@@ -111,6 +124,7 @@ export const LaunchPropType = {
   utcDate: PropTypes.object.isRequired,
   details: PropTypes.string,
   missionIds: PropTypes.array.isRequired,
+  flightNumber: PropTypes.number.isRequired,
 };
 
 Launch.propTypes = {

@@ -37,6 +37,21 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
@@ -78,6 +93,21 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
@@ -119,6 +149,21 @@ exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
@@ -154,6 +199,21 @@ exports[`Launch when launch does not have details does not render the details se
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
@@ -187,6 +247,21 @@ exports[`Launch when launch does not have mission ids does not render the missio
         Details
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
@@ -228,6 +303,21 @@ exports[`Launch when launch is tentative renders date without time 1`] = `
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
