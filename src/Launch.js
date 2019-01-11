@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
+import MoreHorizRoundedIcon from '@material-ui/icons/MoreHorizRounded';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -32,6 +33,9 @@ const styles = theme => ({
   },
   fail: {
     color: theme.palette.error.main,
+  },
+  inProgress: {
+    color: theme.palette.grey['500'],
   },
   launch: {
     display: 'flex',
@@ -67,6 +71,7 @@ export const Launch = ({ classes, launch }) => {
     [classes.success]: launch.isSuccessful,
     [classes.fail]: launch.isFailed,
     [classes.upcoming]: launch.isUpcoming,
+    [classes.inProgress]: launch.isInProgress,
   });
 
   const hadMissionIds = launch.missionIds.length > 0;
@@ -75,7 +80,11 @@ export const Launch = ({ classes, launch }) => {
   return (
     <div className={classes.launch}>
       <Paper className={statusClassName} elevation={1}>
-        <GroupWorkRoundedIcon className={classes.statusIcon} />
+        {launch.isInProgress ? (
+          <MoreHorizRoundedIcon className={classes.statusIcon} />
+        ) : (
+          <GroupWorkRoundedIcon className={classes.statusIcon} />
+        )}
       </Paper>
       <div className={classes.connector} />
       <Card className={classes.launchInfo}>
@@ -119,6 +128,7 @@ export const LaunchPropType = {
   isSuccessful: PropTypes.bool.isRequired,
   isFailed: PropTypes.bool.isRequired,
   isUpcoming: PropTypes.bool.isRequired,
+  isInProgress: PropTypes.bool.isRequired,
   isTentative: PropTypes.bool.isRequired,
   missionName: PropTypes.string.isRequired,
   utcDate: PropTypes.object.isRequired,

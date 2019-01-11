@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Launch when a launch is failed renders it failed 1`] = `
+exports[`Launch when a launch is failed renders failed 1`] = `
 <div
   className="launch"
 >
@@ -56,7 +56,7 @@ exports[`Launch when a launch is failed renders it failed 1`] = `
 </div>
 `;
 
-exports[`Launch when a launch is successful renders it successful 1`] = `
+exports[`Launch when a launch is successful renders successful 1`] = `
 <div
   className="launch"
 >
@@ -112,7 +112,7 @@ exports[`Launch when a launch is successful renders it successful 1`] = `
 </div>
 `;
 
-exports[`Launch when a launch is upcoming renders it upcoming 1`] = `
+exports[`Launch when a launch is upcoming renders upcoming 1`] = `
 <div
   className="launch"
 >
@@ -245,6 +245,62 @@ exports[`Launch when launch does not have mission ids does not render the missio
         component="p"
       >
         Details
+      </WithStyles(Typography)>
+    </WithStyles(CardContent)>
+    <WithStyles(CardActions)>
+      <WithStyles(Button)
+        color="primary"
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          }
+        }
+        size="small"
+        to="/launches/1"
+      >
+        explore
+      </WithStyles(Button)>
+    </WithStyles(CardActions)>
+  </WithStyles(Card)>
+</div>
+`;
+
+exports[`Launch when launch is in progress renders in progress 1`] = `
+<div
+  className="launch"
+>
+  <WithStyles(Paper)
+    className="status inProgress"
+    elevation={1}
+  >
+    <pure(MoreHorizRoundedIcon)
+      className="statusIcon"
+    />
+  </WithStyles(Paper)>
+  <div
+    className="connector"
+  />
+  <WithStyles(Card)
+    className="launchInfo"
+  >
+    <WithStyles(CardHeader)
+      subheader="04/11/2019, 21:43:00"
+      title="Test"
+    />
+    <WithStyles(CardContent)>
+      <WithStyles(Typography)
+        component="p"
+        gutterBottom={true}
+      >
+        Details
+      </WithStyles(Typography)>
+      <WithStyles(Typography)
+        color="textSecondary"
+        component="p"
+      >
+        ID: 
+        id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>

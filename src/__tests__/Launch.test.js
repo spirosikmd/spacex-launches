@@ -12,6 +12,7 @@ describe('Launch', () => {
         upcoming: 'upcoming',
         success: 'success',
         fail: 'fail',
+        inProgress: 'inProgress',
         launch: 'launch',
         launchInfo: 'launchInfo',
         connector: 'connector',
@@ -21,13 +22,13 @@ describe('Launch', () => {
   });
 
   describe('when a launch is successful', () => {
-    it('renders it successful', () => {
+    it('renders successful', () => {
       expect(shallow(Launch, props)).toMatchSnapshot();
     });
   });
 
   describe('when a launch is failed', () => {
-    it('renders it failed', () => {
+    it('renders failed', () => {
       props.launch.isFailed = true;
       props.launch.isSuccessful = false;
       expect(shallow(Launch, props)).toMatchSnapshot();
@@ -35,8 +36,16 @@ describe('Launch', () => {
   });
 
   describe('when a launch is upcoming', () => {
-    it('renders it upcoming', () => {
+    it('renders upcoming', () => {
       props.launch.isUpcoming = true;
+      props.launch.isSuccessful = false;
+      expect(shallow(Launch, props)).toMatchSnapshot();
+    });
+  });
+
+  describe('when launch is in progress', () => {
+    it('renders in progress', () => {
+      props.launch.isInProgress = true;
       props.launch.isSuccessful = false;
       expect(shallow(Launch, props)).toMatchSnapshot();
     });

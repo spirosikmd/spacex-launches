@@ -6,6 +6,7 @@ export function createLaunch(data) {
     isSuccessful: true,
     isFailed: false,
     isUpcoming: false,
+    isInProgress: false,
     isTentative: false,
     details: 'Details',
     missionIds: ['id1'],
