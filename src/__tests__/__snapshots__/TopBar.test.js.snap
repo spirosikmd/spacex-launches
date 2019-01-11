@@ -5,12 +5,12 @@ exports[`TopBar renders 1`] = `
   position="static"
 >
   <WithStyles(Toolbar)>
-    <pure(GroupWorkRoundedIcon)
-      className="logo"
-    />
     <ForwardRef
       to="/"
     >
+      <pure(GroupWorkRoundedIcon)
+        className="logo"
+      />
       <WithStyles(Typography)
         color="inherit"
         variant="h6"

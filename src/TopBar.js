@@ -14,6 +14,8 @@ const styles = theme => ({
   link: {
     textDecoration: 'none',
     color: theme.palette.common.white,
+    display: 'flex',
+    alignItems: 'center',
   },
 });
 
@@ -21,8 +23,8 @@ export const TopBar = ({ classes }) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <GroupWorkRoundedIcon className={classes.logo} />
         <Link to="/" className={classes.link}>
+          <GroupWorkRoundedIcon className={classes.logo} />
           <Typography variant="h6" color="inherit">
             SpaceX Launches
           </Typography>
