@@ -1,12 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
-import {
-  getNumberOfSuccessful,
-  getNumberOfFailed,
-  getNumberOfUpcoming,
-} from './utils';
 import { LaunchPropType } from './Launch';
+
+export function getNumberOfSuccessful(launches) {
+  return launches.filter(launch => launch.isSuccessful).length;
+}
+
+export function getNumberOfUpcoming(launches) {
+  return launches.filter(launch => launch.isUpcoming).length;
+}
+
+export function getNumberOfFailed(launches) {
+  return launches.filter(launch => launch.isFailed).length;
+}
 
 export const GeneralInfo = ({ launches }) => {
   return (

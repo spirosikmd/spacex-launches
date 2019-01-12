@@ -340,8 +340,8 @@ exports[`HomePage when there are no processed launches does not render the sorti
   >
     <React.Memo
       onChange={[Function]}
-      showFailed={true}
-      showSuccessful={true}
+      showFailed={false}
+      showSuccessful={false}
       showUpcoming={false}
     />
   </WithStyles(Grid)>

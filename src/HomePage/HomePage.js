@@ -7,8 +7,30 @@ import SortingOptions from '../SortingOptions';
 import StatusFilter from '../StatusFilter';
 import Loader from '../Loader';
 import { getLaunches } from '../api';
-import { processLaunches } from '../utils';
 import { DESC, UTC_DATE_FIELD } from '../constants';
+
+function processLaunches(
+  launches,
+  { showUpcoming, showSuccessful, showFailed }
+) {
+  let processedLaunches = [...launches];
+
+  if (!showUpcoming) {
+    processedLaunches = processedLaunches.filter(launch => !launch.isUpcoming);
+  }
+
+  if (!showSuccessful) {
+    processedLaunches = processedLaunches.filter(
+      launch => !launch.isSuccessful
+    );
+  }
+
+  if (!showFailed) {
+    processedLaunches = processedLaunches.filter(launch => !launch.isFailed);
+  }
+
+  return processedLaunches;
+}
 
 function getBooleanParam(param) {
   return param === null ? true : param === 'true';
