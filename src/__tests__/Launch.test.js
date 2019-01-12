@@ -66,7 +66,7 @@ describe('Launch', () => {
   });
 
   describe('when launch is tentative', () => {
-    it('renders date without time', () => {
+    it('renders without actions, and date without time', () => {
       props.launch = createLaunch({ isTentative: true });
       expect(shallow(Launch, props)).toMatchSnapshot();
     });

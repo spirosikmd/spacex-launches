@@ -107,16 +107,18 @@ export const Launch = ({ classes, launch }) => {
             )}
           </CardContent>
         )}
-        <CardActions>
-          <Button
-            size="small"
-            color="primary"
-            component={Link}
-            to={`/launches/${launch.flightNumber}`}
-          >
-            explore
-          </Button>
-        </CardActions>
+        {!launch.isTentative && (
+          <CardActions>
+            <Button
+              size="small"
+              color="primary"
+              component={Link}
+              to={`/launches/${launch.flightNumber}`}
+            >
+              explore
+            </Button>
+          </CardActions>
+        )}
       </Card>
     </div>
   );

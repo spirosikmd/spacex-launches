@@ -322,7 +322,7 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
 </div>
 `;
 
-exports[`Launch when launch is tentative renders date without time 1`] = `
+exports[`Launch when launch is tentative renders without actions, and date without time 1`] = `
 <div
   className="launch"
 >
@@ -359,21 +359,6 @@ exports[`Launch when launch is tentative renders date without time 1`] = `
         id1
       </WithStyles(Typography)>
     </WithStyles(CardContent)>
-    <WithStyles(CardActions)>
-      <WithStyles(Button)
-        color="primary"
-        component={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "render": [Function],
-          }
-        }
-        size="small"
-        to="/launches/1"
-      >
-        explore
-      </WithStyles(Button)>
-    </WithStyles(CardActions)>
   </WithStyles(Card)>
 </div>
 `;
