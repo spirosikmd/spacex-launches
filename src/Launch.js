@@ -51,19 +51,17 @@ const styles = theme => ({
   },
 });
 
-function padDate(date) {
-  return ('0' + date).slice(-2);
-}
-
 function getDateTime(utcDate, isLaunchTentative) {
+  const utcString = utcDate.toUTCString();
+
   if (isLaunchTentative) {
-    const day = padDate(utcDate.getDate() + 1);
-    const month = padDate(utcDate.getMonth() + 1);
-    const year = utcDate.getFullYear();
-    return `${day}/${month}/${year}`;
+    return `${utcString
+      .split(' ')
+      .slice(0, 4)
+      .join(' ')}`;
   }
 
-  return utcDate.toLocaleString();
+  return utcString;
 }
 
 export const Launch = ({ classes, launch }) => {

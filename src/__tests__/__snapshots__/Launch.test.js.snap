@@ -19,7 +19,7 @@ exports[`Launch when a launch is failed renders failed 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -75,7 +75,7 @@ exports[`Launch when a launch is successful renders successful 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -131,7 +131,7 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -187,7 +187,7 @@ exports[`Launch when launch does not have details does not render the details se
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -237,7 +237,7 @@ exports[`Launch when launch does not have mission ids does not render the missio
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -285,7 +285,7 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019, 21:43:00"
+      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -341,7 +341,7 @@ exports[`Launch when launch is tentative renders date without time 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="04/11/2019"
+      subheader="Fri, 11 Jan 2019"
       title="Test"
     />
     <WithStyles(CardContent)>

@@ -29,7 +29,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
             "getDate": [MockFunction],
             "getFullYear": [MockFunction],
             "getMonth": [MockFunction],
-            "toLocaleString": [MockFunction],
+            "toUTCString": [MockFunction],
           },
         }
       }
@@ -57,7 +57,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
             "getDate": [MockFunction],
             "getFullYear": [MockFunction],
             "getMonth": [MockFunction],
-            "toLocaleString": [MockFunction],
+            "toUTCString": [MockFunction],
           },
         }
       }
