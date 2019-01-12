@@ -1,11 +1,11 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import GeneralInfo from './GeneralInfo';
-import LaunchList from './LaunchList';
-import SortingOptions from './SortingOptions';
-import StatusFilter from './StatusFilter';
-import Loader from './Loader';
+import GeneralInfo from '../GeneralInfo';
+import LaunchList from '../LaunchList';
+import SortingOptions from '../SortingOptions';
+import StatusFilter from '../StatusFilter';
+import Loader from '../Loader';
 
 const styles = theme => ({
   loader: {

@@ -1,6 +1,6 @@
 import { Home } from '../Home';
-import { createLaunch } from '../__fixtures__/launch';
-import { FLIGHT_NUMBER_FIELD, DESC } from '../constants';
+import { createLaunch } from '../../__fixtures__/launch';
+import { FLIGHT_NUMBER_FIELD, DESC } from '../../constants';
 
 describe('Home', () => {
   let props;
