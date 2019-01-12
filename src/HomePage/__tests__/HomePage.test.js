@@ -22,6 +22,10 @@ describe('HomePage', () => {
       classes: {
         loader: 'loader',
       },
+      location: {
+        search: 'failed=true&successful=true&upcoming=false',
+      },
+      navigate: jest.fn(),
     };
     const launches = [
       createLaunch(),
@@ -38,6 +42,9 @@ describe('HomePage', () => {
 
   it('renders', async () => {
     expect(await shallow(HomePage, props)).toMatchSnapshot();
+    expect(props.navigate).toBeCalledWith(
+      '?upcoming=false&successful=true&failed=true'
+    );
   });
 
   describe('when is loading launches', () => {
@@ -63,11 +70,13 @@ describe('HomePage', () => {
   });
 
   describe('when any status filter changes', () => {
-    it('sets the value and checked in the state', async () => {
+    it('navigates with the new value and checked', async () => {
       const homePage = await shallow(HomePage, props);
       const statusFilter = homePage.find(StatusFilter);
-      statusFilter.prop('onChange')('value', 'checked');
-      expect(homePage.state().value).toBe('checked');
+      statusFilter.prop('onChange')('showUpcoming', 'true');
+      expect(props.navigate).toBeCalledWith(
+        '?upcoming=true&successful=true&failed=true'
+      );
     });
   });
 

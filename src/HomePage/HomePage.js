@@ -10,6 +10,31 @@ import { getLaunches } from '../api';
 import { processLaunches } from '../utils';
 import { DESC, UTC_DATE_FIELD, FIELDS } from '../constants';
 
+function getBooleanParam(param) {
+  return param === null ? true : param === 'true';
+}
+
+function getParams(location) {
+  const searchParams = new URLSearchParams(location.search);
+  return {
+    showUpcoming: getBooleanParam(searchParams.get('upcoming')),
+    showSuccessful: getBooleanParam(searchParams.get('successful')),
+    showFailed: getBooleanParam(searchParams.get('failed')),
+  };
+}
+
+function setParams({
+  showUpcoming = true,
+  showSuccessful = true,
+  showFailed = true,
+}) {
+  const searchParams = new URLSearchParams();
+  searchParams.set('upcoming', showUpcoming);
+  searchParams.set('successful', showSuccessful);
+  searchParams.set('failed', showFailed);
+  return searchParams.toString();
+}
+
 const styles = theme => ({
   loader: {
     paddingTop: theme.spacing.unit * 8,
@@ -42,10 +67,19 @@ export class HomePage extends PureComponent {
     } catch (error) {
       this.setState({ error, isLoadingLaunches: false });
     }
+
+    this.navigateWithParams();
   }
 
-  handleChange = (value, checked) => {
-    this.setState({ [value]: checked });
+  navigateWithParams(newParams = {}) {
+    const { location, navigate } = this.props;
+    const params = getParams(location);
+    const url = setParams({ ...params, ...newParams });
+    navigate(`?${url}`);
+  }
+
+  handleStatusFilterChange = (value, checked) => {
+    this.navigateWithParams({ [value]: checked });
   };
 
   handleSortChange = (name, value) => {
@@ -72,12 +106,13 @@ export class HomePage extends PureComponent {
       launches,
       isLoadingLaunches,
       isUpdatingLaunches,
-      showUpcoming,
-      showSuccessful,
-      showFailed,
       sortOrder,
       sortField,
     } = this.state;
+
+    const { showUpcoming, showSuccessful, showFailed } = getParams(
+      this.props.location
+    );
 
     const processedLaunches = processLaunches(launches, {
       showUpcoming,
@@ -103,7 +138,7 @@ export class HomePage extends PureComponent {
             showFailed={showFailed}
             showSuccessful={showSuccessful}
             showUpcoming={showUpcoming}
-            onChange={this.handleChange}
+            onChange={this.handleStatusFilterChange}
           />
         </Grid>
         {processedLaunches.length > 0 && (
