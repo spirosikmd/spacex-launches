@@ -23,7 +23,8 @@ describe('HomePage', () => {
         loader: 'loader',
       },
       location: {
-        search: 'failed=true&successful=true&upcoming=false',
+        search:
+          'failed=true&successful=true&upcoming=false&sortOrder=desc&sortField=utcDate',
       },
       navigate: jest.fn(),
     };
@@ -43,7 +44,7 @@ describe('HomePage', () => {
   it('renders', async () => {
     expect(await shallow(HomePage, props)).toMatchSnapshot();
     expect(props.navigate).toBeCalledWith(
-      '?upcoming=false&successful=true&failed=true'
+      '?upcoming=false&successful=true&failed=true&order=desc&sort=utcDate'
     );
   });
 
@@ -59,6 +60,9 @@ describe('HomePage', () => {
       const sortingOptions = homePage.find(SortingOptions);
       sortingOptions.prop('onSortChange')('sortField', FLIGHT_NUMBER_FIELD);
       expect(homePage).toMatchSnapshot();
+      expect(props.navigate).toBeCalledWith(
+        '?upcoming=false&successful=true&failed=true&order=desc&sort=flightNumber'
+      );
     });
   });
 
@@ -75,7 +79,7 @@ describe('HomePage', () => {
       const statusFilter = homePage.find(StatusFilter);
       statusFilter.prop('onChange')('showUpcoming', 'true');
       expect(props.navigate).toBeCalledWith(
-        '?upcoming=true&successful=true&failed=true'
+        '?upcoming=true&successful=true&failed=true&order=desc&sort=utcDate'
       );
     });
   });
@@ -93,7 +97,6 @@ describe('HomePage', () => {
       expect(getLaunches).toBeCalledWith({
         sortField: FLIGHT_NUMBER_FIELD,
         sortOrder: DESC,
-        filter: FIELDS,
       });
     });
   });

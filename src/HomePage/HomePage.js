@@ -8,7 +8,7 @@ import StatusFilter from '../StatusFilter';
 import Loader from '../Loader';
 import { getLaunches } from '../api';
 import { processLaunches } from '../utils';
-import { DESC, UTC_DATE_FIELD, FIELDS } from '../constants';
+import { DESC, UTC_DATE_FIELD } from '../constants';
 
 function getBooleanParam(param) {
   return param === null ? true : param === 'true';
@@ -20,6 +20,8 @@ function getParams(location) {
     showUpcoming: getBooleanParam(searchParams.get('upcoming')),
     showSuccessful: getBooleanParam(searchParams.get('successful')),
     showFailed: getBooleanParam(searchParams.get('failed')),
+    sortOrder: searchParams.get('order') || DESC,
+    sortField: searchParams.get('sort') || UTC_DATE_FIELD,
   };
 }
 
@@ -27,11 +29,15 @@ function setParams({
   showUpcoming = true,
   showSuccessful = true,
   showFailed = true,
+  sortOrder = DESC,
+  sortField = UTC_DATE_FIELD,
 }) {
   const searchParams = new URLSearchParams();
   searchParams.set('upcoming', showUpcoming);
   searchParams.set('successful', showSuccessful);
   searchParams.set('failed', showFailed);
+  searchParams.set('order', sortOrder);
+  searchParams.set('sort', sortField);
   return searchParams.toString();
 }
 
@@ -48,20 +54,15 @@ export class HomePage extends PureComponent {
     isLoadingLaunches: true,
     isUpdatingLaunches: false,
     error: null,
-    showUpcoming: false,
-    showSuccessful: true,
-    showFailed: true,
-    sortOrder: DESC,
-    sortField: UTC_DATE_FIELD,
   };
 
   async componentDidMount() {
     try {
-      const { sortField, sortOrder } = this.state;
+      const { location } = this.props;
+      const { sortField, sortOrder } = getParams(location);
       const launches = await getLaunches({
         sortField,
         sortOrder,
-        filter: FIELDS,
       });
       this.setState({ launches, isLoadingLaunches: false });
     } catch (error) {
@@ -82,37 +83,30 @@ export class HomePage extends PureComponent {
     this.navigateWithParams({ [value]: checked });
   };
 
-  handleSortChange = (name, value) => {
-    this.setState(
-      {
-        [name]: value,
-        isUpdatingLaunches: true,
-      },
-      async () => {
-        const { sortField, sortOrder } = this.state;
-        const launches = await getLaunches({
-          sortField,
-          sortOrder,
-          filter: FIELDS,
-        });
-        this.setState({ launches, isUpdatingLaunches: false });
-      }
-    );
+  handleSortChange = async (name, value) => {
+    const { location } = this.props;
+    this.setState({ isUpdatingLaunches: true });
+    this.navigateWithParams({ [name]: value });
+    const { sortField, sortOrder } = getParams(location);
+    const launches = await getLaunches({
+      sortField,
+      sortOrder,
+      ...{ [name]: value },
+    });
+    this.setState({ launches, isUpdatingLaunches: false });
   };
 
   render() {
-    const { classes } = this.props;
-    const {
-      launches,
-      isLoadingLaunches,
-      isUpdatingLaunches,
-      sortOrder,
-      sortField,
-    } = this.state;
+    const { classes, location } = this.props;
+    const { launches, isLoadingLaunches, isUpdatingLaunches } = this.state;
 
-    const { showUpcoming, showSuccessful, showFailed } = getParams(
-      this.props.location
-    );
+    const {
+      showUpcoming,
+      showSuccessful,
+      showFailed,
+      sortField,
+      sortOrder,
+    } = getParams(location);
 
     const processedLaunches = processLaunches(launches, {
       showUpcoming,

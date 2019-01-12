@@ -21,16 +21,16 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
       onChange={[Function]}
       required={false}
       select={true}
-      value="flight_number"
+      value="flightNumber"
       variant="outlined"
     >
       <option
-        value="flight_number"
+        value="flightNumber"
       >
         flight number
       </option>
       <option
-        value="launch_date_utc"
+        value="utcDate"
       >
         utc date
       </option>
@@ -91,16 +91,16 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
       onChange={[Function]}
       required={false}
       select={true}
-      value="launch_date_utc"
+      value="utcDate"
       variant="outlined"
     >
       <option
-        value="flight_number"
+        value="flightNumber"
       >
         flight number
       </option>
       <option
-        value="launch_date_utc"
+        value="utcDate"
       >
         utc date
       </option>

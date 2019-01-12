@@ -1,5 +1,9 @@
+import { FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from './constants';
+
 const BASE = 'https://api.spacexdata.com/v3';
 const LAUNCHES_BASE = `${BASE}/launches`;
+const FILTER =
+  'flight_number,launch_date_utc,launch_success,upcoming,is_tentative,details,mission_name,mission_id';
 
 function sanitizeLaunchResponse(launch) {
   return {
@@ -26,9 +30,22 @@ function getHeaders() {
   };
 }
 
-export async function getLaunches({ sortOrder, sortField, filter }) {
+function mapSortField(sortField) {
+  switch (sortField) {
+    case FLIGHT_NUMBER_FIELD:
+      return 'flight_number';
+    case UTC_DATE_FIELD:
+      return 'launch_date_utc';
+    default:
+      break;
+  }
+}
+
+export async function getLaunches({ sortOrder, sortField }) {
   const response = await fetch(
-    `${LAUNCHES_BASE}?filter=${filter}&sort=${sortField}&order=${sortOrder}`,
+    `${LAUNCHES_BASE}?filter=${FILTER}&sort=${mapSortField(
+      sortField
+    )}&order=${sortOrder}`,
     {
       headers: getHeaders(),
     }

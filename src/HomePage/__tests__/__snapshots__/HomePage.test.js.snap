@@ -90,7 +90,7 @@ exports[`HomePage renders 1`] = `
   >
     <React.Memo
       onSortChange={[Function]}
-      sortField="launch_date_utc"
+      sortField="utcDate"
       sortOrder="desc"
     />
   </WithStyles(Grid)>
@@ -244,7 +244,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
   >
     <React.Memo
       onSortChange={[Function]}
-      sortField="flight_number"
+      sortField="utcDate"
       sortOrder="desc"
     />
   </WithStyles(Grid)>
