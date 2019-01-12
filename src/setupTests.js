@@ -1,5 +1,5 @@
 import React from 'react';
-import { configure } from 'enzyme';
+import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { createSerializer } from 'enzyme-to-json';
 import { createShallow } from '@material-ui/core/test-utils';
@@ -12,6 +12,10 @@ expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }));
 
 global.shallow = (Component, props = {}) => {
   return shallow(<Component {...props} />);
+};
+
+global.mount = (Component, props = {}) => {
+  return mount(<Component {...props} />);
 };
 
 global.Date = jest.fn().mockImplementation(date => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
+import Anchor from './Anchor';
 
 const styles = theme => ({
   root: {
@@ -16,11 +17,16 @@ export const Footer = ({ classes }) => {
   return (
     <div className={classes.root}>
       <Typography>
-        SpaceX Launches | <a href="https://spyros.io">spyros.io</a>
+        SpaceX Launches |{' '}
+        <Anchor target="_blank" href="https://spyros.io">
+          spyros.io
+        </Anchor>
       </Typography>
       <Typography>
         Made possible by the{' '}
-        <a href="https://github.com/r-spacex/SpaceX-API">SpaceX API</a>
+        <Anchor target="_blank" href="https://github.com/r-spacex/SpaceX-API">
+          SpaceX API
+        </Anchor>
       </Typography>
     </div>
   );

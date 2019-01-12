@@ -5,21 +5,24 @@ exports[`Footer renders 1`] = `
   className="root"
 >
   <WithStyles(Typography)>
-    SpaceX Launches | 
-    <a
+    SpaceX Launches |
+     
+    <WithStyles(Component)
       href="https://spyros.io"
+      target="_blank"
     >
       spyros.io
-    </a>
+    </WithStyles(Component)>
   </WithStyles(Typography)>
   <WithStyles(Typography)>
     Made possible by the
      
-    <a
+    <WithStyles(Component)
       href="https://github.com/r-spacex/SpaceX-API"
+      target="_blank"
     >
       SpaceX API
-    </a>
+    </WithStyles(Component)>
   </WithStyles(Typography)>
 </div>
 `;

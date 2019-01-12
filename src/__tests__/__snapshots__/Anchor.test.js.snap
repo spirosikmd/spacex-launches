@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anchor renders 1`] = `
+<a
+  className="anchor"
+  href="href"
+  target="target"
+>
+  text
+</a>
+`;
