@@ -14,7 +14,7 @@ const styles = theme => ({
   },
 });
 
-export const Home = ({
+export const HomePage = ({
   classes,
   launches,
   processedLaunches,
@@ -71,4 +71,4 @@ export const Home = ({
   );
 };
 
-export default withStyles(styles)(React.memo(Home));
+export default withStyles(styles)(React.memo(HomePage));

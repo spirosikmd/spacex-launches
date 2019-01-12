@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home renders 1`] = `
+exports[`HomePage renders 1`] = `
 <WithStyles(Grid)
   container={true}
   spacing={16}
@@ -144,7 +144,7 @@ exports[`Home renders 1`] = `
 </WithStyles(Grid)>
 `;
 
-exports[`Home when is loading launches renders a loader 1`] = `
+exports[`HomePage when is loading launches renders a loader 1`] = `
 <div
   className="loader"
 >
@@ -152,7 +152,7 @@ exports[`Home when is loading launches renders a loader 1`] = `
 </div>
 `;
 
-exports[`Home when is not loading launches when is updating launches renders info, filters, sorting options, and a loader 1`] = `
+exports[`HomePage when is not loading launches when is updating launches renders info, filters, sorting options, and a loader 1`] = `
 <WithStyles(Grid)
   container={true}
   spacing={16}
@@ -257,7 +257,7 @@ exports[`Home when is not loading launches when is updating launches renders inf
 </WithStyles(Grid)>
 `;
 
-exports[`Home when there are no processed launches does not render the sorting options 1`] = `
+exports[`HomePage when there are no processed launches does not render the sorting options 1`] = `
 <WithStyles(Grid)
   container={true}
   spacing={16}

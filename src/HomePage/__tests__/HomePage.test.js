@@ -1,8 +1,8 @@
-import { Home } from '../Home';
+import { HomePage } from '../HomePage';
 import { createLaunch } from '../../__fixtures__/launch';
 import { FLIGHT_NUMBER_FIELD, DESC } from '../../constants';
 
-describe('Home', () => {
+describe('HomePage', () => {
   let props;
 
   beforeEach(() => {
@@ -30,13 +30,13 @@ describe('Home', () => {
   });
 
   it('renders', () => {
-    expect(shallow(Home, props)).toMatchSnapshot();
+    expect(shallow(HomePage, props)).toMatchSnapshot();
   });
 
   describe('when is loading launches', () => {
     it('renders a loader', () => {
       props.isLoadingLaunches = true;
-      expect(shallow(Home, props)).toMatchSnapshot();
+      expect(shallow(HomePage, props)).toMatchSnapshot();
     });
   });
 
@@ -44,7 +44,7 @@ describe('Home', () => {
     describe('when is updating launches', () => {
       it('renders info, filters, sorting options, and a loader', () => {
         props.isUpdatingLaunches = true;
-        expect(shallow(Home, props)).toMatchSnapshot();
+        expect(shallow(HomePage, props)).toMatchSnapshot();
       });
     });
   });
@@ -52,7 +52,7 @@ describe('Home', () => {
   describe('when there are no processed launches', () => {
     it('does not render the sorting options', () => {
       props.processedLaunches = [];
-      expect(shallow(Home, props)).toMatchSnapshot();
+      expect(shallow(HomePage, props)).toMatchSnapshot();
     });
   });
 });

@@ -9,7 +9,7 @@ import Loader from './Loader';
 import TopBar from './TopBar';
 import Footer from './Footer';
 
-const Home = React.lazy(() => import('./Home'));
+const Home = React.lazy(() => import('./HomePage'));
 const NotFound = React.lazy(() => import('./NotFound'));
 const LaunchPage = React.lazy(() => import('./LaunchPage'));
 
