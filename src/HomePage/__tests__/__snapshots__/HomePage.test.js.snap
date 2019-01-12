@@ -78,6 +78,7 @@ exports[`HomePage renders 1`] = `
     xs={12}
   >
     <React.Memo
+      onChange={[Function]}
       showFailed={true}
       showSuccessful={true}
       showUpcoming={false}
@@ -88,7 +89,8 @@ exports[`HomePage renders 1`] = `
     xs={12}
   >
     <React.Memo
-      sortField="flight_number"
+      onSortChange={[Function]}
+      sortField="launch_date_utc"
       sortOrder="desc"
     />
   </WithStyles(Grid)>
@@ -152,7 +154,7 @@ exports[`HomePage when is loading launches renders a loader 1`] = `
 </div>
 `;
 
-exports[`HomePage when is not loading launches when is updating launches renders info, filters, sorting options, and a loader 1`] = `
+exports[`HomePage when is updating launches renders info, filters, sorting options, and a loader 1`] = `
 <WithStyles(Grid)
   container={true}
   spacing={16}
@@ -230,6 +232,7 @@ exports[`HomePage when is not loading launches when is updating launches renders
     xs={12}
   >
     <React.Memo
+      onChange={[Function]}
       showFailed={true}
       showSuccessful={true}
       showUpcoming={false}
@@ -240,6 +243,7 @@ exports[`HomePage when is not loading launches when is updating launches renders
     xs={12}
   >
     <React.Memo
+      onSortChange={[Function]}
       sortField="flight_number"
       sortOrder="desc"
     />
@@ -335,6 +339,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
     xs={12}
   >
     <React.Memo
+      onChange={[Function]}
       showFailed={true}
       showSuccessful={true}
       showUpcoming={false}
