@@ -39,13 +39,13 @@ exports[`Launch when a launch is failed renders failed 1`] = `
       >
         Details
       </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>
       <WithStyles(Button)
@@ -105,13 +105,13 @@ exports[`Launch when a launch is successful renders successful 1`] = `
       >
         Details
       </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>
       <WithStyles(Button)
@@ -171,13 +171,13 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
       >
         Details
       </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>
       <WithStyles(Button)
@@ -231,13 +231,13 @@ exports[`Launch when launch does not have details does not render the details se
       title="Test"
     />
     <WithStyles(CardContent)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>
       <WithStyles(Button)
@@ -355,13 +355,13 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
       >
         Details
       </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
     <WithStyles(CardActions)>
       <WithStyles(Button)
@@ -421,13 +421,13 @@ exports[`Launch when launch is tentative renders without actions 1`] = `
       >
         Details
       </WithStyles(Typography)>
-      <WithStyles(Typography)
-        color="textSecondary"
-        component="p"
-      >
-        ID: 
-        id1
-      </WithStyles(Typography)>
+      <LaunchMissionIds
+        missionIds={
+          Array [
+            "id1",
+          ]
+        }
+      />
     </WithStyles(CardContent)>
   </WithStyles(Card)>
 </div>

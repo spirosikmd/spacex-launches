@@ -2,11 +2,12 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { Redirect } from '@reach/router';
 import { getLaunch } from '../api';
 import Loader from '../Loader';
 import LaunchDateTime from '../LaunchDateTime';
 import LaunchStatus from '../LaunchStatus';
-import { Redirect } from '@reach/router';
+import LaunchMissionIds from '../LaunchMissionIds';
 
 const styles = theme => ({
   headline: {
@@ -38,10 +39,13 @@ const styles = theme => ({
   date: {
     marginBottom: theme.spacing.unit,
   },
-  status: {
+  statusMissionIds: {
     display: 'flex',
     alignItems: 'center',
     marginBottom: theme.spacing.unit * 2,
+  },
+  missionIds: {
+    marginLeft: theme.spacing.unit,
   },
 });
 
@@ -93,20 +97,23 @@ class LaunchPage extends PureComponent {
           </Typography>
         </div>
         <Typography variant="subtitle1" className={classes.date}>
-          {
-            <LaunchDateTime
-              utcDate={launch.utcDate}
-              isTentative={launch.isTentative}
-            />
-          }
+          <LaunchDateTime
+            utcDate={launch.utcDate}
+            isTentative={launch.isTentative}
+          />
         </Typography>
-        <div className={classes.status}>
+        <div className={classes.statusMissionIds}>
           <LaunchStatus
             isSuccessful={launch.isSuccessful}
             isFailed={launch.isFailed}
             isUpcoming={launch.isUpcoming}
             isInProgress={launch.isInProgress}
           />
+          {launch.missionIds.length > 0 && (
+            <div className={classes.missionIds}>
+              <LaunchMissionIds missionIds={launch.missionIds} />
+            </div>
+          )}
         </div>
         <Typography>{launch.details}</Typography>
       </div>

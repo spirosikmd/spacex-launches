@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchMissionIds render IDs with multiple ids 1`] = `
+<WithStyles(Typography)
+  color="textSecondary"
+  component="p"
+>
+  ID
+  s
+  : 
+  id1, id2
+</WithStyles(Typography)>
+`;
+
+exports[`LaunchMissionIds renders 1`] = `
+<WithStyles(Typography)
+  color="textSecondary"
+  component="p"
+>
+  ID
+  : 
+  id1
+</WithStyles(Typography)>
+`;

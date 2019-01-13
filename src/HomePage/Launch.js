@@ -10,6 +10,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import LaunchDateTime from '../LaunchDateTime';
 import LaunchStatus from '../LaunchStatus';
+import LaunchMissionIds from '../LaunchMissionIds';
 
 const styles = theme => ({
   launch: {
@@ -60,9 +61,7 @@ const Launch = ({ classes, launch }) => {
                 <Typography component="p">{launch.details}</Typography>
               ))}
             {hadMissionIds && (
-              <Typography color="textSecondary" component="p">
-                ID: {launch.missionIds.join(', ')}
-              </Typography>
+              <LaunchMissionIds missionIds={launch.missionIds} />
             )}
           </CardContent>
         )}

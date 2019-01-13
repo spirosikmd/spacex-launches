@@ -17,7 +17,8 @@ describe('LaunchPage', () => {
         missionName: 'missionName',
         details: 'details',
         date: 'date',
-        status: 'status',
+        statusMissionIds: 'statusMissionIds',
+        missionIds: 'missionIds',
       },
       flightNumber: '1',
     };
@@ -57,6 +58,16 @@ describe('LaunchPage', () => {
   it('renders redirect to home page when launch is tentative', async () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ isSuccessful: false, isTentative: true }))
+    );
+    const launchPage = shallow(LaunchPage, props);
+    await Promise.resolve();
+    launchPage.update();
+    expect(launchPage).toMatchSnapshot();
+  });
+
+  it('does not render mission ids when launch does not have mission ids', async () => {
+    getLaunch.mockReturnValue(
+      Promise.resolve(createLaunch({ missionIds: [] }))
     );
     const launchPage = shallow(LaunchPage, props);
     await Promise.resolve();
