@@ -1,4 +1,4 @@
-import { LaunchList } from '../LaunchList';
+import LaunchList from '../LaunchList';
 import { createLaunch } from '../__fixtures__/launch';
 
 describe('LaunchList', () => {

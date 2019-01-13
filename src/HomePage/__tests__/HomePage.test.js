@@ -1,4 +1,4 @@
-import { HomePage } from '../HomePage';
+import HomePage from '../HomePage';
 import { createLaunch } from '../../__fixtures__/launch';
 import { getLaunches } from '../../api';
 import { FLIGHT_NUMBER_FIELD, DESC } from '../../constants';
@@ -32,7 +32,10 @@ describe('HomePage', () => {
   });
 
   it('renders', async () => {
-    expect(await shallow(HomePage, props)).toMatchSnapshot();
+    const homePage = shallow(HomePage, props);
+    await Promise.resolve();
+    homePage.update();
+    expect(homePage).toMatchSnapshot();
     expect(props.navigate).toBeCalledWith(
       '?upcoming=false&successful=true&failed=true&order=desc&sort=utcDate'
     );
@@ -46,7 +49,9 @@ describe('HomePage', () => {
 
   describe('when is updating launches', () => {
     it('renders info, filters, sorting options, and a loader', async () => {
-      const homePage = await shallow(HomePage, props);
+      const homePage = shallow(HomePage, props);
+      await Promise.resolve();
+      homePage.update();
       const sortingOptions = homePage.find(SortingOptions);
       sortingOptions.prop('onSortChange')('sortField', FLIGHT_NUMBER_FIELD);
       expect(homePage).toMatchSnapshot();
@@ -60,13 +65,18 @@ describe('HomePage', () => {
     it('does not render the sorting options', async () => {
       props.location.search =
         'failed=false&successful=false&upcoming=false&sortOrder=desc&sortField=utcDate';
-      expect(await shallow(HomePage, props)).toMatchSnapshot();
+      const homePage = shallow(HomePage, props);
+      await Promise.resolve();
+      homePage.update();
+      expect(homePage).toMatchSnapshot();
     });
   });
 
   describe('when any status filter changes', () => {
     it('navigates with the new value and checked', async () => {
-      const homePage = await shallow(HomePage, props);
+      const homePage = shallow(HomePage, props);
+      await Promise.resolve();
+      homePage.update();
       const statusFilter = homePage.find(StatusFilter);
       statusFilter.prop('onChange')('showUpcoming', 'true');
       expect(props.navigate).toBeCalledWith(
@@ -77,7 +87,9 @@ describe('HomePage', () => {
 
   describe('when sorting options change', () => {
     it('gets launches with new sorting options', async () => {
-      const homePage = await shallow(HomePage, props);
+      const homePage = shallow(HomePage, props);
+      await Promise.resolve();
+      homePage.update();
       const sortingOptions = homePage.find(SortingOptions);
       await sortingOptions.prop('onSortChange')(
         'sortField',

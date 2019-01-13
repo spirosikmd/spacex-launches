@@ -39,7 +39,7 @@ const styles = theme => ({
   },
 });
 
-export const LaunchList = ({ classes, launches }) => {
+const LaunchList = ({ classes, launches }) => {
   if (launches.length === 0) {
     return <Image src={emptyListImage} alt="No launches..." />;
   }

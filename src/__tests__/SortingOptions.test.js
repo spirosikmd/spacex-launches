@@ -1,5 +1,5 @@
 import TextField from '@material-ui/core/TextField';
-import { SortingOptions } from '../SortingOptions';
+import SortingOptions from '../SortingOptions';
 import { DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from '../constants';
 
 describe('SortingOptions', () => {

@@ -13,7 +13,7 @@ const styles = theme => ({
   },
 });
 
-export const Anchor = ({ classes, children, ...props }) => {
+const Anchor = ({ classes, children, ...props }) => {
   return (
     <a className={classes.anchor} {...props}>
       {children}

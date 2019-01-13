@@ -9,7 +9,7 @@ exports[`HomePage renders 1`] = `
     item={true}
     xs={12}
   >
-    <React.Memo
+    <GeneralInfo
       launches={
         Array [
           Object {
@@ -24,6 +24,7 @@ exports[`HomePage renders 1`] = `
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -43,6 +44,7 @@ exports[`HomePage renders 1`] = `
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -62,6 +64,7 @@ exports[`HomePage renders 1`] = `
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -77,7 +80,7 @@ exports[`HomePage renders 1`] = `
     item={true}
     xs={12}
   >
-    <React.Memo
+    <StatusFilter
       onChange={[Function]}
       showFailed={true}
       showSuccessful={true}
@@ -88,7 +91,7 @@ exports[`HomePage renders 1`] = `
     item={true}
     xs={12}
   >
-    <React.Memo
+    <SortingOptions
       onSortChange={[Function]}
       sortField="utcDate"
       sortOrder="desc"
@@ -98,7 +101,7 @@ exports[`HomePage renders 1`] = `
     item={true}
     xs={12}
   >
-    <WithStyles(Component)
+    <WithStyles(LaunchList)
       launches={
         Array [
           Object {
@@ -113,6 +116,7 @@ exports[`HomePage renders 1`] = `
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -132,6 +136,7 @@ exports[`HomePage renders 1`] = `
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -150,7 +155,7 @@ exports[`HomePage when is loading launches renders a loader 1`] = `
 <div
   className="loader"
 >
-  <WithStyles(Component) />
+  <WithStyles(Loader) />
 </div>
 `;
 
@@ -163,7 +168,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
     item={true}
     xs={12}
   >
-    <React.Memo
+    <GeneralInfo
       launches={
         Array [
           Object {
@@ -178,6 +183,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -197,6 +203,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -216,6 +223,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -231,7 +239,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
     item={true}
     xs={12}
   >
-    <React.Memo
+    <StatusFilter
       onChange={[Function]}
       showFailed={true}
       showSuccessful={true}
@@ -242,7 +250,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
     item={true}
     xs={12}
   >
-    <React.Memo
+    <SortingOptions
       onSortChange={[Function]}
       sortField="utcDate"
       sortOrder="desc"
@@ -255,7 +263,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
     <div
       className="loader"
     >
-      <WithStyles(Component) />
+      <WithStyles(Loader) />
     </div>
   </WithStyles(Grid)>
 </WithStyles(Grid)>
@@ -270,7 +278,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
     item={true}
     xs={12}
   >
-    <React.Memo
+    <GeneralInfo
       launches={
         Array [
           Object {
@@ -285,6 +293,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -304,6 +313,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -323,6 +333,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
               "id1",
             ],
             "missionName": "Test",
+            "missionPatch": "missionPatch",
             "utcDate": Object {
               "getDate": [MockFunction],
               "getFullYear": [MockFunction],
@@ -338,7 +349,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
     item={true}
     xs={12}
   >
-    <React.Memo
+    <StatusFilter
       onChange={[Function]}
       showFailed={false}
       showSuccessful={false}
@@ -349,7 +360,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
     item={true}
     xs={12}
   >
-    <WithStyles(Component)
+    <WithStyles(LaunchList)
       launches={Array []}
     />
   </WithStyles(Grid)>

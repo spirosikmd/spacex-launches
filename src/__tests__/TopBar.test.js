@@ -1,4 +1,4 @@
-import { TopBar } from '../TopBar';
+import TopBar from '../TopBar';
 
 describe('TopBar', () => {
   let props;

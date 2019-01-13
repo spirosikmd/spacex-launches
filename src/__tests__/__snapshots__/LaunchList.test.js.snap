@@ -11,7 +11,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
     className="launchItem"
     key="1"
   >
-    <WithStyles(Component)
+    <WithStyles(Launch)
       launch={
         Object {
           "details": "Details",
@@ -25,6 +25,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
             "id1",
           ],
           "missionName": "Test",
+          "missionPatch": "missionPatch",
           "utcDate": Object {
             "getDate": [MockFunction],
             "getFullYear": [MockFunction],
@@ -39,7 +40,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
     className="launchItem"
     key="2"
   >
-    <WithStyles(Component)
+    <WithStyles(Launch)
       launch={
         Object {
           "details": "Details",
@@ -53,6 +54,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
             "id1",
           ],
           "missionName": "Test",
+          "missionPatch": "missionPatch",
           "utcDate": Object {
             "getDate": [MockFunction],
             "getFullYear": [MockFunction],
@@ -67,7 +69,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
 `;
 
 exports[`LaunchList when there are no launches renders a message 1`] = `
-<WithStyles(Component)
+<WithStyles(Image)
   alt="No launches..."
   src="emptyList.png"
 />

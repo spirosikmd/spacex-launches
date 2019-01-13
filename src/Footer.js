@@ -13,7 +13,7 @@ const styles = theme => ({
   },
 });
 
-export const Footer = ({ classes }) => {
+const Footer = ({ classes }) => {
   return (
     <div className={classes.root}>
       <Typography>

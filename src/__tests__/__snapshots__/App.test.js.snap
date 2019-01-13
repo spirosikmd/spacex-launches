@@ -2,13 +2,13 @@
 
 exports[`App renders 1`] = `
 <Fragment>
-  <WithStyles(Component) />
+  <WithStyles(TopBar) />
   <main
     className="main"
   >
     <WithStyles(CssBaseline) />
     <React.Suspense
-      fallback={<WithStyles(Component) />}
+      fallback={<WithStyles(Loader) />}
     >
       <Router>
         <React.Lazy
@@ -23,6 +23,6 @@ exports[`App renders 1`] = `
       </Router>
     </React.Suspense>
   </main>
-  <WithStyles(Component) />
+  <WithStyles(Footer) />
 </Fragment>
 `;

@@ -30,7 +30,7 @@ function getSortOrderOptions(sortField) {
   }
 }
 
-export const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
+const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
   const handleSortChange = event => {
     onSortChange(event.currentTarget.name, event.currentTarget.value);
   };

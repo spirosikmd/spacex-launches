@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchDateTime renders both date and time when launch is not tentative 1`] = `
+<span>
+  Fri, 11 Jan 2019 15:31:00 GMT
+</span>
+`;
+
+exports[`LaunchDateTime renders only date when launch is tentative 1`] = `
+<span>
+  Fri, 11 Jan 2019
+</span>
+`;

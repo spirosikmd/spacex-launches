@@ -19,7 +19,19 @@ exports[`Launch when a launch is failed renders failed 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -75,7 +87,19 @@ exports[`Launch when a launch is successful renders successful 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -131,7 +155,19 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -187,7 +223,19 @@ exports[`Launch when launch does not have details does not render the details se
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -237,7 +285,19 @@ exports[`Launch when launch does not have mission ids does not render the missio
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -285,7 +345,19 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019 15:31:00 GMT"
+      subheader={
+        <LaunchDateTime
+          isTentative={false}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>
@@ -322,7 +394,7 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
 </div>
 `;
 
-exports[`Launch when launch is tentative renders without actions, and date without time 1`] = `
+exports[`Launch when launch is tentative renders without actions 1`] = `
 <div
   className="launch"
 >
@@ -341,7 +413,19 @@ exports[`Launch when launch is tentative renders without actions, and date witho
     className="launchInfo"
   >
     <WithStyles(CardHeader)
-      subheader="Fri, 11 Jan 2019"
+      subheader={
+        <LaunchDateTime
+          isTentative={true}
+          utcDate={
+            Object {
+              "getDate": [MockFunction],
+              "getFullYear": [MockFunction],
+              "getMonth": [MockFunction],
+              "toUTCString": [MockFunction],
+            }
+          }
+        />
+      }
       title="Test"
     />
     <WithStyles(CardContent)>

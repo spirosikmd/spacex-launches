@@ -1,4 +1,4 @@
-import { Launch } from '../Launch';
+import Launch from '../Launch';
 import { createLaunch } from '../__fixtures__/launch';
 
 describe('Launch', () => {
@@ -66,7 +66,7 @@ describe('Launch', () => {
   });
 
   describe('when launch is tentative', () => {
-    it('renders without actions, and date without time', () => {
+    it('renders without actions', () => {
       props.launch = createLaunch({ isTentative: true });
       expect(shallow(Launch, props)).toMatchSnapshot();
     });

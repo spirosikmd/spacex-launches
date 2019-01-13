@@ -16,7 +16,7 @@ const styles = theme => ({
   },
 });
 
-export const Image = ({ classes, alt, src }) => {
+const Image = ({ classes, alt, src }) => {
   return (
     <div className={classes.imageWrapper}>
       <img src={src} alt={alt} className={classes.image} />

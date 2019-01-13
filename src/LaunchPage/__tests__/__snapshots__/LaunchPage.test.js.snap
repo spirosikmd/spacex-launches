@@ -1,14 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LaunchPage renders 1`] = `
-<Fragment>
-  <div>
-    Test
+exports[`LaunchPage does not render mission patch when there is no mission patch 1`] = `
+<div>
+  <div
+    className="headline"
+  >
+    <WithStyles(Typography)
+      className="missionName"
+      variant="h4"
+    >
+      Test
+    </WithStyles(Typography)>
   </div>
-  <div>
+  <WithStyles(Typography)
+    className="date"
+    variant="subtitle1"
+  >
+    <LaunchDateTime
+      isTentative={false}
+      utcDate={
+        Object {
+          "getDate": [MockFunction],
+          "getFullYear": [MockFunction],
+          "getMonth": [MockFunction],
+          "toUTCString": [MockFunction],
+        }
+      }
+    />
+  </WithStyles(Typography)>
+  <WithStyles(Typography)>
     Details
-  </div>
-</Fragment>
+  </WithStyles(Typography)>
+</div>
 `;
 
-exports[`LaunchPage when is loading launch renders a loader 1`] = `<WithStyles(Component) />`;
+exports[`LaunchPage renders 1`] = `
+<div>
+  <div
+    className="headline"
+  >
+    <img
+      alt="Test"
+      className="missionPatch"
+      src="missionPatch"
+    />
+    <WithStyles(Typography)
+      className="missionName"
+      variant="h4"
+    >
+      Test
+    </WithStyles(Typography)>
+  </div>
+  <WithStyles(Typography)
+    className="date"
+    variant="subtitle1"
+  >
+    <LaunchDateTime
+      isTentative={false}
+      utcDate={
+        Object {
+          "getDate": [MockFunction],
+          "getFullYear": [MockFunction],
+          "getMonth": [MockFunction],
+          "toUTCString": [MockFunction],
+        }
+      }
+    />
+  </WithStyles(Typography)>
+  <WithStyles(Typography)>
+    Details
+  </WithStyles(Typography)>
+</div>
+`;
+
+exports[`LaunchPage renders a loader when is loading a launch 1`] = `<WithStyles(Loader) />`;

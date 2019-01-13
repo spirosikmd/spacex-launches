@@ -1,4 +1,4 @@
-import { LaunchPage } from '../LaunchPage';
+import LaunchPage from '../LaunchPage';
 import { getLaunch } from '../../api';
 import { createLaunch } from '../../__fixtures__/launch';
 
@@ -11,6 +11,13 @@ describe('LaunchPage', () => {
 
   beforeEach(() => {
     props = {
+      classes: {
+        headline: 'headline',
+        missionPatch: 'missionPatch',
+        missionName: 'missionName',
+        details: 'details',
+        date: 'date',
+      },
       flightNumber: '1',
     };
     const launch = createLaunch();
@@ -18,12 +25,23 @@ describe('LaunchPage', () => {
   });
 
   it('renders', async () => {
-    expect(await shallow(LaunchPage, props)).toMatchSnapshot();
+    const launchPage = shallow(LaunchPage, props);
+    await Promise.resolve();
+    launchPage.update();
+    expect(launchPage).toMatchSnapshot();
   });
 
-  describe('when is loading launch', () => {
-    it('renders a loader', () => {
-      expect(shallow(LaunchPage, props)).toMatchSnapshot();
-    });
+  it('does not render mission patch when there is no mission patch', async () => {
+    getLaunch.mockReturnValue(
+      Promise.resolve(createLaunch({ missionPatch: '' }))
+    );
+    const launchPage = shallow(LaunchPage, props);
+    await Promise.resolve();
+    launchPage.update();
+    expect(launchPage).toMatchSnapshot();
+  });
+
+  it('renders a loader when is loading a launch', () => {
+    expect(shallow(LaunchPage, props)).toMatchSnapshot();
   });
 });

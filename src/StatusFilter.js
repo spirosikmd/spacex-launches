@@ -6,7 +6,7 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormLabel from '@material-ui/core/FormLabel';
 import Switch from '@material-ui/core/Switch';
 
-export const StatusFilter = ({
+const StatusFilter = ({
   showFailed,
   showSuccessful,
   showUpcoming,

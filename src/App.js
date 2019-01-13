@@ -16,7 +16,7 @@ const styles = theme => ({
   },
 });
 
-export class App extends PureComponent {
+class App extends PureComponent {
   render() {
     const { classes } = this.props;
 

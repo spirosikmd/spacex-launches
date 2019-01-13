@@ -19,7 +19,7 @@ const styles = theme => ({
   },
 });
 
-export const TopBar = ({ classes }) => {
+const TopBar = ({ classes }) => {
   return (
     <AppBar position="static">
       <Toolbar>

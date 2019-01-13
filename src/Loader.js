@@ -12,7 +12,7 @@ const styles = {
   },
 };
 
-export const Loader = ({ classes }) => {
+const Loader = ({ classes }) => {
   return (
     <div className={classes.root}>
       <CircularProgress />

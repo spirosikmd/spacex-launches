@@ -70,7 +70,7 @@ const styles = theme => ({
   },
 });
 
-export class HomePage extends PureComponent {
+class HomePage extends PureComponent {
   state = {
     launches: [],
     isLoadingLaunches: true,

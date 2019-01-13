@@ -12,6 +12,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import LaunchDateTime from './LaunchDateTime';
 
 const styles = theme => ({
   status: {
@@ -51,20 +52,7 @@ const styles = theme => ({
   },
 });
 
-function getDateTime(utcDate, isLaunchTentative) {
-  const utcString = utcDate.toUTCString();
-
-  if (isLaunchTentative) {
-    return `${utcString
-      .split(' ')
-      .slice(0, 4)
-      .join(' ')}`;
-  }
-
-  return utcString;
-}
-
-export const Launch = ({ classes, launch }) => {
+const Launch = ({ classes, launch }) => {
   const statusClassName = classnames(classes.status, {
     [classes.success]: launch.isSuccessful,
     [classes.fail]: launch.isFailed,
@@ -88,7 +76,12 @@ export const Launch = ({ classes, launch }) => {
       <Card className={classes.launchInfo}>
         <CardHeader
           title={launch.missionName}
-          subheader={getDateTime(launch.utcDate, launch.isTentative)}
+          subheader={
+            <LaunchDateTime
+              utcDate={launch.utcDate}
+              isTentative={launch.isTentative}
+            />
+          }
         />
         {hasContent && (
           <CardContent>

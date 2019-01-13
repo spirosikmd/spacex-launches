@@ -15,7 +15,7 @@ export function getNumberOfFailed(launches) {
   return launches.filter(launch => launch.isFailed).length;
 }
 
-export const GeneralInfo = ({ launches }) => {
+const GeneralInfo = ({ launches }) => {
   return (
     <>
       <Typography>Total: {launches.length}</Typography>

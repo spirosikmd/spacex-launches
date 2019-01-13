@@ -1,4 +1,4 @@
-import { GeneralInfo } from '../GeneralInfo';
+import GeneralInfo from '../GeneralInfo';
 import { createLaunch } from '../__fixtures__/launch';
 
 describe('GeneralInfo', () => {

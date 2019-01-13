@@ -10,6 +10,7 @@ export function createLaunch(data) {
     isTentative: false,
     details: 'Details',
     missionIds: ['id1'],
+    missionPatch: 'missionPatch',
     ...data,
   };
 }

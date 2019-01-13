@@ -17,6 +17,7 @@ function sanitizeLaunchResponse(launch) {
     details: launch.details,
     missionName: launch.mission_name,
     missionIds: launch.mission_id || [],
+    missionPatch: (launch.links && launch.links.mission_patch) || '',
   };
 }
 
