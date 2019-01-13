@@ -6,6 +6,7 @@ import { getLaunch } from '../api';
 import Loader from '../Loader';
 import LaunchDateTime from '../LaunchDateTime';
 import LaunchStatus from '../LaunchStatus';
+import { Redirect } from '@reach/router';
 
 const styles = theme => ({
   headline: {
@@ -71,6 +72,10 @@ class LaunchPage extends PureComponent {
 
     if (error) {
       return <Typography>{error.message}</Typography>;
+    }
+
+    if (launch.isTentative) {
+      return <Redirect to="/" noThrow />;
     }
 
     return (

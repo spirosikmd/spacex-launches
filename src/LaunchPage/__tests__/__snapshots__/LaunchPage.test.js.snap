@@ -100,3 +100,10 @@ exports[`LaunchPage renders error message when there is an error 1`] = `
   Not Found
 </WithStyles(Typography)>
 `;
+
+exports[`LaunchPage renders redirect to home page when launch is tentative 1`] = `
+<Redirect
+  noThrow={true}
+  to="/"
+/>
+`;
