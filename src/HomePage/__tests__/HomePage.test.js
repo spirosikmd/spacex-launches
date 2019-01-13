@@ -41,6 +41,14 @@ describe('HomePage', () => {
     );
   });
 
+  it('renders error when there is an error', async () => {
+    getLaunches.mockReturnValue(Promise.reject({ message: 'Error' }));
+    const homePage = shallow(HomePage, props);
+    await Promise.resolve();
+    homePage.update();
+    expect(homePage).toMatchSnapshot();
+  });
+
   describe('when is loading launches', () => {
     it('renders a loader', () => {
       expect(shallow(HomePage, props)).toMatchSnapshot();

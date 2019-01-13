@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import GeneralInfo from './GeneralInfo';
 import LaunchList from './LaunchList';
 import SortingOptions from './SortingOptions';
@@ -120,7 +121,12 @@ class HomePage extends PureComponent {
 
   render() {
     const { classes, location } = this.props;
-    const { launches, isLoadingLaunches, isUpdatingLaunches } = this.state;
+    const {
+      launches,
+      isLoadingLaunches,
+      isUpdatingLaunches,
+      error,
+    } = this.state;
 
     const {
       showUpcoming,
@@ -142,6 +148,10 @@ class HomePage extends PureComponent {
           <Loader />
         </div>
       );
+    }
+
+    if (error) {
+      return <Typography>{error.message}</Typography>;
     }
 
     return (

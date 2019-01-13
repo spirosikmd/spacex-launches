@@ -94,3 +94,9 @@ exports[`LaunchPage renders 1`] = `
 `;
 
 exports[`LaunchPage renders a loader when is loading a launch 1`] = `<WithStyles(Loader) />`;
+
+exports[`LaunchPage renders error message when there is an error 1`] = `
+<WithStyles(Typography)>
+  Not Found
+</WithStyles(Typography)>
+`;

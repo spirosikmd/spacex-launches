@@ -45,4 +45,12 @@ describe('LaunchPage', () => {
   it('renders a loader when is loading a launch', () => {
     expect(shallow(LaunchPage, props)).toMatchSnapshot();
   });
+
+  it('renders error message when there is an error', async () => {
+    getLaunch.mockReturnValue(Promise.reject({ message: 'Not Found' }));
+    const launchPage = shallow(LaunchPage, props);
+    await Promise.resolve();
+    launchPage.update();
+    expect(launchPage).toMatchSnapshot();
+  });
 });

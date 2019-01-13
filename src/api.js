@@ -41,6 +41,15 @@ export function mapSortField(sortField) {
   }
 }
 
+async function handleResponse(response) {
+  if (!response.ok) {
+    const { error } = await response.json();
+    throw new Error(error);
+  }
+
+  return await response.json();
+}
+
 export async function getLaunches({ sortOrder, sortField }) {
   const response = await fetch(
     `${LAUNCHES_BASE}?filter=${FILTER}&sort=${mapSortField(
@@ -50,7 +59,9 @@ export async function getLaunches({ sortOrder, sortField }) {
       headers: getHeaders(),
     }
   );
-  const launches = await response.json();
+
+  const launches = await handleResponse(response);
+
   return sanitizeLaunchesResponse(launches);
 }
 
@@ -58,6 +69,8 @@ export async function getLaunch({ flightNumber }) {
   const response = await fetch(`${LAUNCHES_BASE}/${flightNumber}`, {
     headers: getHeaders(),
   });
-  const launch = await response.json();
+
+  const launch = await handleResponse(response);
+
   return sanitizeLaunchResponse(launch);
 }

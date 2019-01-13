@@ -63,10 +63,14 @@ class LaunchPage extends PureComponent {
 
   render() {
     const { classes } = this.props;
-    const { launch, isLoadingLaunch } = this.state;
+    const { launch, isLoadingLaunch, error } = this.state;
 
     if (isLoadingLaunch) {
       return <Loader />;
+    }
+
+    if (error) {
+      return <Typography>{error.message}</Typography>;
     }
 
     return (

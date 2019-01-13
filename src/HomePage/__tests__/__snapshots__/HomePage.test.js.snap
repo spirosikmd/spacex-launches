@@ -151,6 +151,12 @@ exports[`HomePage renders 1`] = `
 </WithStyles(Grid)>
 `;
 
+exports[`HomePage renders error when there is an error 1`] = `
+<WithStyles(Typography)>
+  Error
+</WithStyles(Typography)>
+`;
+
 exports[`HomePage when is loading launches renders a loader 1`] = `
 <div
   className="loader"

@@ -78,6 +78,18 @@ describe('getLaunch', () => {
 
     expect(launch.missionPatch).toBe('');
   });
+
+  it('throws error', async () => {
+    fetch.mockResponseOnce(JSON.stringify({ error: 'Not Found' }), {
+      status: 404,
+    });
+
+    try {
+      await getLaunch({ flightNumber: 1 });
+    } catch (error) {
+      expect(error.message).toBe('Not Found');
+    }
+  });
 });
 
 describe('getLaunches', () => {
@@ -107,6 +119,21 @@ describe('getLaunches', () => {
         headers: { 'Content-Type': 'application/json' },
       }
     );
+  });
+
+  it('throws error', async () => {
+    fetch.mockResponseOnce(JSON.stringify({ error: 'Not Found' }), {
+      status: 404,
+    });
+
+    try {
+      await getLaunches({
+        sortOrder: ASC,
+        sortField: FLIGHT_NUMBER_FIELD,
+      });
+    } catch (error) {
+      expect(error.message).toBe('Not Found');
+    }
   });
 });
 
