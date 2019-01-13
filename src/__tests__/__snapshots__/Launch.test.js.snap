@@ -4,14 +4,12 @@ exports[`Launch when a launch is failed renders failed 1`] = `
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status fail"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={true}
+    isInProgress={false}
+    isSuccessful={false}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />
@@ -72,14 +70,12 @@ exports[`Launch when a launch is successful renders successful 1`] = `
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status success"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={false}
+    isSuccessful={true}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />
@@ -140,14 +136,12 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status upcoming"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={false}
+    isSuccessful={false}
+    isUpcoming={true}
+  />
   <div
     className="connector"
   />
@@ -208,14 +202,12 @@ exports[`Launch when launch does not have details does not render the details se
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status success"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={false}
+    isSuccessful={true}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />
@@ -270,14 +262,12 @@ exports[`Launch when launch does not have mission ids does not render the missio
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status success"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={false}
+    isSuccessful={true}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />
@@ -330,14 +320,12 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status inProgress"
-    elevation={1}
-  >
-    <pure(MoreHorizRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={true}
+    isSuccessful={false}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />
@@ -398,14 +386,12 @@ exports[`Launch when launch is tentative renders without actions 1`] = `
 <div
   className="launch"
 >
-  <WithStyles(Paper)
-    className="status success"
-    elevation={1}
-  >
-    <pure(GroupWorkRoundedIcon)
-      className="statusIcon"
-    />
-  </WithStyles(Paper)>
+  <WithStyles(LaunchStatus)
+    isFailed={false}
+    isInProgress={false}
+    isSuccessful={true}
+    isUpcoming={false}
+  />
   <div
     className="connector"
   />

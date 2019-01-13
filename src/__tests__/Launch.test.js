@@ -7,12 +7,6 @@ describe('Launch', () => {
   beforeEach(() => {
     props = {
       classes: {
-        status: 'status',
-        statusIcon: 'statusIcon',
-        upcoming: 'upcoming',
-        success: 'success',
-        fail: 'fail',
-        inProgress: 'inProgress',
         launch: 'launch',
         launchInfo: 'launchInfo',
         connector: 'connector',

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchStatus renders failed 1`] = `
+<WithStyles(Paper)
+  className="status fail"
+  elevation={1}
+>
+  <pure(GroupWorkRoundedIcon)
+    className="statusIcon"
+  />
+</WithStyles(Paper)>
+`;
+
+exports[`LaunchStatus renders in progress 1`] = `
+<WithStyles(Paper)
+  className="status inProgress"
+  elevation={1}
+>
+  <pure(MoreHorizRoundedIcon)
+    className="statusIcon"
+  />
+</WithStyles(Paper)>
+`;
+
+exports[`LaunchStatus renders successful 1`] = `
+<WithStyles(Paper)
+  className="status success"
+  elevation={1}
+>
+  <pure(GroupWorkRoundedIcon)
+    className="statusIcon"
+  />
+</WithStyles(Paper)>
+`;
+
+exports[`LaunchStatus renders upcoming 1`] = `
+<WithStyles(Paper)
+  className="status upcoming"
+  elevation={1}
+>
+  <pure(GroupWorkRoundedIcon)
+    className="statusIcon"
+  />
+</WithStyles(Paper)>
+`;

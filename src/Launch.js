@@ -1,43 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import { Link } from '@reach/router';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
-import MoreHorizRoundedIcon from '@material-ui/icons/MoreHorizRounded';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import LaunchDateTime from './LaunchDateTime';
+import LaunchStatus from './LaunchStatus';
 
 const styles = theme => ({
-  status: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    padding: theme.spacing.unit / 2,
-    zIndex: '1',
-  },
-  statusIcon: {
-    fontSize: 16,
-  },
-  upcoming: {
-    color: theme.palette.grey['500'],
-  },
-  success: {
-    color: theme.palette.success.main,
-  },
-  fail: {
-    color: theme.palette.error.main,
-  },
-  inProgress: {
-    color: theme.palette.grey['500'],
-  },
   launch: {
     display: 'flex',
     alignItems: 'center',
@@ -53,25 +27,17 @@ const styles = theme => ({
 });
 
 const Launch = ({ classes, launch }) => {
-  const statusClassName = classnames(classes.status, {
-    [classes.success]: launch.isSuccessful,
-    [classes.fail]: launch.isFailed,
-    [classes.upcoming]: launch.isUpcoming,
-    [classes.inProgress]: launch.isInProgress,
-  });
-
   const hadMissionIds = launch.missionIds.length > 0;
   const hasContent = launch.details || hadMissionIds;
 
   return (
     <div className={classes.launch}>
-      <Paper className={statusClassName} elevation={1}>
-        {launch.isInProgress ? (
-          <MoreHorizRoundedIcon className={classes.statusIcon} />
-        ) : (
-          <GroupWorkRoundedIcon className={classes.statusIcon} />
-        )}
-      </Paper>
+      <LaunchStatus
+        isSuccessful={launch.isSuccessful}
+        isFailed={launch.isFailed}
+        isUpcoming={launch.isUpcoming}
+        isInProgress={launch.isInProgress}
+      />
       <div className={classes.connector} />
       <Card className={classes.launchInfo}>
         <CardHeader
