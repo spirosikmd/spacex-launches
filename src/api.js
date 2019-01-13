@@ -1,8 +1,8 @@
 import { FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from './constants';
 
 const BASE = 'https://api.spacexdata.com/v3';
-const LAUNCHES_BASE = `${BASE}/launches`;
-const FILTER =
+export const LAUNCHES_BASE = `${BASE}/launches`;
+export const FILTER =
   'flight_number,launch_date_utc,launch_success,upcoming,is_tentative,details,mission_name,mission_id';
 
 function sanitizeLaunchResponse(launch) {
@@ -31,14 +31,13 @@ function getHeaders() {
   };
 }
 
-function mapSortField(sortField) {
+export function mapSortField(sortField) {
   switch (sortField) {
     case FLIGHT_NUMBER_FIELD:
       return 'flight_number';
     case UTC_DATE_FIELD:
-      return 'launch_date_utc';
     default:
-      break;
+      return 'launch_date_utc';
   }
 }
 

@@ -32,3 +32,5 @@ jest.mock('react', () => {
   const r = jest.requireActual('react');
   return { ...r, memo: x => x };
 });
+
+global.fetch = require('jest-fetch-mock');

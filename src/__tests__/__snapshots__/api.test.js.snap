@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getLaunch returns successful launch data 1`] = `
+Object {
+  "details": "Details",
+  "flightNumber": 1,
+  "isFailed": false,
+  "isInProgress": false,
+  "isSuccessful": true,
+  "isTentative": false,
+  "isUpcoming": false,
+  "missionIds": Array [
+    "id1",
+  ],
+  "missionName": "Test",
+  "missionPatch": "",
+  "utcDate": Object {
+    "getDate": [MockFunction],
+    "getFullYear": [MockFunction],
+    "getMonth": [MockFunction],
+    "toUTCString": [MockFunction],
+  },
+}
+`;
+
+exports[`getLaunches returns sanitized launches data 1`] = `
+Array [
+  Object {
+    "details": "Details",
+    "flightNumber": 1,
+    "isFailed": false,
+    "isInProgress": false,
+    "isSuccessful": true,
+    "isTentative": false,
+    "isUpcoming": false,
+    "missionIds": Array [
+      "id1",
+    ],
+    "missionName": "Test",
+    "missionPatch": "",
+    "utcDate": Object {
+      "getDate": [MockFunction],
+      "getFullYear": [MockFunction],
+      "getMonth": [MockFunction],
+      "toUTCString": [MockFunction],
+    },
+  },
+  Object {
+    "details": "Details",
+    "flightNumber": 2,
+    "isFailed": false,
+    "isInProgress": false,
+    "isSuccessful": true,
+    "isTentative": false,
+    "isUpcoming": false,
+    "missionIds": Array [
+      "id1",
+    ],
+    "missionName": "Test",
+    "missionPatch": "",
+    "utcDate": Object {
+      "getDate": [MockFunction],
+      "getFullYear": [MockFunction],
+      "getMonth": [MockFunction],
+      "toUTCString": [MockFunction],
+    },
+  },
+]
+`;
