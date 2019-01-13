@@ -13,7 +13,7 @@ Object {
     "id1",
   ],
   "missionName": "Test",
-  "missionPatch": "",
+  "missionPatch": "missionPatch",
   "utcDate": Object {
     "getDate": [MockFunction],
     "getFullYear": [MockFunction],
@@ -37,7 +37,7 @@ Array [
       "id1",
     ],
     "missionName": "Test",
-    "missionPatch": "",
+    "missionPatch": "missionPatch",
     "utcDate": Object {
       "getDate": [MockFunction],
       "getFullYear": [MockFunction],
@@ -57,7 +57,7 @@ Array [
       "id1",
     ],
     "missionName": "Test",
-    "missionPatch": "",
+    "missionPatch": "missionPatch",
     "utcDate": Object {
       "getDate": [MockFunction],
       "getFullYear": [MockFunction],

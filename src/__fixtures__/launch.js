@@ -9,7 +9,7 @@ export function createLaunchResponse(data) {
     details: 'Details',
     mission_id: ['id1'],
     links: {
-      missionPatch: 'missionPatch',
+      mission_patch: 'missionPatch',
     },
     ...data,
   };
