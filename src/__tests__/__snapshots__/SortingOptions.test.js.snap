@@ -70,6 +70,76 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
 </WithStyles(Grid)>
 `;
 
+exports[`SortingOptions when sorting field is unknown renders default sorting options 1`] = `
+<WithStyles(Grid)
+  container={true}
+  spacing={8}
+>
+  <WithStyles(Grid)
+    item={true}
+  >
+    <TextField
+      SelectProps={
+        Object {
+          "name": "sortField",
+          "native": true,
+        }
+      }
+      id="sort-field"
+      label="Sort field"
+      margin="normal"
+      onChange={[Function]}
+      required={false}
+      select={true}
+      value="unknown"
+      variant="outlined"
+    >
+      <option
+        value="flightNumber"
+      >
+        flight number
+      </option>
+      <option
+        value="utcDate"
+      >
+        utc date
+      </option>
+    </TextField>
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    item={true}
+  >
+    <TextField
+      SelectProps={
+        Object {
+          "name": "sortOrder",
+          "native": true,
+        }
+      }
+      id="sort-order"
+      label="Sort order"
+      margin="normal"
+      onChange={[Function]}
+      required={false}
+      select={true}
+      value="desc"
+      variant="outlined"
+    >
+      <option
+        value="asc"
+      >
+        ascending
+      </option>
+      <option
+        value="desc"
+      >
+        descending
+      </option>
+    </TextField>
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
+`;
+
 exports[`SortingOptions when sorting field is utc date renders sorting options with date specific text 1`] = `
 <WithStyles(Grid)
   container={true}

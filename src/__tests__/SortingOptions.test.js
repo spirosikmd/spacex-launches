@@ -26,6 +26,13 @@ describe('SortingOptions', () => {
     });
   });
 
+  describe('when sorting field is unknown', () => {
+    it('renders default sorting options', () => {
+      props.sortField = 'unknown';
+      expect(shallow(SortingOptions, props)).toMatchSnapshot();
+    });
+  });
+
   describe('when sorting changes', () => {
     it('calls the onSortChange prop', () => {
       const wrapper = shallow(SortingOptions, props);
