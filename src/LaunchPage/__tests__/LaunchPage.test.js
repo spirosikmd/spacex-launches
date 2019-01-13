@@ -17,6 +17,7 @@ describe('LaunchPage', () => {
         missionName: 'missionName',
         details: 'details',
         date: 'date',
+        status: 'status',
       },
       flightNumber: '1',
     };

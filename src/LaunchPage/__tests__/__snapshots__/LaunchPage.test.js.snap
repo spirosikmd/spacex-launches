@@ -28,6 +28,16 @@ exports[`LaunchPage does not render mission patch when there is no mission patch
       }
     />
   </WithStyles(Typography)>
+  <div
+    className="status"
+  >
+    <WithStyles(LaunchStatus)
+      isFailed={false}
+      isInProgress={false}
+      isSuccessful={true}
+      isUpcoming={false}
+    />
+  </div>
   <WithStyles(Typography)>
     Details
   </WithStyles(Typography)>
@@ -67,6 +77,16 @@ exports[`LaunchPage renders 1`] = `
       }
     />
   </WithStyles(Typography)>
+  <div
+    className="status"
+  >
+    <WithStyles(LaunchStatus)
+      isFailed={false}
+      isInProgress={false}
+      isSuccessful={true}
+      isUpcoming={false}
+    />
+  </div>
   <WithStyles(Typography)>
     Details
   </WithStyles(Typography)>

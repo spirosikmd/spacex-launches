@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { getLaunch } from '../api';
 import Loader from '../Loader';
 import LaunchDateTime from '../LaunchDateTime';
+import LaunchStatus from '../LaunchStatus';
 
 const styles = theme => ({
   headline: {
@@ -34,6 +35,11 @@ const styles = theme => ({
     paddingRight: theme.spacing.unit,
   },
   date: {
+    marginBottom: theme.spacing.unit,
+  },
+  status: {
+    display: 'flex',
+    alignItems: 'center',
     marginBottom: theme.spacing.unit * 2,
   },
 });
@@ -85,6 +91,14 @@ class LaunchPage extends PureComponent {
             />
           }
         </Typography>
+        <div className={classes.status}>
+          <LaunchStatus
+            isSuccessful={launch.isSuccessful}
+            isFailed={launch.isFailed}
+            isUpcoming={launch.isUpcoming}
+            isInProgress={launch.isInProgress}
+          />
+        </div>
         <Typography>{launch.details}</Typography>
       </div>
     );
