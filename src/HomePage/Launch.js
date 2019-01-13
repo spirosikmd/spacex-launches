@@ -8,8 +8,8 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import LaunchDateTime from './LaunchDateTime';
-import LaunchStatus from './LaunchStatus';
+import LaunchDateTime from '../LaunchDateTime';
+import LaunchStatus from '../LaunchStatus';
 
 const styles = theme => ({
   launch: {

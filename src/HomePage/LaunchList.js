@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Launch, { LaunchPropType } from './Launch';
-import Image from './Image';
+import Image from '../Image';
 import emptyListImage from './emptyList.png';
 
 const styles = theme => ({

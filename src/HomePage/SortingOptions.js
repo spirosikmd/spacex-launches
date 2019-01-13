@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-import { ASC, DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from './constants';
+import { ASC, DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from '../constants';
 
 function getSortOrderOptions(sortField) {
   switch (sortField) {

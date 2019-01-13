@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import GeneralInfo from '../GeneralInfo';
-import LaunchList from '../LaunchList';
-import SortingOptions from '../SortingOptions';
-import StatusFilter from '../StatusFilter';
+import GeneralInfo from './GeneralInfo';
+import LaunchList from './LaunchList';
+import SortingOptions from './SortingOptions';
+import StatusFilter from './StatusFilter';
 import Loader from '../Loader';
 import { getLaunches } from '../api';
 import { DESC, UTC_DATE_FIELD } from '../constants';

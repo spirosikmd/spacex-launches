@@ -1,5 +1,5 @@
 import LaunchList from '../LaunchList';
-import { createLaunch } from '../__fixtures__/launch';
+import { createLaunch } from '../../__fixtures__/launch';
 
 describe('LaunchList', () => {
   let props;

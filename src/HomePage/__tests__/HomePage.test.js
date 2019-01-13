@@ -2,8 +2,8 @@ import HomePage from '../HomePage';
 import { createLaunch } from '../../__fixtures__/launch';
 import { getLaunches } from '../../api';
 import { FLIGHT_NUMBER_FIELD, DESC } from '../../constants';
-import StatusFilter from '../../StatusFilter';
-import SortingOptions from '../../SortingOptions';
+import StatusFilter from '../StatusFilter';
+import SortingOptions from '../SortingOptions';
 
 jest.mock('../../api', () => ({
   getLaunches: jest.fn(),
