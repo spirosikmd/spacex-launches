@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound renders 1`] = `
+exports[`NotFoundPage renders 1`] = `
 <WithStyles(Image)
   alt="Not found"
   src="notFound.png"

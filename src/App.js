@@ -6,8 +6,8 @@ import Loader from './Loader';
 import TopBar from './TopBar';
 import Footer from './Footer';
 
-const Home = React.lazy(() => import('./HomePage'));
-const NotFound = React.lazy(() => import('./NotFound'));
+const HomePage = React.lazy(() => import('./HomePage'));
+const NotFoundPage = React.lazy(() => import('./NotFoundPage'));
 const LaunchPage = React.lazy(() => import('./LaunchPage'));
 
 const styles = theme => ({
@@ -27,8 +27,8 @@ class App extends PureComponent {
           <CssBaseline />
           <Suspense fallback={<Loader />}>
             <Router>
-              <NotFound default />
-              <Home path="/" />
+              <NotFoundPage default />
+              <HomePage path="/" />
               <LaunchPage path="/launches/:flightNumber" />
             </Router>
           </Suspense>
