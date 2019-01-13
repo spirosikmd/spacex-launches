@@ -52,14 +52,14 @@ const Launch = ({ classes, launch }) => {
         {hasContent && (
           <CardContent>
             {launch.details &&
-              (hadMissionIds > 0 ? (
+              (hadMissionIds ? (
                 <Typography component="p" gutterBottom>
                   {launch.details}
                 </Typography>
               ) : (
                 <Typography component="p">{launch.details}</Typography>
               ))}
-            {hadMissionIds > 0 && (
+            {hadMissionIds && (
               <Typography color="textSecondary" component="p">
                 ID: {launch.missionIds.join(', ')}
               </Typography>
