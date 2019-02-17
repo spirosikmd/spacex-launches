@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LaunchDateTime = ({ utcDate, isTentative }) => {
+interface LaunchDateTimeProps {
+  utcDate: Date;
+  isTentative: boolean;
+}
+
+const LaunchDateTime = ({ utcDate, isTentative }: LaunchDateTimeProps) => {
   const utcString = utcDate.toUTCString();
 
   if (isTentative) {

@@ -1,4 +1,8 @@
-export function createLaunchResponse(data) {
+import { LaunchResponseData, LaunchData } from '../api';
+
+export function createLaunchResponse(
+  data: LaunchResponseData
+): LaunchResponseData {
   return {
     flight_number: 1,
     mission_name: 'Test',
@@ -15,7 +19,7 @@ export function createLaunchResponse(data) {
   };
 }
 
-export function createLaunch(data) {
+export function createLaunch(data: LaunchData): LaunchData {
   return {
     flightNumber: 1,
     missionName: 'Test',

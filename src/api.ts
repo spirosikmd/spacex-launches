@@ -5,7 +5,35 @@ export const LAUNCHES_BASE = `${BASE}/launches`;
 export const FILTER =
   'flight_number,launch_date_utc,launch_success,upcoming,is_tentative,details,mission_name,mission_id';
 
-function sanitizeLaunchResponse(launch) {
+export interface LaunchData {
+  flightNumber: number;
+  missionName: string;
+  utcDate: Date;
+  isSuccessful: boolean;
+  isFailed: boolean;
+  isUpcoming: boolean;
+  isInProgress: boolean;
+  isTentative: boolean;
+  details: string;
+  missionIds: string[];
+  missionPatch: string;
+}
+
+export interface LaunchResponseData {
+  flight_number: number;
+  mission_name: string;
+  launch_date_utc: string;
+  launch_success: boolean;
+  upcoming: boolean;
+  is_tentative: boolean;
+  details: string;
+  mission_id: string[];
+  links: {
+    mission_patch: string;
+  };
+}
+
+function sanitizeLaunchResponse(launch: LaunchResponseData) {
   return {
     flightNumber: launch.flight_number,
     utcDate: new Date(launch.launch_date_utc),
@@ -21,7 +49,7 @@ function sanitizeLaunchResponse(launch) {
   };
 }
 
-function sanitizeLaunchesResponse(launches) {
+function sanitizeLaunchesResponse(launches: LaunchResponseData[]) {
   return launches.map(sanitizeLaunchResponse);
 }
 
@@ -31,7 +59,7 @@ function getHeaders() {
   };
 }
 
-export function mapSortField(sortField) {
+export function mapSortField(sortField: string) {
   switch (sortField) {
     case FLIGHT_NUMBER_FIELD:
       return 'flight_number';
@@ -41,7 +69,7 @@ export function mapSortField(sortField) {
   }
 }
 
-async function handleResponse(response) {
+async function handleResponse(response: Response) {
   if (!response.ok) {
     const { error } = await response.json();
     throw new Error(error);
@@ -50,7 +78,13 @@ async function handleResponse(response) {
   return await response.json();
 }
 
-export async function getLaunches({ sortOrder, sortField }) {
+export async function getLaunches({
+  sortOrder,
+  sortField,
+}: {
+  sortOrder: string;
+  sortField: string;
+}) {
   const response = await fetch(
     `${LAUNCHES_BASE}?filter=${FILTER}&sort=${mapSortField(
       sortField
@@ -65,7 +99,7 @@ export async function getLaunches({ sortOrder, sortField }) {
   return sanitizeLaunchesResponse(launches);
 }
 
-export async function getLaunch({ flightNumber }) {
+export async function getLaunch({ flightNumber }: { flightNumber: number }) {
   const response = await fetch(`${LAUNCHES_BASE}/${flightNumber}`, {
     headers: getHeaders(),
   });

@@ -2,20 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import { LaunchPropType } from './Launch';
+import { LaunchData } from '../api';
 
-export function getNumberOfSuccessful(launches) {
+export function getNumberOfSuccessful(launches: LaunchData[]) {
   return launches.filter(launch => launch.isSuccessful).length;
 }
 
-export function getNumberOfUpcoming(launches) {
+export function getNumberOfUpcoming(launches: LaunchData[]) {
   return launches.filter(launch => launch.isUpcoming).length;
 }
 
-export function getNumberOfFailed(launches) {
+export function getNumberOfFailed(launches: LaunchData[]) {
   return launches.filter(launch => launch.isFailed).length;
 }
 
-const GeneralInfo = ({ launches }) => {
+interface GeneralInfoProps {
+  launches: LaunchData[];
+}
+
+const GeneralInfo = ({ launches }: GeneralInfoProps) => {
   return (
     <>
       <Typography>Total: {launches.length}</Typography>

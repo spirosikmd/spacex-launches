@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, createStyles, WithStyles } from '@material-ui/core/styles';
 
-const styles = {
+const styles = createStyles({
   root: {
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
-};
+});
 
-const Loader = ({ classes }) => {
+const Loader = ({ classes }: WithStyles<typeof styles>) => {
   return (
     <div className={classes.root}>
       <CircularProgress />

@@ -1,36 +1,49 @@
 import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {
+  withStyles,
+  Theme,
+  createStyles,
+  WithStyles,
+} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import GroupWorkRoundedIcon from '@material-ui/icons/GroupWorkRounded';
 import MoreHorizRoundedIcon from '@material-ui/icons/MoreHorizRounded';
 
-const styles = theme => ({
-  status: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    padding: theme.spacing.unit / 2,
-    zIndex: '1',
-  },
-  statusIcon: {
-    fontSize: 16,
-  },
-  upcoming: {
-    color: theme.palette.grey['500'],
-  },
-  success: {
-    color: theme.palette.success.main,
-  },
-  fail: {
-    color: theme.palette.error.main,
-  },
-  inProgress: {
-    color: theme.palette.grey['500'],
-  },
-});
+const styles = (theme: Theme) =>
+  createStyles({
+    status: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: '50%',
+      padding: theme.spacing.unit / 2,
+      zIndex: 1,
+    },
+    statusIcon: {
+      fontSize: 16,
+    },
+    upcoming: {
+      color: theme.palette.grey['500'],
+    },
+    success: {
+      color: theme.success.main,
+    },
+    fail: {
+      color: theme.palette.error.main,
+    },
+    inProgress: {
+      color: theme.palette.grey['500'],
+    },
+  });
+
+interface LaunchStatusProps extends WithStyles<typeof styles> {
+  isSuccessful: boolean;
+  isFailed: boolean;
+  isUpcoming: boolean;
+  isInProgress: boolean;
+}
 
 const LaunchStatus = ({
   classes,
@@ -38,7 +51,7 @@ const LaunchStatus = ({
   isFailed,
   isUpcoming,
   isInProgress,
-}) => {
+}: LaunchStatusProps) => {
   const statusClassName = classnames(classes.status, {
     [classes.success]: isSuccessful,
     [classes.fail]: isFailed,

@@ -1,56 +1,85 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {
+  withStyles,
+  Theme,
+  createStyles,
+  WithStyles,
+} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { Redirect } from '@reach/router';
-import { getLaunch } from '../api';
+import { Redirect, RouteComponentProps } from '@reach/router';
+import { getLaunch, LaunchData } from '../api';
 import Loader from '../Loader';
 import LaunchDateTime from '../LaunchDateTime';
 import LaunchStatus from '../LaunchStatus';
 import LaunchMissionIds from '../LaunchMissionIds';
 
-const styles = theme => ({
-  headline: {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: theme.spacing.unit * 3,
-    [theme.breakpoints.down('xs')]: {
-      flexDirection: 'column',
-    },
-  },
-  missionPatch: {
-    width: '120px',
-    height: '120px',
-    marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.down('xs')]: {
-      marginRight: 0,
+const styles = (theme: Theme) =>
+  createStyles({
+    headline: {
+      display: 'flex',
+      alignItems: 'center',
       marginBottom: theme.spacing.unit * 3,
+      [theme.breakpoints.down('xs')]: {
+        flexDirection: 'column',
+      },
     },
-  },
-  missionName: {
-    [theme.breakpoints.down('xs')]: {
-      textAlign: 'center',
+    missionPatch: {
+      width: '120px',
+      height: '120px',
+      marginRight: theme.spacing.unit * 3,
+      [theme.breakpoints.down('xs')]: {
+        marginRight: 0,
+        marginBottom: theme.spacing.unit * 3,
+      },
     },
-  },
-  details: {
-    paddingLeft: theme.spacing.unit,
-    paddingRight: theme.spacing.unit,
-  },
-  date: {
-    marginBottom: theme.spacing.unit,
-  },
-  statusMissionIds: {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: theme.spacing.unit * 2,
-  },
-  missionIds: {
-    marginLeft: theme.spacing.unit,
-  },
-});
+    missionName: {
+      [theme.breakpoints.down('xs')]: {
+        textAlign: 'center',
+      },
+    },
+    details: {
+      paddingLeft: theme.spacing.unit,
+      paddingRight: theme.spacing.unit,
+    },
+    date: {
+      marginBottom: theme.spacing.unit,
+    },
+    statusMissionIds: {
+      display: 'flex',
+      alignItems: 'center',
+      marginBottom: theme.spacing.unit * 2,
+    },
+    missionIds: {
+      marginLeft: theme.spacing.unit,
+    },
+  });
 
-class LaunchPage extends PureComponent {
-  state = {
+interface LaunchPageProps
+  extends RouteComponentProps<{ flightNumber: number }>,
+    WithStyles<typeof styles> {}
+
+interface LaunchPageState {
+  error: Error | null;
+  launch: LaunchData | null;
+  isLoadingLaunch: boolean;
+}
+
+class LaunchPage extends PureComponent<LaunchPageProps, LaunchPageState> {
+  static propTypes = {
+    flightNumber: PropTypes.number,
+    classes: PropTypes.shape({
+      headline: PropTypes.string.isRequired,
+      missionPatch: PropTypes.string.isRequired,
+      missionName: PropTypes.string.isRequired,
+      details: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      statusMissionIds: PropTypes.string.isRequired,
+      missionIds: PropTypes.string.isRequired,
+    }).isRequired,
+  };
+
+  state: LaunchPageState = {
     error: null,
     launch: null,
     isLoadingLaunch: true,
@@ -59,6 +88,7 @@ class LaunchPage extends PureComponent {
   async componentDidMount() {
     try {
       const { flightNumber } = this.props;
+      if (!flightNumber) return;
       const launch = await getLaunch({ flightNumber });
       this.setState({ isLoadingLaunch: false, launch });
     } catch (error) {
@@ -78,7 +108,7 @@ class LaunchPage extends PureComponent {
       return <Typography>{error.message}</Typography>;
     }
 
-    if (launch.isTentative) {
+    if (!launch || launch.isTentative) {
       return <Redirect to="/" noThrow />;
     }
 
@@ -120,10 +150,5 @@ class LaunchPage extends PureComponent {
     );
   }
 }
-
-LaunchPage.propTypes = {
-  flightNumber: PropTypes.string.isRequired,
-  classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(LaunchPage);

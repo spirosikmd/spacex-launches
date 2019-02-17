@@ -1,27 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import App from './App';
 import ErrorBoundary from './ErrorBoundary';
 import * as serviceWorker from './serviceWorker';
+import { createCustomMuiTheme } from './createCustomMuiTheme';
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#263238',
-    },
-    secondary: {
-      main: '#81d4fa',
-    },
-    success: {
-      contrastText: '#fff',
-      dark: '#087f23',
-      light: '#80e27e',
-      main: '#4CAF50',
-    },
-  },
-  typography: { useNextVariants: true },
-});
+const theme = createCustomMuiTheme();
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>

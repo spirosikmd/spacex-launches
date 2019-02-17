@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ChangeEvent, SyntheticEvent } from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import { ASC, DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from '../constants';
 
-function getSortOrderOptions(sortField) {
+function getSortOrderOptions(sortField: string) {
   switch (sortField) {
     case FLIGHT_NUMBER_FIELD:
       return (
@@ -30,9 +30,20 @@ function getSortOrderOptions(sortField) {
   }
 }
 
-const SortingOptions = ({ sortField, sortOrder, onSortChange }) => {
-  const handleSortChange = event => {
-    onSortChange(event.currentTarget.name, event.currentTarget.value);
+interface SortingOptionsProps {
+  sortField: string;
+  sortOrder: string;
+  onSortChange: (name: string, value: string) => void;
+}
+
+const SortingOptions = ({
+  sortField,
+  sortOrder,
+  onSortChange,
+}: SortingOptionsProps) => {
+  const handleSortChange = (event: SyntheticEvent) => {
+    const target = event.currentTarget as HTMLSelectElement;
+    onSortChange(target.name, target.value);
   };
 
   return (

@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from '@reach/router';
-import { withStyles } from '@material-ui/core/styles';
+import {
+  withStyles,
+  Theme,
+  WithStyles,
+  createStyles,
+} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import Button, { ButtonProps } from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,23 +16,37 @@ import CardActions from '@material-ui/core/CardActions';
 import LaunchDateTime from '../LaunchDateTime';
 import LaunchStatus from '../LaunchStatus';
 import LaunchMissionIds from '../LaunchMissionIds';
+import { LaunchData } from '../api';
 
-const styles = theme => ({
-  launch: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  launchInfo: {
-    flexGrow: 1,
-  },
-  connector: {
-    minWidth: theme.spacing.unit * 2,
-    border: `0.5px dashed ${theme.palette.secondary.dark}`,
-    marginTop: '1px',
-  },
-});
+const styles = (theme: Theme) =>
+  createStyles({
+    launch: {
+      display: 'flex',
+      alignItems: 'center',
+    },
+    launchInfo: {
+      flexGrow: 1,
+    },
+    connector: {
+      minWidth: theme.spacing.unit * 2,
+      border: `0.5px dashed ${theme.palette.secondary.dark}`,
+      marginTop: '1px',
+    },
+  });
 
-const Launch = ({ classes, launch }) => {
+interface LinkButtonProps extends ButtonProps {
+  to: string;
+}
+
+const LinkButton = (props: LinkButtonProps) => (
+  <Button {...props} component={Link as any} />
+);
+
+interface LaunchProps extends WithStyles<typeof styles> {
+  launch: LaunchData;
+}
+
+const Launch = ({ classes, launch }: LaunchProps) => {
   const hadMissionIds = launch.missionIds.length > 0;
   const hasContent = launch.details || hadMissionIds;
 
@@ -67,14 +86,14 @@ const Launch = ({ classes, launch }) => {
         )}
         {!launch.isTentative && (
           <CardActions>
-            <Button
+            <LinkButton
               size="small"
               color="primary"
               component={Link}
               to={`/launches/${launch.flightNumber}`}
             >
               explore
-            </Button>
+            </LinkButton>
           </CardActions>
         )}
       </Card>

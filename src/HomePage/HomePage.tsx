@@ -1,5 +1,10 @@
 import React, { PureComponent } from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import {
+  withStyles,
+  Theme,
+  createStyles,
+  WithStyles,
+} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import GeneralInfo from './GeneralInfo';
@@ -7,12 +12,17 @@ import LaunchList from './LaunchList';
 import SortingOptions from './SortingOptions';
 import StatusFilter from './StatusFilter';
 import Loader from '../Loader';
-import { getLaunches } from '../api';
+import { getLaunches, LaunchData } from '../api';
 import { DESC, UTC_DATE_FIELD } from '../constants';
+import { RouteComponentProps, WindowLocation } from '@reach/router';
 
 function processLaunches(
-  launches,
-  { showUpcoming, showSuccessful, showFailed }
+  launches: LaunchData[],
+  {
+    showUpcoming,
+    showSuccessful,
+    showFailed,
+  }: { showUpcoming: boolean; showSuccessful: boolean; showFailed: boolean }
 ) {
   let processedLaunches = [...launches];
 
@@ -33,12 +43,31 @@ function processLaunches(
   return processedLaunches;
 }
 
-function getBooleanParam(param) {
+function getBooleanParam(param: string | null) {
   return param === null ? true : param === 'true';
 }
 
-function getParams(location) {
+function getParams(
+  location: WindowLocation | undefined
+): {
+  showUpcoming: boolean;
+  showSuccessful: boolean;
+  showFailed: boolean;
+  sortOrder: string;
+  sortField: string;
+} {
+  if (!location) {
+    return {
+      showUpcoming: true,
+      showSuccessful: true,
+      showFailed: true,
+      sortOrder: DESC,
+      sortField: UTC_DATE_FIELD,
+    };
+  }
+
   const searchParams = new URLSearchParams(location.search);
+
   return {
     showUpcoming: getBooleanParam(searchParams.get('upcoming')),
     showSuccessful: getBooleanParam(searchParams.get('successful')),
@@ -56,23 +85,35 @@ function setParams({
   sortField = UTC_DATE_FIELD,
 }) {
   const searchParams = new URLSearchParams();
-  searchParams.set('upcoming', showUpcoming);
-  searchParams.set('successful', showSuccessful);
-  searchParams.set('failed', showFailed);
+  searchParams.set('upcoming', showUpcoming.toString());
+  searchParams.set('successful', showSuccessful.toString());
+  searchParams.set('failed', showFailed.toString());
   searchParams.set('order', sortOrder);
   searchParams.set('sort', sortField);
   return searchParams.toString();
 }
 
-const styles = theme => ({
-  loader: {
-    paddingTop: theme.spacing.unit * 8,
-    paddingBottom: theme.spacing.unit * 8,
-  },
-});
+const styles = (theme: Theme) =>
+  createStyles({
+    loader: {
+      paddingTop: theme.spacing.unit * 8,
+      paddingBottom: theme.spacing.unit * 8,
+    },
+  });
 
-class HomePage extends PureComponent {
-  state = {
+interface HomePageState {
+  launches: LaunchData[];
+  isLoadingLaunches: boolean;
+  isUpdatingLaunches: boolean;
+  error: Error | null;
+}
+
+interface HomePageProps
+  extends RouteComponentProps,
+    WithStyles<typeof styles> {}
+
+class HomePage extends PureComponent<HomePageProps, HomePageState> {
+  state: HomePageState = {
     launches: [],
     isLoadingLaunches: true,
     isUpdatingLaunches: false,
@@ -97,16 +138,17 @@ class HomePage extends PureComponent {
 
   navigateWithParams(newParams = {}) {
     const { location, navigate } = this.props;
+    if (!navigate) return;
     const params = getParams(location);
     const url = setParams({ ...params, ...newParams });
     navigate(`?${url}`);
   }
 
-  handleStatusFilterChange = (value, checked) => {
+  handleStatusFilterChange = (value: string, checked: boolean) => {
     this.navigateWithParams({ [value]: checked });
   };
 
-  handleSortChange = async (name, value) => {
+  handleSortChange = async (name: string, value: string) => {
     const { location } = this.props;
     this.setState({ isUpdatingLaunches: true });
     this.navigateWithParams({ [name]: value });
