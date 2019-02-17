@@ -75,7 +75,7 @@ async function handleResponse(response: Response) {
     throw new Error(error);
   }
 
-  return await response.json();
+  return response.json();
 }
 
 export async function getLaunches({
