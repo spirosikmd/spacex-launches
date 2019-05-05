@@ -56,7 +56,7 @@ const styles = (theme: Theme) =>
   });
 
 interface LaunchPageProps
-  extends RouteComponentProps<{ flightNumber: number }>,
+  extends RouteComponentProps<{ flightNumber: string }>,
     WithStyles<typeof styles> {}
 
 interface LaunchPageState {
@@ -67,7 +67,7 @@ interface LaunchPageState {
 
 class LaunchPage extends PureComponent<LaunchPageProps, LaunchPageState> {
   static propTypes = {
-    flightNumber: PropTypes.number,
+    flightNumber: PropTypes.string,
     classes: PropTypes.shape({
       headline: PropTypes.string.isRequired,
       missionPatch: PropTypes.string.isRequired,

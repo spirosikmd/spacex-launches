@@ -16,7 +16,7 @@ describe('getLaunch', () => {
   it('returns successful launch data', async () => {
     fetch.mockResponseOnce(JSON.stringify(createLaunchResponse()));
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch).toMatchSnapshot();
     expect(fetch.mock.calls.length).toEqual(1);
@@ -30,7 +30,7 @@ describe('getLaunch', () => {
       JSON.stringify(createLaunchResponse({ launch_success: false }))
     );
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch.isFailed).toBe(true);
   });
@@ -42,7 +42,7 @@ describe('getLaunch', () => {
       )
     );
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch.isUpcoming).toBe(true);
   });
@@ -54,7 +54,7 @@ describe('getLaunch', () => {
       )
     );
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch.isInProgress).toBe(true);
   });
@@ -64,7 +64,7 @@ describe('getLaunch', () => {
       JSON.stringify(createLaunchResponse({ mission_id: null }))
     );
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch.missionIds.length).toBe(0);
   });
@@ -74,7 +74,7 @@ describe('getLaunch', () => {
       JSON.stringify(createLaunchResponse({ links: { mission_patch: null } }))
     );
 
-    const launch = await getLaunch({ flightNumber: 1 });
+    const launch = await getLaunch({ flightNumber: '1' });
 
     expect(launch.missionPatch).toBe('');
   });
@@ -85,7 +85,7 @@ describe('getLaunch', () => {
     });
 
     try {
-      await getLaunch({ flightNumber: 1 });
+      await getLaunch({ flightNumber: '1' });
     } catch (error) {
       expect(error.message).toBe('Not Found');
     }
