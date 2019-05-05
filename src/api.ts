@@ -99,7 +99,7 @@ export async function getLaunches({
   return sanitizeLaunchesResponse(launches);
 }
 
-export async function getLaunch({ flightNumber }: { flightNumber: number }) {
+export async function getLaunch({ flightNumber }: { flightNumber: string }) {
   const response = await fetch(`${LAUNCHES_BASE}/${flightNumber}`, {
     headers: getHeaders(),
   });

@@ -20,7 +20,7 @@ describe('LaunchPage', () => {
         statusMissionIds: 'statusMissionIds',
         missionIds: 'missionIds',
       },
-      flightNumber: 1,
+      flightNumber: '1',
     };
     const launch = createLaunch();
     getLaunch.mockReturnValue(Promise.resolve(launch));
