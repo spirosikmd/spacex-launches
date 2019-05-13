@@ -7,21 +7,21 @@ exports[`App renders 1`] = `
     className="main"
   >
     <WithStyles(CssBaseline) />
-    <React.Suspense
+    <Suspense
       fallback={<WithStyles(Loader) />}
     >
       <Router>
-        <React.Lazy
+        <lazy
           default={true}
         />
-        <React.Lazy
+        <lazy
           path="/"
         />
-        <React.Lazy
+        <lazy
           path="/launches/:flightNumber"
         />
       </Router>
-    </React.Suspense>
+    </Suspense>
   </main>
   <WithStyles(Footer) />
 </Fragment>
