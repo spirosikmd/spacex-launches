@@ -14,8 +14,8 @@ import {
 const styles = (theme: Theme) =>
   createStyles({
     logo: {
-      marginLeft: -theme.spacing.unit,
-      marginRight: theme.spacing.unit,
+      marginLeft: -theme.spacing(1),
+      marginRight: theme.spacing(1),
     },
   });
 

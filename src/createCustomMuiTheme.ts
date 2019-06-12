@@ -37,7 +37,6 @@ export function createCustomMuiTheme(options: ThemeOptions = {}) {
         main: '#81d4fa',
       },
     },
-    typography: { useNextVariants: true },
     ...options,
   });
 }

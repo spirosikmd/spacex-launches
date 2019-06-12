@@ -12,6 +12,6 @@ describe('Footer', () => {
   });
 
   it('renders', () => {
-    expect(shallow(Footer, props)).toMatchSnapshot();
+    expect(mountComponent(Footer, props)).toMatchSnapshot();
   });
 });

@@ -14,12 +14,12 @@ describe('StatusFilter', () => {
   });
 
   it('renders status filters', () => {
-    expect(shallow(StatusFilter, props)).toMatchSnapshot();
+    expect(mountComponent(StatusFilter, props)).toMatchSnapshot();
   });
 
   describe('when a status changes', () => {
     it('calls the onChange prop', () => {
-      const wrapper = shallow(StatusFilter, props);
+      const wrapper = mountComponent(StatusFilter, props);
       const filters = wrapper.find(FormControlLabel);
       filters
         .at(0)

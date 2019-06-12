@@ -12,6 +12,6 @@ describe('TopBar', () => {
   });
 
   it('renders', () => {
-    expect(shallow(TopBar, props)).toMatchSnapshot();
+    expect(mountComponent(TopBar, props)).toMatchSnapshot();
   });
 });

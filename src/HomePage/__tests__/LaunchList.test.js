@@ -17,7 +17,7 @@ describe('LaunchList', () => {
 
   describe('when there are no launches', () => {
     it('renders a message', () => {
-      expect(shallow(LaunchList, props)).toMatchSnapshot();
+      expect(mountComponent(LaunchList, props)).toMatchSnapshot();
     });
   });
 
@@ -27,7 +27,7 @@ describe('LaunchList', () => {
     });
 
     it('renders a list of launches', () => {
-      expect(shallow(LaunchList, props)).toMatchSnapshot();
+      expect(mountComponent(LaunchList, props)).toMatchSnapshot();
     });
   });
 });

@@ -15,6 +15,6 @@ describe('Anchor', () => {
   });
 
   it('renders', () => {
-    expect(mount(Anchor, props)).toMatchSnapshot();
+    expect(mountComponent(Anchor, props)).toMatchSnapshot();
   });
 });

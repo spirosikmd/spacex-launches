@@ -4,5 +4,15 @@ exports[`NotFoundPage renders 1`] = `
 <WithStyles(Image)
   alt="Not found"
   src="notFound.png"
-/>
+>
+  <div
+    className="Image-imageWrapper-1"
+  >
+    <img
+      alt="Not found"
+      className="Image-image-2"
+      src="notFound.png"
+    />
+  </div>
+</WithStyles(Image)>
 `;

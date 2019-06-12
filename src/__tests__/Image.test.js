@@ -15,6 +15,6 @@ describe('Image', () => {
   });
 
   it('renders', () => {
-    expect(shallow(Image, props)).toMatchSnapshot();
+    expect(mountComponent(Image, props)).toMatchSnapshot();
   });
 });

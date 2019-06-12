@@ -96,8 +96,8 @@ function setParams({
 const styles = (theme: Theme) =>
   createStyles({
     loader: {
-      paddingTop: theme.spacing.unit * 8,
-      paddingBottom: theme.spacing.unit * 8,
+      paddingTop: theme.spacing(8),
+      paddingBottom: theme.spacing(8),
     },
   });
 
@@ -197,7 +197,7 @@ class HomePage extends PureComponent<HomePageProps, HomePageState> {
     }
 
     return (
-      <Grid container spacing={16}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <GeneralInfo launches={launches} />
         </Grid>
@@ -232,4 +232,4 @@ class HomePage extends PureComponent<HomePageProps, HomePageState> {
   }
 }
 
-export default withStyles(styles)(React.memo(HomePage));
+export default withStyles(styles)(HomePage);

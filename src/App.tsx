@@ -19,11 +19,11 @@ const LaunchPage = React.lazy(() => import('./LaunchPage'));
 const styles = (theme: Theme) =>
   createStyles({
     main: {
-      padding: theme.spacing.unit * 2,
+      padding: theme.spacing(2),
     },
   });
 
-function App({ classes }: WithStyles<typeof styles>) {
+const App = ({ classes }: WithStyles<typeof styles>) => {
   return (
     <>
       <TopBar />
@@ -40,7 +40,7 @@ function App({ classes }: WithStyles<typeof styles>) {
       <Footer />
     </>
   );
-}
+};
 
 App.propTypes = {
   classes: PropTypes.object.isRequired,

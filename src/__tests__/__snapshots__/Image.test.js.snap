@@ -1,13 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Image renders 1`] = `
-<div
-  className="imageWrapper"
+<WithStyles(Image)
+  alt="alt"
+  classes={
+    Object {
+      "image": "image",
+      "imageWrapper": "imageWrapper",
+    }
+  }
+  src="src"
 >
-  <img
-    alt="alt"
-    className="image"
-    src="src"
-  />
-</div>
+  <div
+    className="Image-imageWrapper-1 imageWrapper"
+  >
+    <img
+      alt="alt"
+      className="Image-image-2 image"
+      src="src"
+    />
+  </div>
+</WithStyles(Image)>
 `;

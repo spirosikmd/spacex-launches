@@ -15,6 +15,6 @@ describe('GeneralInfo', () => {
   });
 
   it('renders general info about launches', () => {
-    expect(shallow(GeneralInfo, props)).toMatchSnapshot();
+    expect(mountComponent(GeneralInfo, props)).toMatchSnapshot();
   });
 });

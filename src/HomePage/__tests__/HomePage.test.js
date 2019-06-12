@@ -25,14 +25,14 @@ describe('HomePage', () => {
     };
     const launches = [
       createLaunch(),
-      createLaunch({ isSuccessful: false, isFailed: true }),
-      createLaunch({ isSuccessful: false, isUpcoming: true }),
+      createLaunch({ flightNumber: 2, isSuccessful: false, isFailed: true }),
+      createLaunch({ flightNumber: 3, isSuccessful: false, isUpcoming: true }),
     ];
     getLaunches.mockReturnValue(Promise.resolve(launches));
   });
 
   it('renders', async () => {
-    const homePage = shallow(HomePage, props);
+    const homePage = mountComponent(HomePage, props);
     await Promise.resolve();
     homePage.update();
     expect(homePage).toMatchSnapshot();
@@ -43,7 +43,7 @@ describe('HomePage', () => {
 
   it('renders error when there is an error', async () => {
     getLaunches.mockReturnValue(Promise.reject({ message: 'Error' }));
-    const homePage = shallow(HomePage, props);
+    const homePage = mountComponent(HomePage, props);
     await Promise.resolve();
     homePage.update();
     expect(homePage).toMatchSnapshot();
@@ -51,13 +51,13 @@ describe('HomePage', () => {
 
   describe('when is loading launches', () => {
     it('renders a loader', () => {
-      expect(shallow(HomePage, props)).toMatchSnapshot();
+      expect(mountComponent(HomePage, props)).toMatchSnapshot();
     });
   });
 
   describe('when is updating launches', () => {
     it('renders info, filters, sorting options, and a loader', async () => {
-      const homePage = shallow(HomePage, props);
+      const homePage = mountComponent(HomePage, props);
       await Promise.resolve();
       homePage.update();
       const sortingOptions = homePage.find(SortingOptions);
@@ -73,7 +73,7 @@ describe('HomePage', () => {
     it('does not render the sorting options', async () => {
       props.location.search =
         'failed=false&successful=false&upcoming=false&sortOrder=desc&sortField=utcDate';
-      const homePage = shallow(HomePage, props);
+      const homePage = mountComponent(HomePage, props);
       await Promise.resolve();
       homePage.update();
       expect(homePage).toMatchSnapshot();
@@ -82,7 +82,7 @@ describe('HomePage', () => {
 
   describe('when any status filter changes', () => {
     it('navigates with the new value and checked', async () => {
-      const homePage = shallow(HomePage, props);
+      const homePage = mountComponent(HomePage, props);
       await Promise.resolve();
       homePage.update();
       const statusFilter = homePage.find(StatusFilter);
@@ -95,7 +95,7 @@ describe('HomePage', () => {
 
   describe('when sorting options change', () => {
     it('gets launches with new sorting options', async () => {
-      const homePage = shallow(HomePage, props);
+      const homePage = mountComponent(HomePage, props);
       await Promise.resolve();
       homePage.update();
       const sortingOptions = homePage.find(SortingOptions);
@@ -103,8 +103,6 @@ describe('HomePage', () => {
         'sortField',
         FLIGHT_NUMBER_FIELD
       );
-      const state = homePage.state();
-      expect(state.isUpdatingLaunches).toBe(false);
       expect(getLaunches).toBeCalledWith({
         sortField: FLIGHT_NUMBER_FIELD,
         sortOrder: DESC,

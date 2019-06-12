@@ -11,11 +11,11 @@ describe('LaunchDateTime', () => {
   });
 
   it('renders both date and time when launch is not tentative', () => {
-    expect(shallow(LaunchDateTime, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchDateTime, props)).toMatchSnapshot();
   });
 
   it('renders only date when launch is tentative', () => {
     props.isTentative = true;
-    expect(shallow(LaunchDateTime, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchDateTime, props)).toMatchSnapshot();
   });
 });

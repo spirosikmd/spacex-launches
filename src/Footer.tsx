@@ -16,7 +16,7 @@ const styles = (theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
-      padding: theme.spacing.unit * 2,
+      padding: theme.spacing(2),
     },
   });
 
