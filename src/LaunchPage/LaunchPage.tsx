@@ -19,7 +19,7 @@ const styles = (theme: Theme) =>
     headline: {
       display: 'flex',
       alignItems: 'center',
-      marginBottom: theme.spacing.unit * 3,
+      marginBottom: theme.spacing(3),
       [theme.breakpoints.down('xs')]: {
         flexDirection: 'column',
       },
@@ -27,10 +27,10 @@ const styles = (theme: Theme) =>
     missionPatch: {
       width: '120px',
       height: '120px',
-      marginRight: theme.spacing.unit * 3,
+      marginRight: theme.spacing(3),
       [theme.breakpoints.down('xs')]: {
         marginRight: 0,
-        marginBottom: theme.spacing.unit * 3,
+        marginBottom: theme.spacing(3),
       },
     },
     missionName: {
@@ -39,19 +39,19 @@ const styles = (theme: Theme) =>
       },
     },
     details: {
-      paddingLeft: theme.spacing.unit,
-      paddingRight: theme.spacing.unit,
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1),
     },
     date: {
-      marginBottom: theme.spacing.unit,
+      marginBottom: theme.spacing(1),
     },
     statusMissionIds: {
       display: 'flex',
       alignItems: 'center',
-      marginBottom: theme.spacing.unit * 2,
+      marginBottom: theme.spacing(2),
     },
     missionIds: {
-      marginLeft: theme.spacing.unit,
+      marginLeft: theme.spacing(1),
     },
   });
 

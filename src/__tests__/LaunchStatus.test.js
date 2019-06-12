@@ -21,24 +21,24 @@ describe('LaunchStatus', () => {
   });
 
   it('renders successful', () => {
-    expect(shallow(LaunchStatus, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
   });
 
   it('renders failed', () => {
     props.isFailed = true;
     props.isSuccessful = false;
-    expect(shallow(LaunchStatus, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
   });
 
   it('renders upcoming', () => {
     props.isUpcoming = true;
     props.isSuccessful = false;
-    expect(shallow(LaunchStatus, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
   });
 
   it('renders in progress', () => {
     props.isInProgress = true;
     props.isSuccessful = false;
-    expect(shallow(LaunchStatus, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
   });
 });

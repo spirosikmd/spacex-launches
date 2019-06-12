@@ -27,7 +27,7 @@ describe('LaunchPage', () => {
   });
 
   it('renders', async () => {
-    const launchPage = shallow(LaunchPage, props);
+    const launchPage = mountComponent(LaunchPage, props);
     await Promise.resolve();
     launchPage.update();
     expect(launchPage).toMatchSnapshot();
@@ -37,19 +37,19 @@ describe('LaunchPage', () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ missionPatch: '' }))
     );
-    const launchPage = shallow(LaunchPage, props);
+    const launchPage = mountComponent(LaunchPage, props);
     await Promise.resolve();
     launchPage.update();
     expect(launchPage).toMatchSnapshot();
   });
 
   it('renders a loader when is loading a launch', () => {
-    expect(shallow(LaunchPage, props)).toMatchSnapshot();
+    expect(mountComponent(LaunchPage, props)).toMatchSnapshot();
   });
 
   it('renders error message when there is an error', async () => {
     getLaunch.mockReturnValue(Promise.reject({ message: 'Not Found' }));
-    const launchPage = shallow(LaunchPage, props);
+    const launchPage = mountComponent(LaunchPage, props);
     await Promise.resolve();
     launchPage.update();
     expect(launchPage).toMatchSnapshot();
@@ -59,7 +59,7 @@ describe('LaunchPage', () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ isSuccessful: false, isTentative: true }))
     );
-    const launchPage = shallow(LaunchPage, props);
+    const launchPage = mountComponent(LaunchPage, props);
     await Promise.resolve();
     launchPage.update();
     expect(launchPage).toMatchSnapshot();
@@ -69,7 +69,7 @@ describe('LaunchPage', () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ missionIds: [] }))
     );
-    const launchPage = shallow(LaunchPage, props);
+    const launchPage = mountComponent(LaunchPage, props);
     await Promise.resolve();
     launchPage.update();
     expect(launchPage).toMatchSnapshot();

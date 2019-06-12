@@ -28,7 +28,7 @@ const styles = (theme: Theme) =>
       flexGrow: 1,
     },
     connector: {
-      minWidth: theme.spacing.unit * 2,
+      minWidth: theme.spacing(2),
       border: `0.5px dashed ${theme.palette.secondary.dark}`,
       marginTop: '1px',
     },
@@ -89,7 +89,6 @@ const Launch = ({ classes, launch }: LaunchProps) => {
             <LinkButton
               size="small"
               color="primary"
-              component={Link}
               to={`/launches/${launch.flightNumber}`}
             >
               explore

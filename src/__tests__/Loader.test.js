@@ -12,6 +12,6 @@ describe('Loader', () => {
   });
 
   it('renders a loader', () => {
-    expect(shallow(Loader, props)).toMatchSnapshot();
+    expect(mountComponent(Loader, props)).toMatchSnapshot();
   });
 });

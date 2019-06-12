@@ -23,7 +23,7 @@ const styles = (theme: Theme) =>
       position: 'absolute' as 'absolute',
       top: '6px',
       bottom: '6px',
-      left: `${theme.spacing.unit + 4}px`,
+      left: `${theme.spacing(1) + 4}px`,
       '&::before': {
         position: 'absolute' as 'absolute',
         content: '""',
@@ -42,7 +42,7 @@ const styles = (theme: Theme) =>
       },
     },
     launchItem: {
-      padding: `${theme.spacing.unit * 2}px 0`,
+      padding: `${theme.spacing(2)}px 0`,
     },
   });
 

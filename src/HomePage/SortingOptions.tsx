@@ -47,7 +47,7 @@ const SortingOptions = ({
   };
 
   return (
-    <Grid container spacing={8}>
+    <Grid container spacing={1}>
       <Grid item>
         <TextField
           id="sort-field"

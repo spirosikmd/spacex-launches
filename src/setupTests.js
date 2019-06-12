@@ -1,31 +1,32 @@
 import React from 'react';
-import { configure, shallow, mount } from 'enzyme';
+import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { createSerializer } from 'enzyme-to-json';
-import { unwrap } from '@material-ui/core/test-utils';
+import createMount from '@material-ui/core/test-utils/createMount';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import { createCustomMuiTheme } from './createCustomMuiTheme';
 
 configure({ adapter: new Adapter() });
 
 expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }));
 
-global.shallow = (Component, props = {}) => {
-  const ComponentWithoutStyles = unwrap(Component);
-  return shallow(<ComponentWithoutStyles {...props} />);
-};
+let mount;
 
-global.mount = (Component, props = {}) => {
-  const ComponentWithoutStyles = unwrap(Component);
-  return mount(<ComponentWithoutStyles {...props} />);
-};
-
-global.Date = jest.fn().mockImplementation(() => {
-  return {
-    toUTCString: jest.fn().mockReturnValue('Fri, 11 Jan 2019 15:31:00 GMT'),
-    getDate: jest.fn().mockReturnValue(3),
-    getMonth: jest.fn().mockReturnValue(10),
-    getFullYear: jest.fn().mockReturnValue(2019),
-  };
+beforeEach(() => {
+  mount = createMount();
 });
+
+afterEach(() => {
+  mount.cleanUp();
+});
+
+global.mountComponent = (Component, props = {}) => {
+  return mount(
+    <MuiThemeProvider theme={createCustomMuiTheme()}>
+      <Component {...props} />
+    </MuiThemeProvider>
+  );
+};
 
 // https://github.com/airbnb/enzyme/issues/1875
 jest.mock('react', () => {

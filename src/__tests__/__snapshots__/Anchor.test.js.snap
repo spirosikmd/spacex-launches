@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Anchor renders 1`] = `
-<a
-  className="anchor"
+<WithStyles(Anchor)
+  classes={
+    Object {
+      "anchor": "anchor",
+    }
+  }
   href="href"
   target="target"
 >
-  text
-</a>
+  <a
+    className="Anchor-anchor-1 anchor"
+    href="href"
+    target="target"
+  >
+    text
+  </a>
+</WithStyles(Anchor)>
 `;

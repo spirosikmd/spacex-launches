@@ -14,12 +14,7 @@ Object {
   ],
   "missionName": "Test",
   "missionPatch": "missionPatch",
-  "utcDate": Object {
-    "getDate": [MockFunction],
-    "getFullYear": [MockFunction],
-    "getMonth": [MockFunction],
-    "toUTCString": [MockFunction],
-  },
+  "utcDate": 2019-01-01T18:16:00.000Z,
 }
 `;
 
@@ -38,12 +33,7 @@ Array [
     ],
     "missionName": "Test",
     "missionPatch": "missionPatch",
-    "utcDate": Object {
-      "getDate": [MockFunction],
-      "getFullYear": [MockFunction],
-      "getMonth": [MockFunction],
-      "toUTCString": [MockFunction],
-    },
+    "utcDate": 2019-01-01T18:16:00.000Z,
   },
   Object {
     "details": "Details",
@@ -58,12 +48,7 @@ Array [
     ],
     "missionName": "Test",
     "missionPatch": "missionPatch",
-    "utcDate": Object {
-      "getDate": [MockFunction],
-      "getFullYear": [MockFunction],
-      "getMonth": [MockFunction],
-      "toUTCString": [MockFunction],
-    },
+    "utcDate": 2019-01-01T18:16:00.000Z,
   },
 ]
 `;

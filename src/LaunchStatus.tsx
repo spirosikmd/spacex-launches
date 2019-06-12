@@ -18,7 +18,7 @@ const styles = (theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: '50%',
-      padding: theme.spacing.unit / 2,
+      padding: theme.spacing(1) / 2,
       zIndex: 1,
     },
     statusIcon: {
