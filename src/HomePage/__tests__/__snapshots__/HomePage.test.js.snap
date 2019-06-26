@@ -1992,7 +1992,7 @@ exports[`HomePage renders 1`] = `
                                                         aria-disabled={false}
                                                         className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-178 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-179 Mui-checked"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -2608,7 +2608,7 @@ exports[`HomePage renders 1`] = `
                                                         aria-disabled={false}
                                                         className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-178 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-179 Mui-checked"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -3224,7 +3224,7 @@ exports[`HomePage renders 1`] = `
                                                         aria-disabled={false}
                                                         className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-178 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -4275,6 +4275,7 @@ exports[`HomePage renders 1`] = `
                                             labelWidth={0}
                                             name="sortField"
                                             onChange={[Function]}
+                                            select={true}
                                             value="utcDate"
                                           >
                                             <ForwardRef(OutlinedInput)
@@ -4290,6 +4291,7 @@ exports[`HomePage renders 1`] = `
                                                   "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                   "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                   "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                  "inputSelect": "MuiOutlinedInput-inputSelect",
                                                   "marginDense": "MuiOutlinedInput-marginDense",
                                                   "multiline": "MuiOutlinedInput-multiline",
                                                   "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -4352,6 +4354,7 @@ exports[`HomePage renders 1`] = `
                                               labelWidth={0}
                                               name="sortField"
                                               onChange={[Function]}
+                                              select={true}
                                               value="utcDate"
                                             >
                                               <WithStyles(ForwardRef(InputBase))
@@ -4367,6 +4370,7 @@ exports[`HomePage renders 1`] = `
                                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                                     "marginDense": "MuiOutlinedInput-marginDense",
                                                     "multiline": "MuiOutlinedInput-multiline",
                                                     "notchedOutline": null,
@@ -4431,6 +4435,7 @@ exports[`HomePage renders 1`] = `
                                                 name="sortField"
                                                 onChange={[Function]}
                                                 renderPrefix={[Function]}
+                                                select={true}
                                                 type="text"
                                                 value="utcDate"
                                               >
@@ -4449,6 +4454,7 @@ exports[`HomePage renders 1`] = `
                                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                                       "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                                       "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                                       "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                                       "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -4513,6 +4519,7 @@ exports[`HomePage renders 1`] = `
                                                   name="sortField"
                                                   onChange={[Function]}
                                                   renderPrefix={[Function]}
+                                                  select={true}
                                                   type="text"
                                                   value="utcDate"
                                                 >
@@ -4529,8 +4536,8 @@ exports[`HomePage renders 1`] = `
                                                         className="MuiOutlinedInput-notchedOutline"
                                                         classes={
                                                           Object {
-                                                            "legend": "PrivateNotchedOutline-legend-245",
-                                                            "root": "PrivateNotchedOutline-root-244",
+                                                            "legend": "PrivateNotchedOutline-legend-247",
+                                                            "root": "PrivateNotchedOutline-root-246",
                                                           }
                                                         }
                                                         labelWidth={0}
@@ -4810,7 +4817,7 @@ exports[`HomePage renders 1`] = `
                                                       >
                                                         <fieldset
                                                           aria-hidden={true}
-                                                          className="PrivateNotchedOutline-root-244 MuiOutlinedInput-notchedOutline"
+                                                          className="PrivateNotchedOutline-root-246 MuiOutlinedInput-notchedOutline"
                                                           style={
                                                             Object {
                                                               "paddingLeft": 8,
@@ -4818,7 +4825,7 @@ exports[`HomePage renders 1`] = `
                                                           }
                                                         >
                                                           <legend
-                                                            className="PrivateNotchedOutline-legend-245"
+                                                            className="PrivateNotchedOutline-legend-247"
                                                             style={
                                                               Object {
                                                                 "width": 0,
@@ -4846,7 +4853,7 @@ exports[`HomePage renders 1`] = `
                                                         }
                                                       }
                                                       aria-invalid={false}
-                                                      className="MuiInputBase-input MuiOutlinedInput-input"
+                                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -4870,70 +4877,66 @@ exports[`HomePage renders 1`] = `
                                                       value="utcDate"
                                                       variant="outlined"
                                                     >
-                                                      <div
-                                                        className="MuiSelect-root"
+                                                      <select
+                                                        aria-invalid={false}
+                                                        className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                                        disabled={false}
+                                                        id="sort-field"
+                                                        multiple={false}
+                                                        name="sortField"
+                                                        onBlur={[Function]}
+                                                        onChange={[Function]}
+                                                        onFocus={[Function]}
+                                                        required={false}
+                                                        value="utcDate"
                                                       >
-                                                        <select
-                                                          aria-invalid={false}
-                                                          className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                                          disabled={false}
-                                                          id="sort-field"
-                                                          multiple={false}
-                                                          name="sortField"
-                                                          onBlur={[Function]}
-                                                          onChange={[Function]}
-                                                          onFocus={[Function]}
-                                                          required={false}
+                                                        <option
+                                                          value="flightNumber"
+                                                        >
+                                                          flight number
+                                                        </option>
+                                                        <option
                                                           value="utcDate"
                                                         >
-                                                          <option
-                                                            value="flightNumber"
-                                                          >
-                                                            flight number
-                                                          </option>
-                                                          <option
-                                                            value="utcDate"
-                                                          >
-                                                            utc date
-                                                          </option>
-                                                        </select>
-                                                        <ArrowDropDownIcon
+                                                          utc date
+                                                        </option>
+                                                      </select>
+                                                      <ArrowDropDownIcon
+                                                        className="MuiSelect-icon"
+                                                      >
+                                                        <WithStyles(ForwardRef(SvgIcon))
                                                           className="MuiSelect-icon"
                                                         >
-                                                          <WithStyles(ForwardRef(SvgIcon))
+                                                          <ForwardRef(SvgIcon)
                                                             className="MuiSelect-icon"
-                                                          >
-                                                            <ForwardRef(SvgIcon)
-                                                              className="MuiSelect-icon"
-                                                              classes={
-                                                                Object {
-                                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                                  "colorError": "MuiSvgIcon-colorError",
-                                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                                  "root": "MuiSvgIcon-root",
-                                                                }
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
                                                               }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root MuiSelect-icon"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <svg
-                                                                aria-hidden="true"
-                                                                className="MuiSvgIcon-root MuiSelect-icon"
-                                                                focusable="false"
-                                                                role="presentation"
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M7 10l5 5 5-5z"
-                                                                />
-                                                              </svg>
-                                                            </ForwardRef(SvgIcon)>
-                                                          </WithStyles(ForwardRef(SvgIcon))>
-                                                        </ArrowDropDownIcon>
-                                                      </div>
+                                                              <path
+                                                                d="M7 10l5 5 5-5z"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </ArrowDropDownIcon>
                                                     </ForwardRef(NativeSelectInput)>
                                                   </div>
                                                 </ForwardRef(InputBase)>
@@ -5391,6 +5394,7 @@ exports[`HomePage renders 1`] = `
                                             labelWidth={0}
                                             name="sortOrder"
                                             onChange={[Function]}
+                                            select={true}
                                             value="desc"
                                           >
                                             <ForwardRef(OutlinedInput)
@@ -5406,6 +5410,7 @@ exports[`HomePage renders 1`] = `
                                                   "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                   "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                   "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                  "inputSelect": "MuiOutlinedInput-inputSelect",
                                                   "marginDense": "MuiOutlinedInput-marginDense",
                                                   "multiline": "MuiOutlinedInput-multiline",
                                                   "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -5468,6 +5473,7 @@ exports[`HomePage renders 1`] = `
                                               labelWidth={0}
                                               name="sortOrder"
                                               onChange={[Function]}
+                                              select={true}
                                               value="desc"
                                             >
                                               <WithStyles(ForwardRef(InputBase))
@@ -5483,6 +5489,7 @@ exports[`HomePage renders 1`] = `
                                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                                     "marginDense": "MuiOutlinedInput-marginDense",
                                                     "multiline": "MuiOutlinedInput-multiline",
                                                     "notchedOutline": null,
@@ -5547,6 +5554,7 @@ exports[`HomePage renders 1`] = `
                                                 name="sortOrder"
                                                 onChange={[Function]}
                                                 renderPrefix={[Function]}
+                                                select={true}
                                                 type="text"
                                                 value="desc"
                                               >
@@ -5565,6 +5573,7 @@ exports[`HomePage renders 1`] = `
                                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                                       "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                                       "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                                       "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                                       "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -5629,6 +5638,7 @@ exports[`HomePage renders 1`] = `
                                                   name="sortOrder"
                                                   onChange={[Function]}
                                                   renderPrefix={[Function]}
+                                                  select={true}
                                                   type="text"
                                                   value="desc"
                                                 >
@@ -5645,8 +5655,8 @@ exports[`HomePage renders 1`] = `
                                                         className="MuiOutlinedInput-notchedOutline"
                                                         classes={
                                                           Object {
-                                                            "legend": "PrivateNotchedOutline-legend-245",
-                                                            "root": "PrivateNotchedOutline-root-244",
+                                                            "legend": "PrivateNotchedOutline-legend-247",
+                                                            "root": "PrivateNotchedOutline-root-246",
                                                           }
                                                         }
                                                         labelWidth={0}
@@ -5926,7 +5936,7 @@ exports[`HomePage renders 1`] = `
                                                       >
                                                         <fieldset
                                                           aria-hidden={true}
-                                                          className="PrivateNotchedOutline-root-244 MuiOutlinedInput-notchedOutline"
+                                                          className="PrivateNotchedOutline-root-246 MuiOutlinedInput-notchedOutline"
                                                           style={
                                                             Object {
                                                               "paddingLeft": 8,
@@ -5934,7 +5944,7 @@ exports[`HomePage renders 1`] = `
                                                           }
                                                         >
                                                           <legend
-                                                            className="PrivateNotchedOutline-legend-245"
+                                                            className="PrivateNotchedOutline-legend-247"
                                                             style={
                                                               Object {
                                                                 "width": 0,
@@ -5962,7 +5972,7 @@ exports[`HomePage renders 1`] = `
                                                         }
                                                       }
                                                       aria-invalid={false}
-                                                      className="MuiInputBase-input MuiOutlinedInput-input"
+                                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -5986,70 +5996,66 @@ exports[`HomePage renders 1`] = `
                                                       value="desc"
                                                       variant="outlined"
                                                     >
-                                                      <div
-                                                        className="MuiSelect-root"
+                                                      <select
+                                                        aria-invalid={false}
+                                                        className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                                        disabled={false}
+                                                        id="sort-order"
+                                                        multiple={false}
+                                                        name="sortOrder"
+                                                        onBlur={[Function]}
+                                                        onChange={[Function]}
+                                                        onFocus={[Function]}
+                                                        required={false}
+                                                        value="desc"
                                                       >
-                                                        <select
-                                                          aria-invalid={false}
-                                                          className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                                          disabled={false}
-                                                          id="sort-order"
-                                                          multiple={false}
-                                                          name="sortOrder"
-                                                          onBlur={[Function]}
-                                                          onChange={[Function]}
-                                                          onFocus={[Function]}
-                                                          required={false}
+                                                        <option
+                                                          value="asc"
+                                                        >
+                                                          old to new
+                                                        </option>
+                                                        <option
                                                           value="desc"
                                                         >
-                                                          <option
-                                                            value="asc"
-                                                          >
-                                                            old to new
-                                                          </option>
-                                                          <option
-                                                            value="desc"
-                                                          >
-                                                            new to old
-                                                          </option>
-                                                        </select>
-                                                        <ArrowDropDownIcon
+                                                          new to old
+                                                        </option>
+                                                      </select>
+                                                      <ArrowDropDownIcon
+                                                        className="MuiSelect-icon"
+                                                      >
+                                                        <WithStyles(ForwardRef(SvgIcon))
                                                           className="MuiSelect-icon"
                                                         >
-                                                          <WithStyles(ForwardRef(SvgIcon))
+                                                          <ForwardRef(SvgIcon)
                                                             className="MuiSelect-icon"
-                                                          >
-                                                            <ForwardRef(SvgIcon)
-                                                              className="MuiSelect-icon"
-                                                              classes={
-                                                                Object {
-                                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                                  "colorError": "MuiSvgIcon-colorError",
-                                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                                  "root": "MuiSvgIcon-root",
-                                                                }
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
                                                               }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root MuiSelect-icon"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <svg
-                                                                aria-hidden="true"
-                                                                className="MuiSvgIcon-root MuiSelect-icon"
-                                                                focusable="false"
-                                                                role="presentation"
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M7 10l5 5 5-5z"
-                                                                />
-                                                              </svg>
-                                                            </ForwardRef(SvgIcon)>
-                                                          </WithStyles(ForwardRef(SvgIcon))>
-                                                        </ArrowDropDownIcon>
-                                                      </div>
+                                                              <path
+                                                                d="M7 10l5 5 5-5z"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </ArrowDropDownIcon>
                                                     </ForwardRef(NativeSelectInput)>
                                                   </div>
                                                 </ForwardRef(InputBase)>
@@ -6228,13 +6234,13 @@ exports[`HomePage renders 1`] = `
                 }
               >
                 <div
-                  className="LaunchList-launchList-255"
+                  className="LaunchList-launchList-257"
                 >
                   <div
-                    className="LaunchList-timeline-256"
+                    className="LaunchList-timeline-258"
                   />
                   <div
-                    className="LaunchList-launchItem-257"
+                    className="LaunchList-launchItem-259"
                     key="1"
                   >
                     <WithStyles(Launch)
@@ -6257,7 +6263,7 @@ exports[`HomePage renders 1`] = `
                       }
                     >
                       <div
-                        className="Launch-launch-258"
+                        className="Launch-launch-260"
                       >
                         <WithStyles(LaunchStatus)
                           isFailed={false}
@@ -6266,11 +6272,11 @@ exports[`HomePage renders 1`] = `
                           isUpcoming={false}
                         >
                           <WithStyles(ForwardRef(Paper))
-                            className="LaunchStatus-status-261 LaunchStatus-success-264"
+                            className="LaunchStatus-status-263 LaunchStatus-success-266"
                             elevation={1}
                           >
                             <ForwardRef(Paper)
-                              className="LaunchStatus-status-261 LaunchStatus-success-264"
+                              className="LaunchStatus-status-263 LaunchStatus-success-266"
                               classes={
                                 Object {
                                   "elevation0": "MuiPaper-elevation0",
@@ -6305,16 +6311,16 @@ exports[`HomePage renders 1`] = `
                               elevation={1}
                             >
                               <div
-                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-261 LaunchStatus-success-264 MuiPaper-rounded"
+                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-263 LaunchStatus-success-266 MuiPaper-rounded"
                               >
                                 <GroupWorkRoundedIcon
-                                  className="LaunchStatus-statusIcon-262"
+                                  className="LaunchStatus-statusIcon-264"
                                 >
                                   <WithStyles(ForwardRef(SvgIcon))
-                                    className="LaunchStatus-statusIcon-262"
+                                    className="LaunchStatus-statusIcon-264"
                                   >
                                     <ForwardRef(SvgIcon)
-                                      className="LaunchStatus-statusIcon-262"
+                                      className="LaunchStatus-statusIcon-264"
                                       classes={
                                         Object {
                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -6331,7 +6337,7 @@ exports[`HomePage renders 1`] = `
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-262"
+                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-264"
                                         focusable="false"
                                         role="presentation"
                                         viewBox="0 0 24 24"
@@ -6352,13 +6358,13 @@ exports[`HomePage renders 1`] = `
                           </WithStyles(ForwardRef(Paper))>
                         </WithStyles(LaunchStatus)>
                         <div
-                          className="Launch-connector-260"
+                          className="Launch-connector-262"
                         />
                         <WithStyles(ForwardRef(Card))
-                          className="Launch-launchInfo-259"
+                          className="Launch-launchInfo-261"
                         >
                           <ForwardRef(Card)
-                            className="Launch-launchInfo-259"
+                            className="Launch-launchInfo-261"
                             classes={
                               Object {
                                 "root": "MuiCard-root",
@@ -6366,11 +6372,11 @@ exports[`HomePage renders 1`] = `
                             }
                           >
                             <WithStyles(ForwardRef(Paper))
-                              className="MuiCard-root Launch-launchInfo-259"
+                              className="MuiCard-root Launch-launchInfo-261"
                               elevation={1}
                             >
                               <ForwardRef(Paper)
-                                className="MuiCard-root Launch-launchInfo-259"
+                                className="MuiCard-root Launch-launchInfo-261"
                                 classes={
                                   Object {
                                     "elevation0": "MuiPaper-elevation0",
@@ -6405,7 +6411,7 @@ exports[`HomePage renders 1`] = `
                                 elevation={1}
                               >
                                 <div
-                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-259 MuiPaper-rounded"
+                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-261 MuiPaper-rounded"
                                 >
                                   <WithStyles(ForwardRef(CardHeader))
                                     subheader={
@@ -7851,7 +7857,7 @@ exports[`HomePage renders 1`] = `
                                                   aria-disabled={false}
                                                   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
                                                   onBlur={[Function]}
-                                                  onDragEnd={[Function]}
+                                                  onDragLeave={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
                                                   onKeyUp={[Function]}
@@ -7871,7 +7877,7 @@ exports[`HomePage renders 1`] = `
                                                     href="/launches/1"
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
-                                                    onDragEnd={[Function]}
+                                                    onDragLeave={[Function]}
                                                     onFocus={[Function]}
                                                     onKeyDown={[Function]}
                                                     onKeyUp={[Function]}
@@ -7907,7 +7913,7 @@ exports[`HomePage renders 1`] = `
                     </WithStyles(Launch)>
                   </div>
                   <div
-                    className="LaunchList-launchItem-257"
+                    className="LaunchList-launchItem-259"
                     key="2"
                   >
                     <WithStyles(Launch)
@@ -7930,7 +7936,7 @@ exports[`HomePage renders 1`] = `
                       }
                     >
                       <div
-                        className="Launch-launch-258"
+                        className="Launch-launch-260"
                       >
                         <WithStyles(LaunchStatus)
                           isFailed={true}
@@ -7939,11 +7945,11 @@ exports[`HomePage renders 1`] = `
                           isUpcoming={false}
                         >
                           <WithStyles(ForwardRef(Paper))
-                            className="LaunchStatus-status-261 LaunchStatus-fail-265"
+                            className="LaunchStatus-status-263 LaunchStatus-fail-267"
                             elevation={1}
                           >
                             <ForwardRef(Paper)
-                              className="LaunchStatus-status-261 LaunchStatus-fail-265"
+                              className="LaunchStatus-status-263 LaunchStatus-fail-267"
                               classes={
                                 Object {
                                   "elevation0": "MuiPaper-elevation0",
@@ -7978,16 +7984,16 @@ exports[`HomePage renders 1`] = `
                               elevation={1}
                             >
                               <div
-                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-261 LaunchStatus-fail-265 MuiPaper-rounded"
+                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-263 LaunchStatus-fail-267 MuiPaper-rounded"
                               >
                                 <GroupWorkRoundedIcon
-                                  className="LaunchStatus-statusIcon-262"
+                                  className="LaunchStatus-statusIcon-264"
                                 >
                                   <WithStyles(ForwardRef(SvgIcon))
-                                    className="LaunchStatus-statusIcon-262"
+                                    className="LaunchStatus-statusIcon-264"
                                   >
                                     <ForwardRef(SvgIcon)
-                                      className="LaunchStatus-statusIcon-262"
+                                      className="LaunchStatus-statusIcon-264"
                                       classes={
                                         Object {
                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -8004,7 +8010,7 @@ exports[`HomePage renders 1`] = `
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-262"
+                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-264"
                                         focusable="false"
                                         role="presentation"
                                         viewBox="0 0 24 24"
@@ -8025,13 +8031,13 @@ exports[`HomePage renders 1`] = `
                           </WithStyles(ForwardRef(Paper))>
                         </WithStyles(LaunchStatus)>
                         <div
-                          className="Launch-connector-260"
+                          className="Launch-connector-262"
                         />
                         <WithStyles(ForwardRef(Card))
-                          className="Launch-launchInfo-259"
+                          className="Launch-launchInfo-261"
                         >
                           <ForwardRef(Card)
-                            className="Launch-launchInfo-259"
+                            className="Launch-launchInfo-261"
                             classes={
                               Object {
                                 "root": "MuiCard-root",
@@ -8039,11 +8045,11 @@ exports[`HomePage renders 1`] = `
                             }
                           >
                             <WithStyles(ForwardRef(Paper))
-                              className="MuiCard-root Launch-launchInfo-259"
+                              className="MuiCard-root Launch-launchInfo-261"
                               elevation={1}
                             >
                               <ForwardRef(Paper)
-                                className="MuiCard-root Launch-launchInfo-259"
+                                className="MuiCard-root Launch-launchInfo-261"
                                 classes={
                                   Object {
                                     "elevation0": "MuiPaper-elevation0",
@@ -8078,7 +8084,7 @@ exports[`HomePage renders 1`] = `
                                 elevation={1}
                               >
                                 <div
-                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-259 MuiPaper-rounded"
+                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-261 MuiPaper-rounded"
                                 >
                                   <WithStyles(ForwardRef(CardHeader))
                                     subheader={
@@ -9524,7 +9530,7 @@ exports[`HomePage renders 1`] = `
                                                   aria-disabled={false}
                                                   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
                                                   onBlur={[Function]}
-                                                  onDragEnd={[Function]}
+                                                  onDragLeave={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
                                                   onKeyUp={[Function]}
@@ -9544,7 +9550,7 @@ exports[`HomePage renders 1`] = `
                                                     href="/launches/2"
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
-                                                    onDragEnd={[Function]}
+                                                    onDragLeave={[Function]}
                                                     onFocus={[Function]}
                                                     onKeyDown={[Function]}
                                                     onKeyUp={[Function]}
@@ -9952,11 +9958,11 @@ exports[`HomePage when is loading launches renders a loader 1`] = `
   navigate={[MockFunction]}
 >
   <div
-    className="HomePage-loader-375 loader"
+    className="HomePage-loader-377 loader"
   >
     <WithStyles(Loader)>
       <div
-        className="Loader-root-376"
+        className="Loader-root-378"
       >
         <WithStyles(ForwardRef(CircularProgress))>
           <ForwardRef(CircularProgress)
@@ -11890,10 +11896,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -11915,10 +11921,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -11948,7 +11954,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               value="showFailed"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -11956,7 +11962,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                  className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -11978,7 +11984,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -11988,7 +11994,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -12005,9 +12011,9 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -12027,7 +12033,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                           />
                                                           <input
                                                             checked={true}
-                                                            className="PrivateSwitchBase-input-885 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-889 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -12506,10 +12512,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -12531,10 +12537,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -12564,7 +12570,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               value="showSuccessful"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -12572,7 +12578,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                  className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -12594,7 +12600,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -12604,7 +12610,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -12621,9 +12627,9 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-883 Mui-checked"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-887 Mui-checked"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -12643,7 +12649,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                           />
                                                           <input
                                                             checked={true}
-                                                            className="PrivateSwitchBase-input-885 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-889 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -13122,10 +13128,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -13147,10 +13153,10 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-883 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-884 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-885 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-887 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-888 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-889 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -13180,7 +13186,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               value="showUpcoming"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -13188,7 +13194,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                  className="PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -13210,7 +13216,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -13220,7 +13226,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -13237,9 +13243,9 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-882 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-886 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -13259,7 +13265,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                           />
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-885 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-889 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -14290,6 +14296,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                             labelWidth={0}
                                             name="sortField"
                                             onChange={[Function]}
+                                            select={true}
                                             value="utcDate"
                                           >
                                             <ForwardRef(OutlinedInput)
@@ -14305,6 +14312,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                   "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                   "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                  "inputSelect": "MuiOutlinedInput-inputSelect",
                                                   "marginDense": "MuiOutlinedInput-marginDense",
                                                   "multiline": "MuiOutlinedInput-multiline",
                                                   "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -14367,6 +14375,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               labelWidth={0}
                                               name="sortField"
                                               onChange={[Function]}
+                                              select={true}
                                               value="utcDate"
                                             >
                                               <WithStyles(ForwardRef(InputBase))
@@ -14382,6 +14391,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                                     "marginDense": "MuiOutlinedInput-marginDense",
                                                     "multiline": "MuiOutlinedInput-multiline",
                                                     "notchedOutline": null,
@@ -14446,6 +14456,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 name="sortField"
                                                 onChange={[Function]}
                                                 renderPrefix={[Function]}
+                                                select={true}
                                                 type="text"
                                                 value="utcDate"
                                               >
@@ -14464,6 +14475,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                                       "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                                       "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                                       "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                                       "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -14528,6 +14540,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   name="sortField"
                                                   onChange={[Function]}
                                                   renderPrefix={[Function]}
+                                                  select={true}
                                                   type="text"
                                                   value="utcDate"
                                                 >
@@ -14544,8 +14557,8 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                         className="MuiOutlinedInput-notchedOutline"
                                                         classes={
                                                           Object {
-                                                            "legend": "PrivateNotchedOutline-legend-949",
-                                                            "root": "PrivateNotchedOutline-root-948",
+                                                            "legend": "PrivateNotchedOutline-legend-955",
+                                                            "root": "PrivateNotchedOutline-root-954",
                                                           }
                                                         }
                                                         labelWidth={0}
@@ -14825,7 +14838,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       >
                                                         <fieldset
                                                           aria-hidden={true}
-                                                          className="PrivateNotchedOutline-root-948 MuiOutlinedInput-notchedOutline"
+                                                          className="PrivateNotchedOutline-root-954 MuiOutlinedInput-notchedOutline"
                                                           style={
                                                             Object {
                                                               "paddingLeft": 8,
@@ -14833,7 +14846,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                           }
                                                         >
                                                           <legend
-                                                            className="PrivateNotchedOutline-legend-949"
+                                                            className="PrivateNotchedOutline-legend-955"
                                                             style={
                                                               Object {
                                                                 "width": 0,
@@ -14861,7 +14874,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                         }
                                                       }
                                                       aria-invalid={false}
-                                                      className="MuiInputBase-input MuiOutlinedInput-input"
+                                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -14885,70 +14898,66 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       value="utcDate"
                                                       variant="outlined"
                                                     >
-                                                      <div
-                                                        className="MuiSelect-root"
+                                                      <select
+                                                        aria-invalid={false}
+                                                        className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                                        disabled={false}
+                                                        id="sort-field"
+                                                        multiple={false}
+                                                        name="sortField"
+                                                        onBlur={[Function]}
+                                                        onChange={[Function]}
+                                                        onFocus={[Function]}
+                                                        required={false}
+                                                        value="utcDate"
                                                       >
-                                                        <select
-                                                          aria-invalid={false}
-                                                          className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                                          disabled={false}
-                                                          id="sort-field"
-                                                          multiple={false}
-                                                          name="sortField"
-                                                          onBlur={[Function]}
-                                                          onChange={[Function]}
-                                                          onFocus={[Function]}
-                                                          required={false}
+                                                        <option
+                                                          value="flightNumber"
+                                                        >
+                                                          flight number
+                                                        </option>
+                                                        <option
                                                           value="utcDate"
                                                         >
-                                                          <option
-                                                            value="flightNumber"
-                                                          >
-                                                            flight number
-                                                          </option>
-                                                          <option
-                                                            value="utcDate"
-                                                          >
-                                                            utc date
-                                                          </option>
-                                                        </select>
-                                                        <ArrowDropDownIcon
+                                                          utc date
+                                                        </option>
+                                                      </select>
+                                                      <ArrowDropDownIcon
+                                                        className="MuiSelect-icon"
+                                                      >
+                                                        <WithStyles(ForwardRef(SvgIcon))
                                                           className="MuiSelect-icon"
                                                         >
-                                                          <WithStyles(ForwardRef(SvgIcon))
+                                                          <ForwardRef(SvgIcon)
                                                             className="MuiSelect-icon"
-                                                          >
-                                                            <ForwardRef(SvgIcon)
-                                                              className="MuiSelect-icon"
-                                                              classes={
-                                                                Object {
-                                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                                  "colorError": "MuiSvgIcon-colorError",
-                                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                                  "root": "MuiSvgIcon-root",
-                                                                }
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
                                                               }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root MuiSelect-icon"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <svg
-                                                                aria-hidden="true"
-                                                                className="MuiSvgIcon-root MuiSelect-icon"
-                                                                focusable="false"
-                                                                role="presentation"
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M7 10l5 5 5-5z"
-                                                                />
-                                                              </svg>
-                                                            </ForwardRef(SvgIcon)>
-                                                          </WithStyles(ForwardRef(SvgIcon))>
-                                                        </ArrowDropDownIcon>
-                                                      </div>
+                                                              <path
+                                                                d="M7 10l5 5 5-5z"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </ArrowDropDownIcon>
                                                     </ForwardRef(NativeSelectInput)>
                                                   </div>
                                                 </ForwardRef(InputBase)>
@@ -15406,6 +15415,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                             labelWidth={0}
                                             name="sortOrder"
                                             onChange={[Function]}
+                                            select={true}
                                             value="desc"
                                           >
                                             <ForwardRef(OutlinedInput)
@@ -15421,6 +15431,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                   "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                   "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                  "inputSelect": "MuiOutlinedInput-inputSelect",
                                                   "marginDense": "MuiOutlinedInput-marginDense",
                                                   "multiline": "MuiOutlinedInput-multiline",
                                                   "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -15483,6 +15494,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                               labelWidth={0}
                                               name="sortOrder"
                                               onChange={[Function]}
+                                              select={true}
                                               value="desc"
                                             >
                                               <WithStyles(ForwardRef(InputBase))
@@ -15498,6 +15510,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                                     "marginDense": "MuiOutlinedInput-marginDense",
                                                     "multiline": "MuiOutlinedInput-multiline",
                                                     "notchedOutline": null,
@@ -15562,6 +15575,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                 name="sortOrder"
                                                 onChange={[Function]}
                                                 renderPrefix={[Function]}
+                                                select={true}
                                                 type="text"
                                                 value="desc"
                                               >
@@ -15580,6 +15594,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                                       "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                                       "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                                       "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                                       "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -15644,6 +15659,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   name="sortOrder"
                                                   onChange={[Function]}
                                                   renderPrefix={[Function]}
+                                                  select={true}
                                                   type="text"
                                                   value="desc"
                                                 >
@@ -15660,8 +15676,8 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                         className="MuiOutlinedInput-notchedOutline"
                                                         classes={
                                                           Object {
-                                                            "legend": "PrivateNotchedOutline-legend-949",
-                                                            "root": "PrivateNotchedOutline-root-948",
+                                                            "legend": "PrivateNotchedOutline-legend-955",
+                                                            "root": "PrivateNotchedOutline-root-954",
                                                           }
                                                         }
                                                         labelWidth={0}
@@ -15941,7 +15957,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       >
                                                         <fieldset
                                                           aria-hidden={true}
-                                                          className="PrivateNotchedOutline-root-948 MuiOutlinedInput-notchedOutline"
+                                                          className="PrivateNotchedOutline-root-954 MuiOutlinedInput-notchedOutline"
                                                           style={
                                                             Object {
                                                               "paddingLeft": 8,
@@ -15949,7 +15965,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                           }
                                                         >
                                                           <legend
-                                                            className="PrivateNotchedOutline-legend-949"
+                                                            className="PrivateNotchedOutline-legend-955"
                                                             style={
                                                               Object {
                                                                 "width": 0,
@@ -15977,7 +15993,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                         }
                                                       }
                                                       aria-invalid={false}
-                                                      className="MuiInputBase-input MuiOutlinedInput-input"
+                                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -16001,70 +16017,66 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                       value="desc"
                                                       variant="outlined"
                                                     >
-                                                      <div
-                                                        className="MuiSelect-root"
+                                                      <select
+                                                        aria-invalid={false}
+                                                        className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                                        disabled={false}
+                                                        id="sort-order"
+                                                        multiple={false}
+                                                        name="sortOrder"
+                                                        onBlur={[Function]}
+                                                        onChange={[Function]}
+                                                        onFocus={[Function]}
+                                                        required={false}
+                                                        value="desc"
                                                       >
-                                                        <select
-                                                          aria-invalid={false}
-                                                          className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                                          disabled={false}
-                                                          id="sort-order"
-                                                          multiple={false}
-                                                          name="sortOrder"
-                                                          onBlur={[Function]}
-                                                          onChange={[Function]}
-                                                          onFocus={[Function]}
-                                                          required={false}
+                                                        <option
+                                                          value="asc"
+                                                        >
+                                                          old to new
+                                                        </option>
+                                                        <option
                                                           value="desc"
                                                         >
-                                                          <option
-                                                            value="asc"
-                                                          >
-                                                            old to new
-                                                          </option>
-                                                          <option
-                                                            value="desc"
-                                                          >
-                                                            new to old
-                                                          </option>
-                                                        </select>
-                                                        <ArrowDropDownIcon
+                                                          new to old
+                                                        </option>
+                                                      </select>
+                                                      <ArrowDropDownIcon
+                                                        className="MuiSelect-icon"
+                                                      >
+                                                        <WithStyles(ForwardRef(SvgIcon))
                                                           className="MuiSelect-icon"
                                                         >
-                                                          <WithStyles(ForwardRef(SvgIcon))
+                                                          <ForwardRef(SvgIcon)
                                                             className="MuiSelect-icon"
-                                                          >
-                                                            <ForwardRef(SvgIcon)
-                                                              className="MuiSelect-icon"
-                                                              classes={
-                                                                Object {
-                                                                  "colorAction": "MuiSvgIcon-colorAction",
-                                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                                  "colorError": "MuiSvgIcon-colorError",
-                                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                                  "root": "MuiSvgIcon-root",
-                                                                }
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
                                                               }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root MuiSelect-icon"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <svg
-                                                                aria-hidden="true"
-                                                                className="MuiSvgIcon-root MuiSelect-icon"
-                                                                focusable="false"
-                                                                role="presentation"
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M7 10l5 5 5-5z"
-                                                                />
-                                                              </svg>
-                                                            </ForwardRef(SvgIcon)>
-                                                          </WithStyles(ForwardRef(SvgIcon))>
-                                                        </ArrowDropDownIcon>
-                                                      </div>
+                                                              <path
+                                                                d="M7 10l5 5 5-5z"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </ArrowDropDownIcon>
                                                     </ForwardRef(NativeSelectInput)>
                                                   </div>
                                                 </ForwardRef(InputBase)>
@@ -16243,13 +16255,13 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                 }
               >
                 <div
-                  className="LaunchList-launchList-959"
+                  className="LaunchList-launchList-965"
                 >
                   <div
-                    className="LaunchList-timeline-960"
+                    className="LaunchList-timeline-966"
                   />
                   <div
-                    className="LaunchList-launchItem-961"
+                    className="LaunchList-launchItem-967"
                     key="1"
                   >
                     <WithStyles(Launch)
@@ -16272,7 +16284,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                       }
                     >
                       <div
-                        className="Launch-launch-962"
+                        className="Launch-launch-968"
                       >
                         <WithStyles(LaunchStatus)
                           isFailed={false}
@@ -16281,11 +16293,11 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                           isUpcoming={false}
                         >
                           <WithStyles(ForwardRef(Paper))
-                            className="LaunchStatus-status-965 LaunchStatus-success-968"
+                            className="LaunchStatus-status-971 LaunchStatus-success-974"
                             elevation={1}
                           >
                             <ForwardRef(Paper)
-                              className="LaunchStatus-status-965 LaunchStatus-success-968"
+                              className="LaunchStatus-status-971 LaunchStatus-success-974"
                               classes={
                                 Object {
                                   "elevation0": "MuiPaper-elevation0",
@@ -16320,16 +16332,16 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                               elevation={1}
                             >
                               <div
-                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-965 LaunchStatus-success-968 MuiPaper-rounded"
+                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-971 LaunchStatus-success-974 MuiPaper-rounded"
                               >
                                 <GroupWorkRoundedIcon
-                                  className="LaunchStatus-statusIcon-966"
+                                  className="LaunchStatus-statusIcon-972"
                                 >
                                   <WithStyles(ForwardRef(SvgIcon))
-                                    className="LaunchStatus-statusIcon-966"
+                                    className="LaunchStatus-statusIcon-972"
                                   >
                                     <ForwardRef(SvgIcon)
-                                      className="LaunchStatus-statusIcon-966"
+                                      className="LaunchStatus-statusIcon-972"
                                       classes={
                                         Object {
                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -16346,7 +16358,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-966"
+                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-972"
                                         focusable="false"
                                         role="presentation"
                                         viewBox="0 0 24 24"
@@ -16367,13 +16379,13 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                           </WithStyles(ForwardRef(Paper))>
                         </WithStyles(LaunchStatus)>
                         <div
-                          className="Launch-connector-964"
+                          className="Launch-connector-970"
                         />
                         <WithStyles(ForwardRef(Card))
-                          className="Launch-launchInfo-963"
+                          className="Launch-launchInfo-969"
                         >
                           <ForwardRef(Card)
-                            className="Launch-launchInfo-963"
+                            className="Launch-launchInfo-969"
                             classes={
                               Object {
                                 "root": "MuiCard-root",
@@ -16381,11 +16393,11 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                             }
                           >
                             <WithStyles(ForwardRef(Paper))
-                              className="MuiCard-root Launch-launchInfo-963"
+                              className="MuiCard-root Launch-launchInfo-969"
                               elevation={1}
                             >
                               <ForwardRef(Paper)
-                                className="MuiCard-root Launch-launchInfo-963"
+                                className="MuiCard-root Launch-launchInfo-969"
                                 classes={
                                   Object {
                                     "elevation0": "MuiPaper-elevation0",
@@ -16420,7 +16432,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                 elevation={1}
                               >
                                 <div
-                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-963 MuiPaper-rounded"
+                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-969 MuiPaper-rounded"
                                 >
                                   <WithStyles(ForwardRef(CardHeader))
                                     subheader={
@@ -17866,7 +17878,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   aria-disabled={false}
                                                   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
                                                   onBlur={[Function]}
-                                                  onDragEnd={[Function]}
+                                                  onDragLeave={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
                                                   onKeyUp={[Function]}
@@ -17886,7 +17898,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     href="/launches/1"
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
-                                                    onDragEnd={[Function]}
+                                                    onDragLeave={[Function]}
                                                     onFocus={[Function]}
                                                     onKeyDown={[Function]}
                                                     onKeyUp={[Function]}
@@ -17922,7 +17934,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                     </WithStyles(Launch)>
                   </div>
                   <div
-                    className="LaunchList-launchItem-961"
+                    className="LaunchList-launchItem-967"
                     key="2"
                   >
                     <WithStyles(Launch)
@@ -17945,7 +17957,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                       }
                     >
                       <div
-                        className="Launch-launch-962"
+                        className="Launch-launch-968"
                       >
                         <WithStyles(LaunchStatus)
                           isFailed={true}
@@ -17954,11 +17966,11 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                           isUpcoming={false}
                         >
                           <WithStyles(ForwardRef(Paper))
-                            className="LaunchStatus-status-965 LaunchStatus-fail-969"
+                            className="LaunchStatus-status-971 LaunchStatus-fail-975"
                             elevation={1}
                           >
                             <ForwardRef(Paper)
-                              className="LaunchStatus-status-965 LaunchStatus-fail-969"
+                              className="LaunchStatus-status-971 LaunchStatus-fail-975"
                               classes={
                                 Object {
                                   "elevation0": "MuiPaper-elevation0",
@@ -17993,16 +18005,16 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                               elevation={1}
                             >
                               <div
-                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-965 LaunchStatus-fail-969 MuiPaper-rounded"
+                                className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-971 LaunchStatus-fail-975 MuiPaper-rounded"
                               >
                                 <GroupWorkRoundedIcon
-                                  className="LaunchStatus-statusIcon-966"
+                                  className="LaunchStatus-statusIcon-972"
                                 >
                                   <WithStyles(ForwardRef(SvgIcon))
-                                    className="LaunchStatus-statusIcon-966"
+                                    className="LaunchStatus-statusIcon-972"
                                   >
                                     <ForwardRef(SvgIcon)
-                                      className="LaunchStatus-statusIcon-966"
+                                      className="LaunchStatus-statusIcon-972"
                                       classes={
                                         Object {
                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -18019,7 +18031,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-966"
+                                        className="MuiSvgIcon-root LaunchStatus-statusIcon-972"
                                         focusable="false"
                                         role="presentation"
                                         viewBox="0 0 24 24"
@@ -18040,13 +18052,13 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                           </WithStyles(ForwardRef(Paper))>
                         </WithStyles(LaunchStatus)>
                         <div
-                          className="Launch-connector-964"
+                          className="Launch-connector-970"
                         />
                         <WithStyles(ForwardRef(Card))
-                          className="Launch-launchInfo-963"
+                          className="Launch-launchInfo-969"
                         >
                           <ForwardRef(Card)
-                            className="Launch-launchInfo-963"
+                            className="Launch-launchInfo-969"
                             classes={
                               Object {
                                 "root": "MuiCard-root",
@@ -18054,11 +18066,11 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                             }
                           >
                             <WithStyles(ForwardRef(Paper))
-                              className="MuiCard-root Launch-launchInfo-963"
+                              className="MuiCard-root Launch-launchInfo-969"
                               elevation={1}
                             >
                               <ForwardRef(Paper)
-                                className="MuiCard-root Launch-launchInfo-963"
+                                className="MuiCard-root Launch-launchInfo-969"
                                 classes={
                                   Object {
                                     "elevation0": "MuiPaper-elevation0",
@@ -18093,7 +18105,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                 elevation={1}
                               >
                                 <div
-                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-963 MuiPaper-rounded"
+                                  className="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-969 MuiPaper-rounded"
                                 >
                                   <WithStyles(ForwardRef(CardHeader))
                                     subheader={
@@ -19539,7 +19551,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                   aria-disabled={false}
                                                   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
                                                   onBlur={[Function]}
-                                                  onDragEnd={[Function]}
+                                                  onDragLeave={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
                                                   onKeyUp={[Function]}
@@ -19559,7 +19571,7 @@ exports[`HomePage when is updating launches renders info, filters, sorting optio
                                                     href="/launches/2"
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
-                                                    onDragEnd={[Function]}
+                                                    onDragLeave={[Function]}
                                                     onFocus={[Function]}
                                                     onKeyDown={[Function]}
                                                     onKeyUp={[Function]}
@@ -21480,10 +21492,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -21505,10 +21517,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -21538,7 +21550,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               value="showFailed"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -21546,7 +21558,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                  className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -21568,7 +21580,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -21578,7 +21590,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -21595,9 +21607,9 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -21617,7 +21629,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                           />
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-1294 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-1300 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -22096,10 +22108,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -22121,10 +22133,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -22154,7 +22166,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               value="showSuccessful"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -22162,7 +22174,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                  className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -22184,7 +22196,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -22194,7 +22206,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -22211,9 +22223,9 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -22233,7 +22245,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                           />
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-1294 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-1300 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -22712,10 +22724,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                             }
                                             classes={
                                               Object {
-                                                "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                               }
                                             }
                                             disabled={false}
@@ -22737,10 +22749,10 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-1292 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-1293 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-1294 MuiSwitch-input",
-                                                  "root": "PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-1298 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-1299 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-1300 MuiSwitch-input",
+                                                  "root": "PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary",
                                                 }
                                               }
                                               disabled={false}
@@ -22770,7 +22782,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                               value="showUpcoming"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                 component="span"
                                                 disabled={false}
                                                 onBlur={[Function]}
@@ -22778,7 +22790,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                  className="PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -22800,7 +22812,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -22810,7 +22822,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -22827,9 +22839,9 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1291 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1297 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                                                         onBlur={[Function]}
-                                                        onDragEnd={[Function]}
+                                                        onDragLeave={[Function]}
                                                         onFocus={[Function]}
                                                         onKeyDown={[Function]}
                                                         onKeyUp={[Function]}
@@ -22849,7 +22861,7 @@ exports[`HomePage when there are no processed launches does not render the sorti
                                                           />
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-1294 MuiSwitch-input"
+                                                            className="PrivateSwitchBase-input-1300 MuiSwitch-input"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -23330,11 +23342,11 @@ exports[`HomePage when there are no processed launches does not render the sorti
                   src="emptyList.png"
                 >
                   <div
-                    className="Image-imageWrapper-1310"
+                    className="Image-imageWrapper-1316"
                   >
                     <img
                       alt="No launches..."
-                      className="Image-image-1311"
+                      className="Image-image-1317"
                       src="emptyList.png"
                     />
                   </div>
