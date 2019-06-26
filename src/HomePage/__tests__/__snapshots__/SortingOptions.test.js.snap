@@ -559,6 +559,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                               labelWidth={0}
                               name="sortField"
                               onChange={[Function]}
+                              select={true}
                               value="flightNumber"
                             >
                               <ForwardRef(OutlinedInput)
@@ -574,6 +575,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -636,6 +638,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                 labelWidth={0}
                                 name="sortField"
                                 onChange={[Function]}
+                                select={true}
                                 value="flightNumber"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -651,6 +654,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -715,6 +719,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                   name="sortField"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="flightNumber"
                                 >
@@ -733,6 +738,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -797,6 +803,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                     name="sortField"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="flightNumber"
                                   >
@@ -813,8 +820,8 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-166",
-                                              "root": "PrivateNotchedOutline-root-165",
+                                              "legend": "PrivateNotchedOutline-legend-168",
+                                              "root": "PrivateNotchedOutline-root-167",
                                             }
                                           }
                                           labelWidth={0}
@@ -1094,7 +1101,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-165 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-167 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -1102,7 +1109,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-166"
+                                              className="PrivateNotchedOutline-legend-168"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -1130,7 +1137,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -1154,70 +1161,66 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         value="flightNumber"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-field"
+                                          multiple={false}
+                                          name="sortField"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="flightNumber"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-field"
-                                            multiple={false}
-                                            name="sortField"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
+                                          <option
                                             value="flightNumber"
                                           >
-                                            <option
-                                              value="flightNumber"
-                                            >
-                                              flight number
-                                            </option>
-                                            <option
-                                              value="utcDate"
-                                            >
-                                              utc date
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            flight number
+                                          </option>
+                                          <option
+                                            value="utcDate"
+                                          >
+                                            utc date
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
@@ -1675,6 +1678,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                               labelWidth={0}
                               name="sortOrder"
                               onChange={[Function]}
+                              select={true}
                               value="desc"
                             >
                               <ForwardRef(OutlinedInput)
@@ -1690,6 +1694,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -1752,6 +1757,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                 labelWidth={0}
                                 name="sortOrder"
                                 onChange={[Function]}
+                                select={true}
                                 value="desc"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -1767,6 +1773,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -1831,6 +1838,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                   name="sortOrder"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="desc"
                                 >
@@ -1849,6 +1857,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -1913,6 +1922,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                     name="sortOrder"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="desc"
                                   >
@@ -1929,8 +1939,8 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-166",
-                                              "root": "PrivateNotchedOutline-root-165",
+                                              "legend": "PrivateNotchedOutline-legend-168",
+                                              "root": "PrivateNotchedOutline-root-167",
                                             }
                                           }
                                           labelWidth={0}
@@ -2210,7 +2220,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-165 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-167 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -2218,7 +2228,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-166"
+                                              className="PrivateNotchedOutline-legend-168"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -2246,7 +2256,7 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -2270,70 +2280,66 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
                                         value="desc"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-order"
+                                          multiple={false}
+                                          name="sortOrder"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="desc"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-order"
-                                            multiple={false}
-                                            name="sortOrder"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
+                                          <option
+                                            value="asc"
+                                          >
+                                            smaller to bigger
+                                          </option>
+                                          <option
                                             value="desc"
                                           >
-                                            <option
-                                              value="asc"
-                                            >
-                                              smaller to bigger
-                                            </option>
-                                            <option
-                                              value="desc"
-                                            >
-                                              bigger to smaller
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            bigger to smaller
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
@@ -2915,6 +2921,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                               labelWidth={0}
                               name="sortField"
                               onChange={[Function]}
+                              select={true}
                               value="unknown"
                             >
                               <ForwardRef(OutlinedInput)
@@ -2930,6 +2937,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -2992,6 +3000,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                 labelWidth={0}
                                 name="sortField"
                                 onChange={[Function]}
+                                select={true}
                                 value="unknown"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -3007,6 +3016,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -3071,6 +3081,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                   name="sortField"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="unknown"
                                 >
@@ -3089,6 +3100,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -3153,6 +3165,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                     name="sortField"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="unknown"
                                   >
@@ -3169,8 +3182,8 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-516",
-                                              "root": "PrivateNotchedOutline-root-515",
+                                              "legend": "PrivateNotchedOutline-legend-522",
+                                              "root": "PrivateNotchedOutline-root-521",
                                             }
                                           }
                                           labelWidth={0}
@@ -3450,7 +3463,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-515 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-521 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -3458,7 +3471,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-516"
+                                              className="PrivateNotchedOutline-legend-522"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -3486,7 +3499,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -3510,70 +3523,66 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         value="unknown"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-field"
+                                          multiple={false}
+                                          name="sortField"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="unknown"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-field"
-                                            multiple={false}
-                                            name="sortField"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
-                                            value="unknown"
+                                          <option
+                                            value="flightNumber"
                                           >
-                                            <option
-                                              value="flightNumber"
-                                            >
-                                              flight number
-                                            </option>
-                                            <option
-                                              value="utcDate"
-                                            >
-                                              utc date
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            flight number
+                                          </option>
+                                          <option
+                                            value="utcDate"
+                                          >
+                                            utc date
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
@@ -4031,6 +4040,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                               labelWidth={0}
                               name="sortOrder"
                               onChange={[Function]}
+                              select={true}
                               value="desc"
                             >
                               <ForwardRef(OutlinedInput)
@@ -4046,6 +4056,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -4108,6 +4119,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                 labelWidth={0}
                                 name="sortOrder"
                                 onChange={[Function]}
+                                select={true}
                                 value="desc"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -4123,6 +4135,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -4187,6 +4200,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                   name="sortOrder"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="desc"
                                 >
@@ -4205,6 +4219,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -4269,6 +4284,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                     name="sortOrder"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="desc"
                                   >
@@ -4285,8 +4301,8 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-516",
-                                              "root": "PrivateNotchedOutline-root-515",
+                                              "legend": "PrivateNotchedOutline-legend-522",
+                                              "root": "PrivateNotchedOutline-root-521",
                                             }
                                           }
                                           labelWidth={0}
@@ -4566,7 +4582,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-515 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-521 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -4574,7 +4590,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-516"
+                                              className="PrivateNotchedOutline-legend-522"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -4602,7 +4618,7 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -4626,70 +4642,66 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
                                         value="desc"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-order"
+                                          multiple={false}
+                                          name="sortOrder"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="desc"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-order"
-                                            multiple={false}
-                                            name="sortOrder"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
+                                          <option
+                                            value="asc"
+                                          >
+                                            ascending
+                                          </option>
+                                          <option
                                             value="desc"
                                           >
-                                            <option
-                                              value="asc"
-                                            >
-                                              ascending
-                                            </option>
-                                            <option
-                                              value="desc"
-                                            >
-                                              descending
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            descending
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
@@ -5271,6 +5283,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                               labelWidth={0}
                               name="sortField"
                               onChange={[Function]}
+                              select={true}
                               value="utcDate"
                             >
                               <ForwardRef(OutlinedInput)
@@ -5286,6 +5299,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -5348,6 +5362,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                 labelWidth={0}
                                 name="sortField"
                                 onChange={[Function]}
+                                select={true}
                                 value="utcDate"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -5363,6 +5378,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -5427,6 +5443,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                   name="sortField"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="utcDate"
                                 >
@@ -5445,6 +5462,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -5509,6 +5527,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                     name="sortField"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="utcDate"
                                   >
@@ -5525,8 +5544,8 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-341",
-                                              "root": "PrivateNotchedOutline-root-340",
+                                              "legend": "PrivateNotchedOutline-legend-345",
+                                              "root": "PrivateNotchedOutline-root-344",
                                             }
                                           }
                                           labelWidth={0}
@@ -5806,7 +5825,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-340 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-344 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -5814,7 +5833,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-341"
+                                              className="PrivateNotchedOutline-legend-345"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -5842,7 +5861,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -5866,70 +5885,66 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         value="utcDate"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-field"
+                                          multiple={false}
+                                          name="sortField"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="utcDate"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-field"
-                                            multiple={false}
-                                            name="sortField"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
+                                          <option
+                                            value="flightNumber"
+                                          >
+                                            flight number
+                                          </option>
+                                          <option
                                             value="utcDate"
                                           >
-                                            <option
-                                              value="flightNumber"
-                                            >
-                                              flight number
-                                            </option>
-                                            <option
-                                              value="utcDate"
-                                            >
-                                              utc date
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            utc date
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
@@ -6387,6 +6402,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                               labelWidth={0}
                               name="sortOrder"
                               onChange={[Function]}
+                              select={true}
                               value="desc"
                             >
                               <ForwardRef(OutlinedInput)
@@ -6402,6 +6418,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -6464,6 +6481,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                 labelWidth={0}
                                 name="sortOrder"
                                 onChange={[Function]}
+                                select={true}
                                 value="desc"
                               >
                                 <WithStyles(ForwardRef(InputBase))
@@ -6479,6 +6497,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                       "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                       "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiOutlinedInput-inputSelect",
                                       "marginDense": "MuiOutlinedInput-marginDense",
                                       "multiline": "MuiOutlinedInput-multiline",
                                       "notchedOutline": null,
@@ -6543,6 +6562,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                   name="sortOrder"
                                   onChange={[Function]}
                                   renderPrefix={[Function]}
+                                  select={true}
                                   type="text"
                                   value="desc"
                                 >
@@ -6561,6 +6581,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
                                         "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                         "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                        "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                         "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                         "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                         "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -6625,6 +6646,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                     name="sortOrder"
                                     onChange={[Function]}
                                     renderPrefix={[Function]}
+                                    select={true}
                                     type="text"
                                     value="desc"
                                   >
@@ -6641,8 +6663,8 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                           className="MuiOutlinedInput-notchedOutline"
                                           classes={
                                             Object {
-                                              "legend": "PrivateNotchedOutline-legend-341",
-                                              "root": "PrivateNotchedOutline-root-340",
+                                              "legend": "PrivateNotchedOutline-legend-345",
+                                              "root": "PrivateNotchedOutline-root-344",
                                             }
                                           }
                                           labelWidth={0}
@@ -6922,7 +6944,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         >
                                           <fieldset
                                             aria-hidden={true}
-                                            className="PrivateNotchedOutline-root-340 MuiOutlinedInput-notchedOutline"
+                                            className="PrivateNotchedOutline-root-344 MuiOutlinedInput-notchedOutline"
                                             style={
                                               Object {
                                                 "paddingLeft": 8,
@@ -6930,7 +6952,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                             }
                                           >
                                             <legend
-                                              className="PrivateNotchedOutline-legend-341"
+                                              className="PrivateNotchedOutline-legend-345"
                                               style={
                                                 Object {
                                                   "width": 0,
@@ -6958,7 +6980,7 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                           }
                                         }
                                         aria-invalid={false}
-                                        className="MuiInputBase-input MuiOutlinedInput-input"
+                                        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect"
                                         classes={
                                           Object {
                                             "disabled": "Mui-disabled",
@@ -6982,70 +7004,66 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
                                         value="desc"
                                         variant="outlined"
                                       >
-                                        <div
-                                          className="MuiSelect-root"
+                                        <select
+                                          aria-invalid={false}
+                                          className="MuiSelect-root MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSelect MuiOutlinedInput-inputSelect MuiSelect-outlined"
+                                          disabled={false}
+                                          id="sort-order"
+                                          multiple={false}
+                                          name="sortOrder"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          value="desc"
                                         >
-                                          <select
-                                            aria-invalid={false}
-                                            className="MuiSelect-select MuiInputBase-input MuiOutlinedInput-input MuiSelect-outlined"
-                                            disabled={false}
-                                            id="sort-order"
-                                            multiple={false}
-                                            name="sortOrder"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onFocus={[Function]}
-                                            required={false}
+                                          <option
+                                            value="asc"
+                                          >
+                                            old to new
+                                          </option>
+                                          <option
                                             value="desc"
                                           >
-                                            <option
-                                              value="asc"
-                                            >
-                                              old to new
-                                            </option>
-                                            <option
-                                              value="desc"
-                                            >
-                                              new to old
-                                            </option>
-                                          </select>
-                                          <ArrowDropDownIcon
+                                            new to old
+                                          </option>
+                                        </select>
+                                        <ArrowDropDownIcon
+                                          className="MuiSelect-icon"
+                                        >
+                                          <WithStyles(ForwardRef(SvgIcon))
                                             className="MuiSelect-icon"
                                           >
-                                            <WithStyles(ForwardRef(SvgIcon))
+                                            <ForwardRef(SvgIcon)
                                               className="MuiSelect-icon"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                className="MuiSelect-icon"
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
+                                              classes={
+                                                Object {
+                                                  "colorAction": "MuiSvgIcon-colorAction",
+                                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                  "colorError": "MuiSvgIcon-colorError",
+                                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                  "root": "MuiSvgIcon-root",
                                                 }
+                                              }
+                                            >
+                                              <svg
+                                                aria-hidden="true"
+                                                className="MuiSvgIcon-root MuiSelect-icon"
+                                                focusable="false"
+                                                role="presentation"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="MuiSvgIcon-root MuiSelect-icon"
-                                                  focusable="false"
-                                                  role="presentation"
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M7 10l5 5 5-5z"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ArrowDropDownIcon>
-                                        </div>
+                                                <path
+                                                  d="M7 10l5 5 5-5z"
+                                                />
+                                              </svg>
+                                            </ForwardRef(SvgIcon)>
+                                          </WithStyles(ForwardRef(SvgIcon))>
+                                        </ArrowDropDownIcon>
                                       </ForwardRef(NativeSelectInput)>
                                     </div>
                                   </ForwardRef(InputBase)>
