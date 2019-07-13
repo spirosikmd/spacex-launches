@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../setupTests';
 import LaunchDateTime from '../LaunchDateTime';
 
 describe('LaunchDateTime', () => {
@@ -11,11 +13,13 @@ describe('LaunchDateTime', () => {
   });
 
   it('renders both date and time when launch is not tentative', () => {
-    expect(mountComponent(LaunchDateTime, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchDateTime {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders only date when launch is tentative', () => {
     props.isTentative = true;
-    expect(mountComponent(LaunchDateTime, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchDateTime {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

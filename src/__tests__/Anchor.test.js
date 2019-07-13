@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../setupTests';
 import Anchor from '../Anchor';
 
 describe('Anchor', () => {
@@ -5,16 +7,13 @@ describe('Anchor', () => {
 
   beforeEach(() => {
     props = {
-      classes: {
-        anchor: 'anchor',
-      },
       href: 'href',
       target: 'target',
-      children: 'text',
     };
   });
 
-  it('renders', () => {
-    expect(mountComponent(Anchor, props)).toMatchSnapshot();
+  it('renders an anchor tag', () => {
+    const { asFragment } = render(<Anchor {...props}>text</Anchor>);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

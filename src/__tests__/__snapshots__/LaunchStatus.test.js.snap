@@ -1,421 +1,97 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LaunchStatus renders failed 1`] = `
-<WithStyles(LaunchStatus)
-  classes={
-    Object {
-      "fail": "fail",
-      "inProgress": "inProgress",
-      "status": "status",
-      "statusIcon": "statusIcon",
-      "success": "success",
-      "upcoming": "upcoming",
-    }
-  }
-  isFailed={true}
-  isInProgress={false}
-  isSuccessful={false}
-  isUpcoming={false}
->
-  <WithStyles(ForwardRef(Paper))
-    className="LaunchStatus-status-43 status LaunchStatus-fail-47 fail"
-    elevation={1}
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-43 LaunchStatus-fail-47 MuiPaper-rounded"
   >
-    <ForwardRef(Paper)
-      className="LaunchStatus-status-43 status LaunchStatus-fail-47 fail"
-      classes={
-        Object {
-          "elevation0": "MuiPaper-elevation0",
-          "elevation1": "MuiPaper-elevation1",
-          "elevation10": "MuiPaper-elevation10",
-          "elevation11": "MuiPaper-elevation11",
-          "elevation12": "MuiPaper-elevation12",
-          "elevation13": "MuiPaper-elevation13",
-          "elevation14": "MuiPaper-elevation14",
-          "elevation15": "MuiPaper-elevation15",
-          "elevation16": "MuiPaper-elevation16",
-          "elevation17": "MuiPaper-elevation17",
-          "elevation18": "MuiPaper-elevation18",
-          "elevation19": "MuiPaper-elevation19",
-          "elevation2": "MuiPaper-elevation2",
-          "elevation20": "MuiPaper-elevation20",
-          "elevation21": "MuiPaper-elevation21",
-          "elevation22": "MuiPaper-elevation22",
-          "elevation23": "MuiPaper-elevation23",
-          "elevation24": "MuiPaper-elevation24",
-          "elevation3": "MuiPaper-elevation3",
-          "elevation4": "MuiPaper-elevation4",
-          "elevation5": "MuiPaper-elevation5",
-          "elevation6": "MuiPaper-elevation6",
-          "elevation7": "MuiPaper-elevation7",
-          "elevation8": "MuiPaper-elevation8",
-          "elevation9": "MuiPaper-elevation9",
-          "root": "MuiPaper-root",
-          "rounded": "MuiPaper-rounded",
-        }
-      }
-      elevation={1}
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root LaunchStatus-statusIcon-44"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
     >
-      <div
-        className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-43 status LaunchStatus-fail-47 fail MuiPaper-rounded"
-      >
-        <GroupWorkRoundedIcon
-          className="LaunchStatus-statusIcon-44 statusIcon"
-        >
-          <WithStyles(ForwardRef(SvgIcon))
-            className="LaunchStatus-statusIcon-44 statusIcon"
-          >
-            <ForwardRef(SvgIcon)
-              className="LaunchStatus-statusIcon-44 statusIcon"
-              classes={
-                Object {
-                  "colorAction": "MuiSvgIcon-colorAction",
-                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                  "colorError": "MuiSvgIcon-colorError",
-                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                  "root": "MuiSvgIcon-root",
-                }
-              }
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root LaunchStatus-statusIcon-44 statusIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                />
-              </svg>
-            </ForwardRef(SvgIcon)>
-          </WithStyles(ForwardRef(SvgIcon))>
-        </GroupWorkRoundedIcon>
-      </div>
-    </ForwardRef(Paper)>
-  </WithStyles(ForwardRef(Paper))>
-</WithStyles(LaunchStatus)>
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`LaunchStatus renders in progress 1`] = `
-<WithStyles(LaunchStatus)
-  classes={
-    Object {
-      "fail": "fail",
-      "inProgress": "inProgress",
-      "status": "status",
-      "statusIcon": "statusIcon",
-      "success": "success",
-      "upcoming": "upcoming",
-    }
-  }
-  isFailed={false}
-  isInProgress={true}
-  isSuccessful={false}
-  isUpcoming={false}
->
-  <WithStyles(ForwardRef(Paper))
-    className="LaunchStatus-status-127 status LaunchStatus-inProgress-132 inProgress"
-    elevation={1}
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-127 LaunchStatus-inProgress-132 MuiPaper-rounded"
   >
-    <ForwardRef(Paper)
-      className="LaunchStatus-status-127 status LaunchStatus-inProgress-132 inProgress"
-      classes={
-        Object {
-          "elevation0": "MuiPaper-elevation0",
-          "elevation1": "MuiPaper-elevation1",
-          "elevation10": "MuiPaper-elevation10",
-          "elevation11": "MuiPaper-elevation11",
-          "elevation12": "MuiPaper-elevation12",
-          "elevation13": "MuiPaper-elevation13",
-          "elevation14": "MuiPaper-elevation14",
-          "elevation15": "MuiPaper-elevation15",
-          "elevation16": "MuiPaper-elevation16",
-          "elevation17": "MuiPaper-elevation17",
-          "elevation18": "MuiPaper-elevation18",
-          "elevation19": "MuiPaper-elevation19",
-          "elevation2": "MuiPaper-elevation2",
-          "elevation20": "MuiPaper-elevation20",
-          "elevation21": "MuiPaper-elevation21",
-          "elevation22": "MuiPaper-elevation22",
-          "elevation23": "MuiPaper-elevation23",
-          "elevation24": "MuiPaper-elevation24",
-          "elevation3": "MuiPaper-elevation3",
-          "elevation4": "MuiPaper-elevation4",
-          "elevation5": "MuiPaper-elevation5",
-          "elevation6": "MuiPaper-elevation6",
-          "elevation7": "MuiPaper-elevation7",
-          "elevation8": "MuiPaper-elevation8",
-          "elevation9": "MuiPaper-elevation9",
-          "root": "MuiPaper-root",
-          "rounded": "MuiPaper-rounded",
-        }
-      }
-      elevation={1}
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root LaunchStatus-statusIcon-128"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
     >
-      <div
-        className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-127 status LaunchStatus-inProgress-132 inProgress MuiPaper-rounded"
-      >
-        <MoreHorizRoundedIcon
-          className="LaunchStatus-statusIcon-128 statusIcon"
-        >
-          <WithStyles(ForwardRef(SvgIcon))
-            className="LaunchStatus-statusIcon-128 statusIcon"
-          >
-            <ForwardRef(SvgIcon)
-              className="LaunchStatus-statusIcon-128 statusIcon"
-              classes={
-                Object {
-                  "colorAction": "MuiSvgIcon-colorAction",
-                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                  "colorError": "MuiSvgIcon-colorError",
-                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                  "root": "MuiSvgIcon-root",
-                }
-              }
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root LaunchStatus-statusIcon-128 statusIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-                />
-              </svg>
-            </ForwardRef(SvgIcon)>
-          </WithStyles(ForwardRef(SvgIcon))>
-        </MoreHorizRoundedIcon>
-      </div>
-    </ForwardRef(Paper)>
-  </WithStyles(ForwardRef(Paper))>
-</WithStyles(LaunchStatus)>
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`LaunchStatus renders successful 1`] = `
-<WithStyles(LaunchStatus)
-  classes={
-    Object {
-      "fail": "fail",
-      "inProgress": "inProgress",
-      "status": "status",
-      "statusIcon": "statusIcon",
-      "success": "success",
-      "upcoming": "upcoming",
-    }
-  }
-  isFailed={false}
-  isInProgress={false}
-  isSuccessful={true}
-  isUpcoming={false}
->
-  <WithStyles(ForwardRef(Paper))
-    className="LaunchStatus-status-1 status LaunchStatus-success-4 success"
-    elevation={1}
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-1 LaunchStatus-success-4 MuiPaper-rounded"
   >
-    <ForwardRef(Paper)
-      className="LaunchStatus-status-1 status LaunchStatus-success-4 success"
-      classes={
-        Object {
-          "elevation0": "MuiPaper-elevation0",
-          "elevation1": "MuiPaper-elevation1",
-          "elevation10": "MuiPaper-elevation10",
-          "elevation11": "MuiPaper-elevation11",
-          "elevation12": "MuiPaper-elevation12",
-          "elevation13": "MuiPaper-elevation13",
-          "elevation14": "MuiPaper-elevation14",
-          "elevation15": "MuiPaper-elevation15",
-          "elevation16": "MuiPaper-elevation16",
-          "elevation17": "MuiPaper-elevation17",
-          "elevation18": "MuiPaper-elevation18",
-          "elevation19": "MuiPaper-elevation19",
-          "elevation2": "MuiPaper-elevation2",
-          "elevation20": "MuiPaper-elevation20",
-          "elevation21": "MuiPaper-elevation21",
-          "elevation22": "MuiPaper-elevation22",
-          "elevation23": "MuiPaper-elevation23",
-          "elevation24": "MuiPaper-elevation24",
-          "elevation3": "MuiPaper-elevation3",
-          "elevation4": "MuiPaper-elevation4",
-          "elevation5": "MuiPaper-elevation5",
-          "elevation6": "MuiPaper-elevation6",
-          "elevation7": "MuiPaper-elevation7",
-          "elevation8": "MuiPaper-elevation8",
-          "elevation9": "MuiPaper-elevation9",
-          "root": "MuiPaper-root",
-          "rounded": "MuiPaper-rounded",
-        }
-      }
-      elevation={1}
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root LaunchStatus-statusIcon-2"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
     >
-      <div
-        className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-1 status LaunchStatus-success-4 success MuiPaper-rounded"
-      >
-        <GroupWorkRoundedIcon
-          className="LaunchStatus-statusIcon-2 statusIcon"
-        >
-          <WithStyles(ForwardRef(SvgIcon))
-            className="LaunchStatus-statusIcon-2 statusIcon"
-          >
-            <ForwardRef(SvgIcon)
-              className="LaunchStatus-statusIcon-2 statusIcon"
-              classes={
-                Object {
-                  "colorAction": "MuiSvgIcon-colorAction",
-                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                  "colorError": "MuiSvgIcon-colorError",
-                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                  "root": "MuiSvgIcon-root",
-                }
-              }
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root LaunchStatus-statusIcon-2 statusIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                />
-              </svg>
-            </ForwardRef(SvgIcon)>
-          </WithStyles(ForwardRef(SvgIcon))>
-        </GroupWorkRoundedIcon>
-      </div>
-    </ForwardRef(Paper)>
-  </WithStyles(ForwardRef(Paper))>
-</WithStyles(LaunchStatus)>
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`LaunchStatus renders upcoming 1`] = `
-<WithStyles(LaunchStatus)
-  classes={
-    Object {
-      "fail": "fail",
-      "inProgress": "inProgress",
-      "status": "status",
-      "statusIcon": "statusIcon",
-      "success": "success",
-      "upcoming": "upcoming",
-    }
-  }
-  isFailed={false}
-  isInProgress={false}
-  isSuccessful={false}
-  isUpcoming={true}
->
-  <WithStyles(ForwardRef(Paper))
-    className="LaunchStatus-status-85 status LaunchStatus-upcoming-87 upcoming"
-    elevation={1}
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-85 LaunchStatus-upcoming-87 MuiPaper-rounded"
   >
-    <ForwardRef(Paper)
-      className="LaunchStatus-status-85 status LaunchStatus-upcoming-87 upcoming"
-      classes={
-        Object {
-          "elevation0": "MuiPaper-elevation0",
-          "elevation1": "MuiPaper-elevation1",
-          "elevation10": "MuiPaper-elevation10",
-          "elevation11": "MuiPaper-elevation11",
-          "elevation12": "MuiPaper-elevation12",
-          "elevation13": "MuiPaper-elevation13",
-          "elevation14": "MuiPaper-elevation14",
-          "elevation15": "MuiPaper-elevation15",
-          "elevation16": "MuiPaper-elevation16",
-          "elevation17": "MuiPaper-elevation17",
-          "elevation18": "MuiPaper-elevation18",
-          "elevation19": "MuiPaper-elevation19",
-          "elevation2": "MuiPaper-elevation2",
-          "elevation20": "MuiPaper-elevation20",
-          "elevation21": "MuiPaper-elevation21",
-          "elevation22": "MuiPaper-elevation22",
-          "elevation23": "MuiPaper-elevation23",
-          "elevation24": "MuiPaper-elevation24",
-          "elevation3": "MuiPaper-elevation3",
-          "elevation4": "MuiPaper-elevation4",
-          "elevation5": "MuiPaper-elevation5",
-          "elevation6": "MuiPaper-elevation6",
-          "elevation7": "MuiPaper-elevation7",
-          "elevation8": "MuiPaper-elevation8",
-          "elevation9": "MuiPaper-elevation9",
-          "root": "MuiPaper-root",
-          "rounded": "MuiPaper-rounded",
-        }
-      }
-      elevation={1}
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root LaunchStatus-statusIcon-86"
+      focusable="false"
+      role="presentation"
+      viewBox="0 0 24 24"
     >
-      <div
-        className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-85 status LaunchStatus-upcoming-87 upcoming MuiPaper-rounded"
-      >
-        <GroupWorkRoundedIcon
-          className="LaunchStatus-statusIcon-86 statusIcon"
-        >
-          <WithStyles(ForwardRef(SvgIcon))
-            className="LaunchStatus-statusIcon-86 statusIcon"
-          >
-            <ForwardRef(SvgIcon)
-              className="LaunchStatus-statusIcon-86 statusIcon"
-              classes={
-                Object {
-                  "colorAction": "MuiSvgIcon-colorAction",
-                  "colorDisabled": "MuiSvgIcon-colorDisabled",
-                  "colorError": "MuiSvgIcon-colorError",
-                  "colorPrimary": "MuiSvgIcon-colorPrimary",
-                  "colorSecondary": "MuiSvgIcon-colorSecondary",
-                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                  "root": "MuiSvgIcon-root",
-                }
-              }
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root LaunchStatus-statusIcon-86 statusIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                />
-              </svg>
-            </ForwardRef(SvgIcon)>
-          </WithStyles(ForwardRef(SvgIcon))>
-        </GroupWorkRoundedIcon>
-      </div>
-    </ForwardRef(Paper)>
-  </WithStyles(ForwardRef(Paper))>
-</WithStyles(LaunchStatus)>
+      <path
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;

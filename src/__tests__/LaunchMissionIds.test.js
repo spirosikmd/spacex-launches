@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../setupTests';
 import LaunchMissionIds from '../LaunchMissionIds';
 
 describe('LaunchMissionIds', () => {
@@ -10,11 +12,13 @@ describe('LaunchMissionIds', () => {
   });
 
   it('renders', () => {
-    expect(mountComponent(LaunchMissionIds, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchMissionIds {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('render IDs with multiple ids', () => {
     props.missionIds = ['id1', 'id2'];
-    expect(mountComponent(LaunchMissionIds, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchMissionIds {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

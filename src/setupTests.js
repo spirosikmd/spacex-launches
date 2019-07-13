@@ -5,6 +5,8 @@ import { createSerializer } from 'enzyme-to-json';
 import createMount from '@material-ui/core/test-utils/createMount';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { createCustomMuiTheme } from './createCustomMuiTheme';
+import { render } from '@testing-library/react';
+import '@testing-library/react/cleanup-after-each';
 
 configure({ adapter: new Adapter() });
 
@@ -35,3 +37,20 @@ jest.mock('react', () => {
 });
 
 global.fetch = require('jest-fetch-mock');
+
+const AllTheProviders = ({ children }) => {
+  return (
+    <MuiThemeProvider theme={createCustomMuiTheme()}>
+      {children}
+    </MuiThemeProvider>
+  );
+};
+
+const customRender = (ui, options) =>
+  render(ui, { wrapper: AllTheProviders, ...options });
+
+// re-export everything
+export * from '@testing-library/react';
+
+// override render method
+export { customRender as render };

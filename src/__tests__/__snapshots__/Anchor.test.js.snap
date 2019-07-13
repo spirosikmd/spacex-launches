@@ -1,21 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Anchor renders 1`] = `
-<WithStyles(Anchor)
-  classes={
-    Object {
-      "anchor": "anchor",
-    }
-  }
-  href="href"
-  target="target"
->
+exports[`Anchor renders an anchor tag 1`] = `
+<DocumentFragment>
   <a
-    className="Anchor-anchor-1 anchor"
+    class="Anchor-anchor-1"
     href="href"
     target="target"
   >
     text
   </a>
-</WithStyles(Anchor)>
+</DocumentFragment>
 `;

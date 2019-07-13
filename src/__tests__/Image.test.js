@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../setupTests';
 import Image from '../Image';
 
 describe('Image', () => {
@@ -7,14 +9,11 @@ describe('Image', () => {
     props = {
       src: 'src',
       alt: 'alt',
-      classes: {
-        imageWrapper: 'imageWrapper',
-        image: 'image',
-      },
     };
   });
 
-  it('renders', () => {
-    expect(mountComponent(Image, props)).toMatchSnapshot();
+  it('renders an image', () => {
+    const { asFragment } = render(<Image {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

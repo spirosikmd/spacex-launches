@@ -1,17 +1,10 @@
+import React from 'react';
+import { render } from '../setupTests';
 import Footer from '../Footer';
 
 describe('Footer', () => {
-  let props;
-
-  beforeEach(() => {
-    props = {
-      classes: {
-        root: 'root',
-      },
-    };
-  });
-
-  it('renders', () => {
-    expect(mountComponent(Footer, props)).toMatchSnapshot();
+  it('render a footer', () => {
+    const { asFragment } = render(<Footer />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });
