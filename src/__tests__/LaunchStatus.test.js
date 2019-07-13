@@ -1,18 +1,12 @@
+import React from 'react';
 import LaunchStatus from '../LaunchStatus';
+import { render } from '../setupTests';
 
 describe('LaunchStatus', () => {
   let props;
 
   beforeEach(() => {
     props = {
-      classes: {
-        status: 'status',
-        statusIcon: 'statusIcon',
-        upcoming: 'upcoming',
-        success: 'success',
-        fail: 'fail',
-        inProgress: 'inProgress',
-      },
       isSuccessful: true,
       isFailed: false,
       isUpcoming: false,
@@ -21,24 +15,28 @@ describe('LaunchStatus', () => {
   });
 
   it('renders successful', () => {
-    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchStatus {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders failed', () => {
     props.isFailed = true;
     props.isSuccessful = false;
-    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchStatus {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders upcoming', () => {
     props.isUpcoming = true;
     props.isSuccessful = false;
-    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchStatus {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders in progress', () => {
     props.isInProgress = true;
     props.isSuccessful = false;
-    expect(mountComponent(LaunchStatus, props)).toMatchSnapshot();
+    const { asFragment } = render(<LaunchStatus {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

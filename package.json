@@ -43,6 +43,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@testing-library/react": "^8.0.5",
     "@types/classnames": "^2.2.9",
     "@types/enzyme": "^3.10.2",
     "@types/enzyme-adapter-react-16": "^1.0.5",

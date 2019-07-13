@@ -1,24 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image renders 1`] = `
-<WithStyles(Image)
-  alt="alt"
-  classes={
-    Object {
-      "image": "image",
-      "imageWrapper": "imageWrapper",
-    }
-  }
-  src="src"
->
+exports[`Image renders an image 1`] = `
+<DocumentFragment>
   <div
-    className="Image-imageWrapper-1 imageWrapper"
+    class="Image-imageWrapper-1"
   >
     <img
       alt="alt"
-      className="Image-image-2 image"
+      class="Image-image-2"
       src="src"
     />
   </div>
-</WithStyles(Image)>
+</DocumentFragment>
 `;
