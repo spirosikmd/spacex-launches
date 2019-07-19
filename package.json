@@ -57,5 +57,8 @@
     "enzyme-to-json": "^3.3.5",
     "jest-fetch-mock": "^2.1.2",
     "typescript": "^3.5.3"
+  },
+  "resolutions": {
+    "lodash": "^4.17.13"
   }
 }
