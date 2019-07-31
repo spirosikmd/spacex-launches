@@ -1660,13 +1660,28 @@ exports[`Launch when a launch is failed renders failed 1`] = `
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
@@ -3345,13 +3360,28 @@ exports[`Launch when a launch is successful renders successful 1`] = `
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
@@ -5030,13 +5060,28 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
@@ -6394,13 +6439,28 @@ exports[`Launch when launch does not have details does not render the details se
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
@@ -7752,13 +7812,28 @@ exports[`Launch when launch does not have mission ids does not render the missio
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
@@ -9437,13 +9512,28 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
                                 >
                                   explore
                                 </span>
-                                <WithStyles(TouchRipple)
+                                <WithStyles(ForwardRef(TouchRipple))
                                   center={false}
                                 >
-                                  <span
-                                    className="MuiTouchRipple-root"
-                                  />
-                                </WithStyles(TouchRipple)>
+                                  <ForwardRef(TouchRipple)
+                                    center={false}
+                                    classes={
+                                      Object {
+                                        "child": "MuiTouchRipple-child",
+                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                        "ripple": "MuiTouchRipple-ripple",
+                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                        "root": "MuiTouchRipple-root",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="MuiTouchRipple-root"
+                                    />
+                                  </ForwardRef(TouchRipple)>
+                                </WithStyles(ForwardRef(TouchRipple))>
                               </a>
                             </ForwardRef>
                           </ForwardRef(ButtonBase)>
