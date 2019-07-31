@@ -1706,13 +1706,28 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
                                       >
                                         explore
                                       </span>
-                                      <WithStyles(TouchRipple)
+                                      <WithStyles(ForwardRef(TouchRipple))
                                         center={false}
                                       >
-                                        <span
-                                          className="MuiTouchRipple-root"
-                                        />
-                                      </WithStyles(TouchRipple)>
+                                        <ForwardRef(TouchRipple)
+                                          center={false}
+                                          classes={
+                                            Object {
+                                              "child": "MuiTouchRipple-child",
+                                              "childLeaving": "MuiTouchRipple-childLeaving",
+                                              "childPulsate": "MuiTouchRipple-childPulsate",
+                                              "ripple": "MuiTouchRipple-ripple",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                              "root": "MuiTouchRipple-root",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="MuiTouchRipple-root"
+                                          />
+                                        </ForwardRef(TouchRipple)>
+                                      </WithStyles(ForwardRef(TouchRipple))>
                                     </a>
                                   </ForwardRef>
                                 </ForwardRef(ButtonBase)>
@@ -3386,13 +3401,28 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
                                       >
                                         explore
                                       </span>
-                                      <WithStyles(TouchRipple)
+                                      <WithStyles(ForwardRef(TouchRipple))
                                         center={false}
                                       >
-                                        <span
-                                          className="MuiTouchRipple-root"
-                                        />
-                                      </WithStyles(TouchRipple)>
+                                        <ForwardRef(TouchRipple)
+                                          center={false}
+                                          classes={
+                                            Object {
+                                              "child": "MuiTouchRipple-child",
+                                              "childLeaving": "MuiTouchRipple-childLeaving",
+                                              "childPulsate": "MuiTouchRipple-childPulsate",
+                                              "ripple": "MuiTouchRipple-ripple",
+                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                              "root": "MuiTouchRipple-root",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="MuiTouchRipple-root"
+                                          />
+                                        </ForwardRef(TouchRipple)>
+                                      </WithStyles(ForwardRef(TouchRipple))>
                                     </a>
                                   </ForwardRef>
                                 </ForwardRef(ButtonBase)>
