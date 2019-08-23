@@ -6,7 +6,6 @@ import createMount from '@material-ui/core/test-utils/createMount';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { createCustomMuiTheme } from './createCustomMuiTheme';
 import { render } from '@testing-library/react';
-import '@testing-library/react/cleanup-after-each';
 
 configure({ adapter: new Adapter() });
 
