@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../../setupTests';
 import TextField from '@material-ui/core/TextField';
 import SortingOptions from '../SortingOptions';
 import { DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from '../../constants';
@@ -15,21 +17,24 @@ describe('SortingOptions', () => {
 
   describe('when sorting field is flight number', () => {
     it('renders sorting options with flight number specific text', () => {
-      expect(mountComponent(SortingOptions, props)).toMatchSnapshot();
+      const { asFragment } = render(<SortingOptions {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('when sorting field is utc date', () => {
     it('renders sorting options with date specific text', () => {
       props.sortField = UTC_DATE_FIELD;
-      expect(mountComponent(SortingOptions, props)).toMatchSnapshot();
+      const { asFragment } = render(<SortingOptions {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('when sorting field is unknown', () => {
     it('renders default sorting options', () => {
       props.sortField = 'unknown';
-      expect(mountComponent(SortingOptions, props)).toMatchSnapshot();
+      const { asFragment } = render(<SortingOptions {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 

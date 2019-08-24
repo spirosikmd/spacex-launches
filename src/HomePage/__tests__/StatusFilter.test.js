@@ -1,4 +1,5 @@
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import React from 'react';
+import { render, fireEvent } from '../../setupTests';
 import StatusFilter from '../StatusFilter';
 
 describe('StatusFilter', () => {
@@ -14,23 +15,31 @@ describe('StatusFilter', () => {
   });
 
   it('renders status filters', () => {
-    expect(mountComponent(StatusFilter, props)).toMatchSnapshot();
+    const { asFragment } = render(<StatusFilter {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  describe('when a status changes', () => {
+  describe('when failed status changes', () => {
     it('calls the onChange prop', () => {
-      const wrapper = mountComponent(StatusFilter, props);
-      const filters = wrapper.find(FormControlLabel);
-      filters
-        .at(0)
-        .props()
-        .control.props.onChange({
-          currentTarget: {
-            value: 'value',
-            checked: 'checked',
-          },
-        });
-      expect(props.onChange).toBeCalledWith('value', 'checked');
+      const { getByLabelText } = render(<StatusFilter {...props} />);
+      fireEvent.click(getByLabelText('Failed'));
+      expect(props.onChange).toBeCalledWith('showFailed', false);
+    });
+  });
+
+  describe('when successful status changes', () => {
+    it('calls the onChange prop', () => {
+      const { getByLabelText } = render(<StatusFilter {...props} />);
+      fireEvent.click(getByLabelText('Successful'));
+      expect(props.onChange).toBeCalledWith('showSuccessful', false);
+    });
+  });
+
+  describe('when upcoming status changes', () => {
+    it('calls the onChange prop', () => {
+      const { getByLabelText } = render(<StatusFilter {...props} />);
+      fireEvent.click(getByLabelText('Upcoming'));
+      expect(props.onChange).toBeCalledWith('showUpcoming', false);
     });
   });
 });

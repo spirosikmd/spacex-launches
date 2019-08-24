@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../../setupTests';
 import LaunchList from '../LaunchList';
 import { createLaunch } from '../../__fixtures__/launch';
 
@@ -17,7 +19,8 @@ describe('LaunchList', () => {
 
   describe('when there are no launches', () => {
     it('renders a message', () => {
-      expect(mountComponent(LaunchList, props)).toMatchSnapshot();
+      const { asFragment } = render(<LaunchList {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
@@ -27,7 +30,8 @@ describe('LaunchList', () => {
     });
 
     it('renders a list of launches', () => {
-      expect(mountComponent(LaunchList, props)).toMatchSnapshot();
+      const { asFragment } = render(<LaunchList {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 });
