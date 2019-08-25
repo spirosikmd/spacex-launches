@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../../setupTests';
 import HomePage from '../HomePage';
 import { createLaunch } from '../../__fixtures__/launch';
 import { getLaunches } from '../../api';
@@ -51,7 +53,8 @@ describe('HomePage', () => {
 
   describe('when is loading launches', () => {
     it('renders a loader', () => {
-      expect(mountComponent(HomePage, props)).toMatchSnapshot();
+      const { asFragment } = render(<HomePage {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 

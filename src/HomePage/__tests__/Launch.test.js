@@ -1,3 +1,5 @@
+import React from 'react';
+import { render } from '../../setupTests';
 import Launch from '../Launch';
 import { createLaunch } from '../../__fixtures__/launch';
 
@@ -17,7 +19,8 @@ describe('Launch', () => {
 
   describe('when a launch is successful', () => {
     it('renders successful', () => {
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
@@ -25,7 +28,8 @@ describe('Launch', () => {
     it('renders failed', () => {
       props.launch.isFailed = true;
       props.launch.isSuccessful = false;
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
@@ -33,7 +37,8 @@ describe('Launch', () => {
     it('renders upcoming', () => {
       props.launch.isUpcoming = true;
       props.launch.isSuccessful = false;
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
@@ -41,28 +46,32 @@ describe('Launch', () => {
     it('renders in progress', () => {
       props.launch.isInProgress = true;
       props.launch.isSuccessful = false;
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('when launch does not have details', () => {
     it('does not render the details section', () => {
       props.launch = createLaunch({ details: null });
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('when launch does not have mission ids', () => {
     it('does not render the mission ids info', () => {
       props.launch = createLaunch({ missionIds: [] });
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('when launch is tentative', () => {
     it('renders without actions', () => {
       props.launch = createLaunch({ isTentative: true });
-      expect(mountComponent(Launch, props)).toMatchSnapshot();
+      const { asFragment } = render(<Launch {...props} />);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 });

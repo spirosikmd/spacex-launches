@@ -1,7 +1,10 @@
+import React from 'react';
+import { render } from '../../setupTests';
 import NotFoundPage from '../NotFoundPage';
 
 describe('NotFoundPage', () => {
   it('renders', () => {
-    expect(mountComponent(NotFoundPage, {})).toMatchSnapshot();
+    const { asFragment } = render(<NotFoundPage />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });
