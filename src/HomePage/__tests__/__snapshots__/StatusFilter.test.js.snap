@@ -26,14 +26,14 @@ exports[`StatusFilter renders status filters 1`] = `
             <span
               class="MuiIconButton-label"
             >
-              <span
-                class="MuiSwitch-thumb"
-              />
               <input
                 checked=""
                 class="PrivateSwitchBase-input-35 MuiSwitch-input"
                 type="checkbox"
                 value="showFailed"
+              />
+              <span
+                class="MuiSwitch-thumb"
               />
             </span>
             <span
@@ -63,14 +63,14 @@ exports[`StatusFilter renders status filters 1`] = `
             <span
               class="MuiIconButton-label"
             >
-              <span
-                class="MuiSwitch-thumb"
-              />
               <input
                 checked=""
                 class="PrivateSwitchBase-input-35 MuiSwitch-input"
                 type="checkbox"
                 value="showSuccessful"
+              />
+              <span
+                class="MuiSwitch-thumb"
               />
             </span>
             <span
@@ -100,14 +100,14 @@ exports[`StatusFilter renders status filters 1`] = `
             <span
               class="MuiIconButton-label"
             >
-              <span
-                class="MuiSwitch-thumb"
-              />
               <input
                 checked=""
                 class="PrivateSwitchBase-input-35 MuiSwitch-input"
                 type="checkbox"
                 value="showUpcoming"
+              />
+              <span
+                class="MuiSwitch-thumb"
               />
             </span>
             <span
