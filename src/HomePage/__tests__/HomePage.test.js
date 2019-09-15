@@ -34,10 +34,8 @@ describe('HomePage', () => {
   });
 
   it('renders', async () => {
-    const homePage = mountComponent(HomePage, props);
-    await Promise.resolve();
-    homePage.update();
-    expect(homePage).toMatchSnapshot();
+    const { asFragment } = await render(<HomePage {...props} />);
+    expect(asFragment()).toMatchSnapshot();
     expect(props.navigate).toBeCalledWith(
       '?upcoming=false&successful=true&failed=true&order=desc&sort=utcDate'
     );
@@ -45,10 +43,8 @@ describe('HomePage', () => {
 
   it('renders error when there is an error', async () => {
     getLaunches.mockReturnValue(Promise.reject({ message: 'Error' }));
-    const homePage = mountComponent(HomePage, props);
-    await Promise.resolve();
-    homePage.update();
-    expect(homePage).toMatchSnapshot();
+    const { asFragment } = await render(<HomePage {...props} />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   describe('when is loading launches', () => {
