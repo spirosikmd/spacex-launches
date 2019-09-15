@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../setupTests';
+import { render, fireEvent } from '../../setupTests';
 import TextField from '@material-ui/core/TextField';
 import SortingOptions from '../SortingOptions';
 import { DESC, FLIGHT_NUMBER_FIELD, UTC_DATE_FIELD } from '../../constants';
@@ -38,17 +38,19 @@ describe('SortingOptions', () => {
     });
   });
 
-  describe('when sorting changes', () => {
+  describe('when sort field changes', () => {
     it('calls the onSortChange prop', () => {
-      const wrapper = mountComponent(SortingOptions, props);
-      const sortField = wrapper.find(TextField).at(0);
-      sortField.prop('onChange')({
-        currentTarget: {
-          name: 'name',
-          value: 'value',
-        },
-      });
-      expect(props.onSortChange).toBeCalledWith('name', 'value');
+      const { getByLabelText } = render(<SortingOptions {...props} />);
+      fireEvent.change(getByLabelText('Sort field'));
+      expect(props.onSortChange).toBeCalledWith('sortField', 'flightNumber');
+    });
+  });
+
+  describe('when sort order changes', () => {
+    it('calls the onSortChange prop', () => {
+      const { getByLabelText } = render(<SortingOptions {...props} />);
+      fireEvent.change(getByLabelText('Sort order'));
+      expect(props.onSortChange).toBeCalledWith('sortOrder', 'desc');
     });
   });
 });
