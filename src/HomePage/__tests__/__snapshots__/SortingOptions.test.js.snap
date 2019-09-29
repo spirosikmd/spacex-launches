@@ -51,11 +51,11 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-179 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-180 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-180"
+              class="PrivateNotchedOutline-legend-181"
               style="width: 0px;"
             >
               <span>
@@ -112,11 +112,11 @@ exports[`SortingOptions when sorting field is flight number renders sorting opti
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-179 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-180 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-180"
+              class="PrivateNotchedOutline-legend-181"
               style="width: 0px;"
             >
               <span>
@@ -182,11 +182,11 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-539 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-542 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-540"
+              class="PrivateNotchedOutline-legend-543"
               style="width: 0px;"
             >
               <span>
@@ -243,11 +243,11 @@ exports[`SortingOptions when sorting field is unknown renders default sorting op
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-539 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-542 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-540"
+              class="PrivateNotchedOutline-legend-543"
               style="width: 0px;"
             >
               <span>
@@ -313,11 +313,11 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-361 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-360"
+              class="PrivateNotchedOutline-legend-362"
               style="width: 0px;"
             >
               <span>
@@ -374,11 +374,11 @@ exports[`SortingOptions when sorting field is utc date renders sorting options w
           </svg>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-361 MuiOutlinedInput-notchedOutline"
             style="padding-left: 8px;"
           >
             <legend
-              class="PrivateNotchedOutline-legend-360"
+              class="PrivateNotchedOutline-legend-362"
               style="width: 0px;"
             >
               <span>
