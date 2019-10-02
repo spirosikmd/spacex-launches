@@ -1,6 +1,6 @@
 import React from 'react';
 import LaunchPage from '../LaunchPage';
-import { act, render, wait } from '../../setupTests';
+import { render, wait } from '../../setupTests';
 import { getLaunch } from '../../api';
 import { createLaunch } from '../../__fixtures__/launch';
 
