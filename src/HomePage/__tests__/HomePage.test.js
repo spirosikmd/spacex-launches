@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../setupTests';
+import { render, wait } from '../../setupTests';
 import HomePage from '../HomePage';
 import { createLaunch } from '../../__fixtures__/launch';
 import { getLaunches } from '../../api';
@@ -34,8 +34,8 @@ describe('HomePage', () => {
   });
 
   it('renders', async () => {
-    const { asFragment } = await render(<HomePage {...props} />);
-    expect(asFragment()).toMatchSnapshot();
+    const { asFragment } = render(<HomePage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
     expect(props.navigate).toBeCalledWith(
       '?upcoming=false&successful=true&failed=true&order=desc&sort=utcDate'
     );
@@ -43,8 +43,8 @@ describe('HomePage', () => {
 
   it('renders error when there is an error', async () => {
     getLaunches.mockReturnValue(Promise.reject({ message: 'Error' }));
-    const { asFragment } = await render(<HomePage {...props} />);
-    expect(asFragment()).toMatchSnapshot();
+    const { asFragment } = render(<HomePage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   describe('when is loading launches', () => {
