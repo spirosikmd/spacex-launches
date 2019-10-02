@@ -1,1048 +1,210 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LaunchPage does not render mission ids when launch does not have mission ids 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
->
+<DocumentFragment>
   <div>
     <div
-      className="LaunchPage-headline-347 headline"
+      class="LaunchPage-headline-275 headline"
     >
       <img
         alt="Test"
-        className="LaunchPage-missionPatch-348 missionPatch"
+        class="LaunchPage-missionPatch-276 missionPatch"
         src="missionPatch"
       />
-      <WithStyles(ForwardRef(Typography))
-        className="LaunchPage-missionName-349 missionName"
-        variant="h4"
+      <h4
+        class="MuiTypography-root LaunchPage-missionName-277 missionName MuiTypography-h4"
       >
-        <ForwardRef(Typography)
-          className="LaunchPage-missionName-349 missionName"
-          classes={
-            Object {
-              "alignCenter": "MuiTypography-alignCenter",
-              "alignJustify": "MuiTypography-alignJustify",
-              "alignLeft": "MuiTypography-alignLeft",
-              "alignRight": "MuiTypography-alignRight",
-              "body1": "MuiTypography-body1",
-              "body2": "MuiTypography-body2",
-              "button": "MuiTypography-button",
-              "caption": "MuiTypography-caption",
-              "colorError": "MuiTypography-colorError",
-              "colorInherit": "MuiTypography-colorInherit",
-              "colorPrimary": "MuiTypography-colorPrimary",
-              "colorSecondary": "MuiTypography-colorSecondary",
-              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-              "displayBlock": "MuiTypography-displayBlock",
-              "displayInline": "MuiTypography-displayInline",
-              "gutterBottom": "MuiTypography-gutterBottom",
-              "h1": "MuiTypography-h1",
-              "h2": "MuiTypography-h2",
-              "h3": "MuiTypography-h3",
-              "h4": "MuiTypography-h4",
-              "h5": "MuiTypography-h5",
-              "h6": "MuiTypography-h6",
-              "noWrap": "MuiTypography-noWrap",
-              "overline": "MuiTypography-overline",
-              "paragraph": "MuiTypography-paragraph",
-              "root": "MuiTypography-root",
-              "srOnly": "MuiTypography-srOnly",
-              "subtitle1": "MuiTypography-subtitle1",
-              "subtitle2": "MuiTypography-subtitle2",
-            }
-          }
-          variant="h4"
-        >
-          <h4
-            className="MuiTypography-root LaunchPage-missionName-349 missionName MuiTypography-h4"
-          >
-            Test
-          </h4>
-        </ForwardRef(Typography)>
-      </WithStyles(ForwardRef(Typography))>
+        Test
+      </h4>
     </div>
-    <WithStyles(ForwardRef(Typography))
-      className="LaunchPage-date-351 date"
-      variant="subtitle1"
+    <h6
+      class="MuiTypography-root LaunchPage-date-279 date MuiTypography-subtitle1"
     >
-      <ForwardRef(Typography)
-        className="LaunchPage-date-351 date"
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
-        variant="subtitle1"
-      >
-        <h6
-          className="MuiTypography-root LaunchPage-date-351 date MuiTypography-subtitle1"
-        >
-          <span>
-            Tue, 01 Jan 2019 00:00:00 GMT
-          </span>
-        </h6>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+      <span>
+        Tue, 01 Jan 2019 00:00:00 GMT
+      </span>
+    </h6>
     <div
-      className="LaunchPage-statusMissionIds-352 statusMissionIds"
+      class="LaunchPage-statusMissionIds-280 statusMissionIds"
     >
-      <WithStyles(LaunchStatus)
-        isFailed={false}
-        isInProgress={false}
-        isSuccessful={true}
-        isUpcoming={false}
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-325 LaunchStatus-success-328 MuiPaper-rounded"
       >
-        <WithStyles(ForwardRef(Paper))
-          className="LaunchStatus-status-397 LaunchStatus-success-400"
-          elevation={1}
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root LaunchStatus-statusIcon-326"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
         >
-          <ForwardRef(Paper)
-            className="LaunchStatus-status-397 LaunchStatus-success-400"
-            classes={
-              Object {
-                "elevation0": "MuiPaper-elevation0",
-                "elevation1": "MuiPaper-elevation1",
-                "elevation10": "MuiPaper-elevation10",
-                "elevation11": "MuiPaper-elevation11",
-                "elevation12": "MuiPaper-elevation12",
-                "elevation13": "MuiPaper-elevation13",
-                "elevation14": "MuiPaper-elevation14",
-                "elevation15": "MuiPaper-elevation15",
-                "elevation16": "MuiPaper-elevation16",
-                "elevation17": "MuiPaper-elevation17",
-                "elevation18": "MuiPaper-elevation18",
-                "elevation19": "MuiPaper-elevation19",
-                "elevation2": "MuiPaper-elevation2",
-                "elevation20": "MuiPaper-elevation20",
-                "elevation21": "MuiPaper-elevation21",
-                "elevation22": "MuiPaper-elevation22",
-                "elevation23": "MuiPaper-elevation23",
-                "elevation24": "MuiPaper-elevation24",
-                "elevation3": "MuiPaper-elevation3",
-                "elevation4": "MuiPaper-elevation4",
-                "elevation5": "MuiPaper-elevation5",
-                "elevation6": "MuiPaper-elevation6",
-                "elevation7": "MuiPaper-elevation7",
-                "elevation8": "MuiPaper-elevation8",
-                "elevation9": "MuiPaper-elevation9",
-                "root": "MuiPaper-root",
-                "rounded": "MuiPaper-rounded",
-              }
-            }
-            elevation={1}
-          >
-            <div
-              className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-397 LaunchStatus-success-400 MuiPaper-rounded"
-            >
-              <GroupWorkRoundedIcon
-                className="LaunchStatus-statusIcon-398"
-              >
-                <WithStyles(ForwardRef(SvgIcon))
-                  className="LaunchStatus-statusIcon-398"
-                >
-                  <ForwardRef(SvgIcon)
-                    className="LaunchStatus-statusIcon-398"
-                    classes={
-                      Object {
-                        "colorAction": "MuiSvgIcon-colorAction",
-                        "colorDisabled": "MuiSvgIcon-colorDisabled",
-                        "colorError": "MuiSvgIcon-colorError",
-                        "colorPrimary": "MuiSvgIcon-colorPrimary",
-                        "colorSecondary": "MuiSvgIcon-colorSecondary",
-                        "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                        "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                        "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                        "root": "MuiSvgIcon-root",
-                      }
-                    }
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root LaunchStatus-statusIcon-398"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                      />
-                    </svg>
-                  </ForwardRef(SvgIcon)>
-                </WithStyles(ForwardRef(SvgIcon))>
-              </GroupWorkRoundedIcon>
-            </div>
-          </ForwardRef(Paper)>
-        </WithStyles(ForwardRef(Paper))>
-      </WithStyles(LaunchStatus)>
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+          />
+        </svg>
+      </div>
     </div>
-    <WithStyles(ForwardRef(Typography))>
-      <ForwardRef(Typography)
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
-        >
-          Details
-        </p>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+    <p
+      class="MuiTypography-root MuiTypography-body1"
+    >
+      Details
+    </p>
   </div>
-</WithStyles(LaunchPage)>
+</DocumentFragment>
 `;
 
 exports[`LaunchPage does not render mission patch when there is no mission patch 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
->
+<DocumentFragment>
   <div>
     <div
-      className="LaunchPage-headline-93 headline"
+      class="LaunchPage-headline-93 headline"
     >
-      <WithStyles(ForwardRef(Typography))
-        className="LaunchPage-missionName-95 missionName"
-        variant="h4"
+      <h4
+        class="MuiTypography-root LaunchPage-missionName-95 missionName MuiTypography-h4"
       >
-        <ForwardRef(Typography)
-          className="LaunchPage-missionName-95 missionName"
-          classes={
-            Object {
-              "alignCenter": "MuiTypography-alignCenter",
-              "alignJustify": "MuiTypography-alignJustify",
-              "alignLeft": "MuiTypography-alignLeft",
-              "alignRight": "MuiTypography-alignRight",
-              "body1": "MuiTypography-body1",
-              "body2": "MuiTypography-body2",
-              "button": "MuiTypography-button",
-              "caption": "MuiTypography-caption",
-              "colorError": "MuiTypography-colorError",
-              "colorInherit": "MuiTypography-colorInherit",
-              "colorPrimary": "MuiTypography-colorPrimary",
-              "colorSecondary": "MuiTypography-colorSecondary",
-              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-              "displayBlock": "MuiTypography-displayBlock",
-              "displayInline": "MuiTypography-displayInline",
-              "gutterBottom": "MuiTypography-gutterBottom",
-              "h1": "MuiTypography-h1",
-              "h2": "MuiTypography-h2",
-              "h3": "MuiTypography-h3",
-              "h4": "MuiTypography-h4",
-              "h5": "MuiTypography-h5",
-              "h6": "MuiTypography-h6",
-              "noWrap": "MuiTypography-noWrap",
-              "overline": "MuiTypography-overline",
-              "paragraph": "MuiTypography-paragraph",
-              "root": "MuiTypography-root",
-              "srOnly": "MuiTypography-srOnly",
-              "subtitle1": "MuiTypography-subtitle1",
-              "subtitle2": "MuiTypography-subtitle2",
-            }
-          }
-          variant="h4"
-        >
-          <h4
-            className="MuiTypography-root LaunchPage-missionName-95 missionName MuiTypography-h4"
-          >
-            Test
-          </h4>
-        </ForwardRef(Typography)>
-      </WithStyles(ForwardRef(Typography))>
+        Test
+      </h4>
     </div>
-    <WithStyles(ForwardRef(Typography))
-      className="LaunchPage-date-97 date"
-      variant="subtitle1"
+    <h6
+      class="MuiTypography-root LaunchPage-date-97 date MuiTypography-subtitle1"
     >
-      <ForwardRef(Typography)
-        className="LaunchPage-date-97 date"
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
-        variant="subtitle1"
-      >
-        <h6
-          className="MuiTypography-root LaunchPage-date-97 date MuiTypography-subtitle1"
-        >
-          <span>
-            Tue, 01 Jan 2019 00:00:00 GMT
-          </span>
-        </h6>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+      <span>
+        Tue, 01 Jan 2019 00:00:00 GMT
+      </span>
+    </h6>
     <div
-      className="LaunchPage-statusMissionIds-98 statusMissionIds"
+      class="LaunchPage-statusMissionIds-98 statusMissionIds"
     >
-      <WithStyles(LaunchStatus)
-        isFailed={false}
-        isInProgress={false}
-        isSuccessful={true}
-        isUpcoming={false}
-      >
-        <WithStyles(ForwardRef(Paper))
-          className="LaunchStatus-status-143 LaunchStatus-success-146"
-          elevation={1}
-        >
-          <ForwardRef(Paper)
-            className="LaunchStatus-status-143 LaunchStatus-success-146"
-            classes={
-              Object {
-                "elevation0": "MuiPaper-elevation0",
-                "elevation1": "MuiPaper-elevation1",
-                "elevation10": "MuiPaper-elevation10",
-                "elevation11": "MuiPaper-elevation11",
-                "elevation12": "MuiPaper-elevation12",
-                "elevation13": "MuiPaper-elevation13",
-                "elevation14": "MuiPaper-elevation14",
-                "elevation15": "MuiPaper-elevation15",
-                "elevation16": "MuiPaper-elevation16",
-                "elevation17": "MuiPaper-elevation17",
-                "elevation18": "MuiPaper-elevation18",
-                "elevation19": "MuiPaper-elevation19",
-                "elevation2": "MuiPaper-elevation2",
-                "elevation20": "MuiPaper-elevation20",
-                "elevation21": "MuiPaper-elevation21",
-                "elevation22": "MuiPaper-elevation22",
-                "elevation23": "MuiPaper-elevation23",
-                "elevation24": "MuiPaper-elevation24",
-                "elevation3": "MuiPaper-elevation3",
-                "elevation4": "MuiPaper-elevation4",
-                "elevation5": "MuiPaper-elevation5",
-                "elevation6": "MuiPaper-elevation6",
-                "elevation7": "MuiPaper-elevation7",
-                "elevation8": "MuiPaper-elevation8",
-                "elevation9": "MuiPaper-elevation9",
-                "root": "MuiPaper-root",
-                "rounded": "MuiPaper-rounded",
-              }
-            }
-            elevation={1}
-          >
-            <div
-              className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-143 LaunchStatus-success-146 MuiPaper-rounded"
-            >
-              <GroupWorkRoundedIcon
-                className="LaunchStatus-statusIcon-144"
-              >
-                <WithStyles(ForwardRef(SvgIcon))
-                  className="LaunchStatus-statusIcon-144"
-                >
-                  <ForwardRef(SvgIcon)
-                    className="LaunchStatus-statusIcon-144"
-                    classes={
-                      Object {
-                        "colorAction": "MuiSvgIcon-colorAction",
-                        "colorDisabled": "MuiSvgIcon-colorDisabled",
-                        "colorError": "MuiSvgIcon-colorError",
-                        "colorPrimary": "MuiSvgIcon-colorPrimary",
-                        "colorSecondary": "MuiSvgIcon-colorSecondary",
-                        "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                        "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                        "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                        "root": "MuiSvgIcon-root",
-                      }
-                    }
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root LaunchStatus-statusIcon-144"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                      />
-                    </svg>
-                  </ForwardRef(SvgIcon)>
-                </WithStyles(ForwardRef(SvgIcon))>
-              </GroupWorkRoundedIcon>
-            </div>
-          </ForwardRef(Paper)>
-        </WithStyles(ForwardRef(Paper))>
-      </WithStyles(LaunchStatus)>
       <div
-        className="LaunchPage-missionIds-99 missionIds"
+        class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-143 LaunchStatus-success-146 MuiPaper-rounded"
       >
-        <WithStyles(ForwardRef(Typography))
-          color="textSecondary"
-          component="p"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root LaunchStatus-statusIcon-144"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
         >
-          <ForwardRef(Typography)
-            classes={
-              Object {
-                "alignCenter": "MuiTypography-alignCenter",
-                "alignJustify": "MuiTypography-alignJustify",
-                "alignLeft": "MuiTypography-alignLeft",
-                "alignRight": "MuiTypography-alignRight",
-                "body1": "MuiTypography-body1",
-                "body2": "MuiTypography-body2",
-                "button": "MuiTypography-button",
-                "caption": "MuiTypography-caption",
-                "colorError": "MuiTypography-colorError",
-                "colorInherit": "MuiTypography-colorInherit",
-                "colorPrimary": "MuiTypography-colorPrimary",
-                "colorSecondary": "MuiTypography-colorSecondary",
-                "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                "displayBlock": "MuiTypography-displayBlock",
-                "displayInline": "MuiTypography-displayInline",
-                "gutterBottom": "MuiTypography-gutterBottom",
-                "h1": "MuiTypography-h1",
-                "h2": "MuiTypography-h2",
-                "h3": "MuiTypography-h3",
-                "h4": "MuiTypography-h4",
-                "h5": "MuiTypography-h5",
-                "h6": "MuiTypography-h6",
-                "noWrap": "MuiTypography-noWrap",
-                "overline": "MuiTypography-overline",
-                "paragraph": "MuiTypography-paragraph",
-                "root": "MuiTypography-root",
-                "srOnly": "MuiTypography-srOnly",
-                "subtitle1": "MuiTypography-subtitle1",
-                "subtitle2": "MuiTypography-subtitle2",
-              }
-            }
-            color="textSecondary"
-            component="p"
-          >
-            <p
-              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
-            >
-              ID
-              : 
-              id1
-            </p>
-          </ForwardRef(Typography)>
-        </WithStyles(ForwardRef(Typography))>
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+          />
+        </svg>
       </div>
-    </div>
-    <WithStyles(ForwardRef(Typography))>
-      <ForwardRef(Typography)
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
+      <div
+        class="LaunchPage-missionIds-99 missionIds"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
         >
-          Details
+          ID: id1
         </p>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1"
+    >
+      Details
+    </p>
   </div>
-</WithStyles(LaunchPage)>
+</DocumentFragment>
 `;
 
 exports[`LaunchPage renders 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
->
+<DocumentFragment>
   <div>
     <div
-      className="LaunchPage-headline-1 headline"
+      class="LaunchPage-headline-1 headline"
     >
       <img
         alt="Test"
-        className="LaunchPage-missionPatch-2 missionPatch"
+        class="LaunchPage-missionPatch-2 missionPatch"
         src="missionPatch"
       />
-      <WithStyles(ForwardRef(Typography))
-        className="LaunchPage-missionName-3 missionName"
-        variant="h4"
+      <h4
+        class="MuiTypography-root LaunchPage-missionName-3 missionName MuiTypography-h4"
       >
-        <ForwardRef(Typography)
-          className="LaunchPage-missionName-3 missionName"
-          classes={
-            Object {
-              "alignCenter": "MuiTypography-alignCenter",
-              "alignJustify": "MuiTypography-alignJustify",
-              "alignLeft": "MuiTypography-alignLeft",
-              "alignRight": "MuiTypography-alignRight",
-              "body1": "MuiTypography-body1",
-              "body2": "MuiTypography-body2",
-              "button": "MuiTypography-button",
-              "caption": "MuiTypography-caption",
-              "colorError": "MuiTypography-colorError",
-              "colorInherit": "MuiTypography-colorInherit",
-              "colorPrimary": "MuiTypography-colorPrimary",
-              "colorSecondary": "MuiTypography-colorSecondary",
-              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-              "displayBlock": "MuiTypography-displayBlock",
-              "displayInline": "MuiTypography-displayInline",
-              "gutterBottom": "MuiTypography-gutterBottom",
-              "h1": "MuiTypography-h1",
-              "h2": "MuiTypography-h2",
-              "h3": "MuiTypography-h3",
-              "h4": "MuiTypography-h4",
-              "h5": "MuiTypography-h5",
-              "h6": "MuiTypography-h6",
-              "noWrap": "MuiTypography-noWrap",
-              "overline": "MuiTypography-overline",
-              "paragraph": "MuiTypography-paragraph",
-              "root": "MuiTypography-root",
-              "srOnly": "MuiTypography-srOnly",
-              "subtitle1": "MuiTypography-subtitle1",
-              "subtitle2": "MuiTypography-subtitle2",
-            }
-          }
-          variant="h4"
-        >
-          <h4
-            className="MuiTypography-root LaunchPage-missionName-3 missionName MuiTypography-h4"
-          >
-            Test
-          </h4>
-        </ForwardRef(Typography)>
-      </WithStyles(ForwardRef(Typography))>
+        Test
+      </h4>
     </div>
-    <WithStyles(ForwardRef(Typography))
-      className="LaunchPage-date-5 date"
-      variant="subtitle1"
+    <h6
+      class="MuiTypography-root LaunchPage-date-5 date MuiTypography-subtitle1"
     >
-      <ForwardRef(Typography)
-        className="LaunchPage-date-5 date"
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
-        variant="subtitle1"
-      >
-        <h6
-          className="MuiTypography-root LaunchPage-date-5 date MuiTypography-subtitle1"
-        >
-          <span>
-            Tue, 01 Jan 2019 00:00:00 GMT
-          </span>
-        </h6>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+      <span>
+        Tue, 01 Jan 2019 00:00:00 GMT
+      </span>
+    </h6>
     <div
-      className="LaunchPage-statusMissionIds-6 statusMissionIds"
+      class="LaunchPage-statusMissionIds-6 statusMissionIds"
     >
-      <WithStyles(LaunchStatus)
-        isFailed={false}
-        isInProgress={false}
-        isSuccessful={true}
-        isUpcoming={false}
-      >
-        <WithStyles(ForwardRef(Paper))
-          className="LaunchStatus-status-51 LaunchStatus-success-54"
-          elevation={1}
-        >
-          <ForwardRef(Paper)
-            className="LaunchStatus-status-51 LaunchStatus-success-54"
-            classes={
-              Object {
-                "elevation0": "MuiPaper-elevation0",
-                "elevation1": "MuiPaper-elevation1",
-                "elevation10": "MuiPaper-elevation10",
-                "elevation11": "MuiPaper-elevation11",
-                "elevation12": "MuiPaper-elevation12",
-                "elevation13": "MuiPaper-elevation13",
-                "elevation14": "MuiPaper-elevation14",
-                "elevation15": "MuiPaper-elevation15",
-                "elevation16": "MuiPaper-elevation16",
-                "elevation17": "MuiPaper-elevation17",
-                "elevation18": "MuiPaper-elevation18",
-                "elevation19": "MuiPaper-elevation19",
-                "elevation2": "MuiPaper-elevation2",
-                "elevation20": "MuiPaper-elevation20",
-                "elevation21": "MuiPaper-elevation21",
-                "elevation22": "MuiPaper-elevation22",
-                "elevation23": "MuiPaper-elevation23",
-                "elevation24": "MuiPaper-elevation24",
-                "elevation3": "MuiPaper-elevation3",
-                "elevation4": "MuiPaper-elevation4",
-                "elevation5": "MuiPaper-elevation5",
-                "elevation6": "MuiPaper-elevation6",
-                "elevation7": "MuiPaper-elevation7",
-                "elevation8": "MuiPaper-elevation8",
-                "elevation9": "MuiPaper-elevation9",
-                "root": "MuiPaper-root",
-                "rounded": "MuiPaper-rounded",
-              }
-            }
-            elevation={1}
-          >
-            <div
-              className="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-51 LaunchStatus-success-54 MuiPaper-rounded"
-            >
-              <GroupWorkRoundedIcon
-                className="LaunchStatus-statusIcon-52"
-              >
-                <WithStyles(ForwardRef(SvgIcon))
-                  className="LaunchStatus-statusIcon-52"
-                >
-                  <ForwardRef(SvgIcon)
-                    className="LaunchStatus-statusIcon-52"
-                    classes={
-                      Object {
-                        "colorAction": "MuiSvgIcon-colorAction",
-                        "colorDisabled": "MuiSvgIcon-colorDisabled",
-                        "colorError": "MuiSvgIcon-colorError",
-                        "colorPrimary": "MuiSvgIcon-colorPrimary",
-                        "colorSecondary": "MuiSvgIcon-colorSecondary",
-                        "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                        "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                        "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                        "root": "MuiSvgIcon-root",
-                      }
-                    }
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root LaunchStatus-statusIcon-52"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                      />
-                    </svg>
-                  </ForwardRef(SvgIcon)>
-                </WithStyles(ForwardRef(SvgIcon))>
-              </GroupWorkRoundedIcon>
-            </div>
-          </ForwardRef(Paper)>
-        </WithStyles(ForwardRef(Paper))>
-      </WithStyles(LaunchStatus)>
       <div
-        className="LaunchPage-missionIds-7 missionIds"
+        class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-51 LaunchStatus-success-54 MuiPaper-rounded"
       >
-        <WithStyles(ForwardRef(Typography))
-          color="textSecondary"
-          component="p"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root LaunchStatus-statusIcon-52"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
         >
-          <ForwardRef(Typography)
-            classes={
-              Object {
-                "alignCenter": "MuiTypography-alignCenter",
-                "alignJustify": "MuiTypography-alignJustify",
-                "alignLeft": "MuiTypography-alignLeft",
-                "alignRight": "MuiTypography-alignRight",
-                "body1": "MuiTypography-body1",
-                "body2": "MuiTypography-body2",
-                "button": "MuiTypography-button",
-                "caption": "MuiTypography-caption",
-                "colorError": "MuiTypography-colorError",
-                "colorInherit": "MuiTypography-colorInherit",
-                "colorPrimary": "MuiTypography-colorPrimary",
-                "colorSecondary": "MuiTypography-colorSecondary",
-                "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                "displayBlock": "MuiTypography-displayBlock",
-                "displayInline": "MuiTypography-displayInline",
-                "gutterBottom": "MuiTypography-gutterBottom",
-                "h1": "MuiTypography-h1",
-                "h2": "MuiTypography-h2",
-                "h3": "MuiTypography-h3",
-                "h4": "MuiTypography-h4",
-                "h5": "MuiTypography-h5",
-                "h6": "MuiTypography-h6",
-                "noWrap": "MuiTypography-noWrap",
-                "overline": "MuiTypography-overline",
-                "paragraph": "MuiTypography-paragraph",
-                "root": "MuiTypography-root",
-                "srOnly": "MuiTypography-srOnly",
-                "subtitle1": "MuiTypography-subtitle1",
-                "subtitle2": "MuiTypography-subtitle2",
-              }
-            }
-            color="textSecondary"
-            component="p"
-          >
-            <p
-              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
-            >
-              ID
-              : 
-              id1
-            </p>
-          </ForwardRef(Typography)>
-        </WithStyles(ForwardRef(Typography))>
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+          />
+        </svg>
       </div>
-    </div>
-    <WithStyles(ForwardRef(Typography))>
-      <ForwardRef(Typography)
-        classes={
-          Object {
-            "alignCenter": "MuiTypography-alignCenter",
-            "alignJustify": "MuiTypography-alignJustify",
-            "alignLeft": "MuiTypography-alignLeft",
-            "alignRight": "MuiTypography-alignRight",
-            "body1": "MuiTypography-body1",
-            "body2": "MuiTypography-body2",
-            "button": "MuiTypography-button",
-            "caption": "MuiTypography-caption",
-            "colorError": "MuiTypography-colorError",
-            "colorInherit": "MuiTypography-colorInherit",
-            "colorPrimary": "MuiTypography-colorPrimary",
-            "colorSecondary": "MuiTypography-colorSecondary",
-            "colorTextPrimary": "MuiTypography-colorTextPrimary",
-            "colorTextSecondary": "MuiTypography-colorTextSecondary",
-            "displayBlock": "MuiTypography-displayBlock",
-            "displayInline": "MuiTypography-displayInline",
-            "gutterBottom": "MuiTypography-gutterBottom",
-            "h1": "MuiTypography-h1",
-            "h2": "MuiTypography-h2",
-            "h3": "MuiTypography-h3",
-            "h4": "MuiTypography-h4",
-            "h5": "MuiTypography-h5",
-            "h6": "MuiTypography-h6",
-            "noWrap": "MuiTypography-noWrap",
-            "overline": "MuiTypography-overline",
-            "paragraph": "MuiTypography-paragraph",
-            "root": "MuiTypography-root",
-            "srOnly": "MuiTypography-srOnly",
-            "subtitle1": "MuiTypography-subtitle1",
-            "subtitle2": "MuiTypography-subtitle2",
-          }
-        }
+      <div
+        class="LaunchPage-missionIds-7 missionIds"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
         >
-          Details
+          ID: id1
         </p>
-      </ForwardRef(Typography)>
-    </WithStyles(ForwardRef(Typography))>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1"
+    >
+      Details
+    </p>
   </div>
-</WithStyles(LaunchPage)>
+</DocumentFragment>
 `;
 
 exports[`LaunchPage renders a loader when is loading a launch 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
->
-  <WithStyles(Loader)>
+<DocumentFragment>
+  <div
+    class="Loader-root-192"
+  >
     <div
-      className="Loader-root-192"
+      class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      role="progressbar"
+      style="width: 40px; height: 40px;"
     >
-      <WithStyles(ForwardRef(CircularProgress))>
-        <ForwardRef(CircularProgress)
-          classes={
-            Object {
-              "circle": "MuiCircularProgress-circle",
-              "circleDisableShrink": "MuiCircularProgress-circleDisableShrink",
-              "circleIndeterminate": "MuiCircularProgress-circleIndeterminate",
-              "circleStatic": "MuiCircularProgress-circleStatic",
-              "colorPrimary": "MuiCircularProgress-colorPrimary",
-              "colorSecondary": "MuiCircularProgress-colorSecondary",
-              "indeterminate": "MuiCircularProgress-indeterminate",
-              "root": "MuiCircularProgress-root",
-              "static": "MuiCircularProgress-static",
-              "svg": "MuiCircularProgress-svg",
-            }
-          }
-        >
-          <div
-            className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
-            role="progressbar"
-            style={
-              Object {
-                "height": 40,
-                "width": 40,
-              }
-            }
-          >
-            <svg
-              className="MuiCircularProgress-svg"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-                cx={44}
-                cy={44}
-                fill="none"
-                r={20.2}
-                strokeWidth={3.6}
-                style={Object {}}
-              />
-            </svg>
-          </div>
-        </ForwardRef(CircularProgress)>
-      </WithStyles(ForwardRef(CircularProgress))>
+      <svg
+        class="MuiCircularProgress-svg"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+          cx="44"
+          cy="44"
+          fill="none"
+          r="20.2"
+          stroke-width="3.6"
+        />
+      </svg>
     </div>
-  </WithStyles(Loader)>
-</WithStyles(LaunchPage)>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`LaunchPage renders error message when there is an error 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
->
-  <WithStyles(ForwardRef(Typography))>
-    <ForwardRef(Typography)
-      classes={
-        Object {
-          "alignCenter": "MuiTypography-alignCenter",
-          "alignJustify": "MuiTypography-alignJustify",
-          "alignLeft": "MuiTypography-alignLeft",
-          "alignRight": "MuiTypography-alignRight",
-          "body1": "MuiTypography-body1",
-          "body2": "MuiTypography-body2",
-          "button": "MuiTypography-button",
-          "caption": "MuiTypography-caption",
-          "colorError": "MuiTypography-colorError",
-          "colorInherit": "MuiTypography-colorInherit",
-          "colorPrimary": "MuiTypography-colorPrimary",
-          "colorSecondary": "MuiTypography-colorSecondary",
-          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-          "displayBlock": "MuiTypography-displayBlock",
-          "displayInline": "MuiTypography-displayInline",
-          "gutterBottom": "MuiTypography-gutterBottom",
-          "h1": "MuiTypography-h1",
-          "h2": "MuiTypography-h2",
-          "h3": "MuiTypography-h3",
-          "h4": "MuiTypography-h4",
-          "h5": "MuiTypography-h5",
-          "h6": "MuiTypography-h6",
-          "noWrap": "MuiTypography-noWrap",
-          "overline": "MuiTypography-overline",
-          "paragraph": "MuiTypography-paragraph",
-          "root": "MuiTypography-root",
-          "srOnly": "MuiTypography-srOnly",
-          "subtitle1": "MuiTypography-subtitle1",
-          "subtitle2": "MuiTypography-subtitle2",
-        }
-      }
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
-      >
-        Not Found
-      </p>
-    </ForwardRef(Typography)>
-  </WithStyles(ForwardRef(Typography))>
-</WithStyles(LaunchPage)>
+<DocumentFragment>
+  <p
+    class="MuiTypography-root MuiTypography-body1"
+  >
+    Not Found
+  </p>
+</DocumentFragment>
 `;
 
-exports[`LaunchPage renders redirect to home page when launch is tentative 1`] = `
-<WithStyles(LaunchPage)
-  classes={
-    Object {
-      "date": "date",
-      "details": "details",
-      "headline": "headline",
-      "missionIds": "missionIds",
-      "missionName": "missionName",
-      "missionPatch": "missionPatch",
-      "statusMissionIds": "statusMissionIds",
-    }
-  }
-  flightNumber="1"
-/>
-`;
+exports[`LaunchPage renders redirect to home page when launch is tentative 1`] = `<DocumentFragment />`;

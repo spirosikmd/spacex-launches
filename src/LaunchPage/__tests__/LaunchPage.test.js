@@ -1,7 +1,8 @@
+import React from 'react';
 import LaunchPage from '../LaunchPage';
+import { act, render, wait } from '../../setupTests';
 import { getLaunch } from '../../api';
 import { createLaunch } from '../../__fixtures__/launch';
-import { act } from '@testing-library/react';
 
 jest.mock('../../api', () => ({
   getLaunch: jest.fn(),
@@ -28,80 +29,43 @@ describe('LaunchPage', () => {
   });
 
   it('renders', async () => {
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    await act(async () => {
-      await Promise.resolve();
-      launchPage.update();
-    });
-    expect(launchPage).toMatchSnapshot();
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   it('does not render mission patch when there is no mission patch', async () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ missionPatch: '' }))
     );
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    await act(async () => {
-      await Promise.resolve();
-      launchPage.update();
-    });
-    expect(launchPage).toMatchSnapshot();
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   it('renders a loader when is loading a launch', async () => {
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    expect(launchPage).toMatchSnapshot();
+    props.flightNumber = null;
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   it('renders error message when there is an error', async () => {
     getLaunch.mockReturnValue(Promise.reject({ message: 'Not Found' }));
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    await act(async () => {
-      await Promise.resolve();
-      launchPage.update();
-    });
-    expect(launchPage).toMatchSnapshot();
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   it('renders redirect to home page when launch is tentative', async () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ isSuccessful: false, isTentative: true }))
     );
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    await act(async () => {
-      await Promise.resolve();
-      launchPage.update();
-    });
-    expect(launchPage).toMatchSnapshot();
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 
   it('does not render mission ids when launch does not have mission ids', async () => {
     getLaunch.mockReturnValue(
       Promise.resolve(createLaunch({ missionIds: [] }))
     );
-    let launchPage;
-    await act(async () => {
-      launchPage = await mountComponent(LaunchPage, props);
-    });
-    await act(async () => {
-      await Promise.resolve();
-      launchPage.update();
-    });
-    expect(launchPage).toMatchSnapshot();
+    const { asFragment } = render(<LaunchPage {...props} />);
+    await wait(() => expect(asFragment()).toMatchSnapshot());
   });
 });

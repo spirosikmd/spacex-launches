@@ -72,10 +72,8 @@ describe('HomePage', () => {
     it('does not render the sorting options', async () => {
       props.location.search =
         'failed=false&successful=false&upcoming=false&sortOrder=desc&sortField=utcDate';
-      const homePage = mountComponent(HomePage, props);
-      await Promise.resolve();
-      homePage.update();
-      expect(homePage).toMatchSnapshot();
+      const { asFragment } = render(<HomePage {...props} />);
+      await wait(() => expect(asFragment()).toMatchSnapshot());
     });
   });
 
