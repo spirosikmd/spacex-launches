@@ -74,7 +74,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
           >
             <a
               aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
               href="/launches/1"
               role="button"
               tabindex="0"
@@ -158,7 +158,7 @@ exports[`LaunchList when there are launches renders a list of launches 1`] = `
           >
             <a
               aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
               href="/launches/2"
               role="button"
               tabindex="0"
