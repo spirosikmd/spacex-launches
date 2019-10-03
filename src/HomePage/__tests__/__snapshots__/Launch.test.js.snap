@@ -3,14 +3,14 @@
 exports[`Launch when a launch is failed renders failed 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-116 launch"
+    class="Launch-launch-127 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-119 LaunchStatus-fail-123 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-130 LaunchStatus-fail-134 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-120"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-131"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -21,10 +21,10 @@ exports[`Launch when a launch is failed renders failed 1`] = `
       </svg>
     </div>
     <div
-      class="Launch-connector-118 connector"
+      class="Launch-connector-129 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-117 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-128 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
@@ -65,7 +65,7 @@ exports[`Launch when a launch is failed renders failed 1`] = `
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -150,7 +150,7 @@ exports[`Launch when a launch is successful renders successful 1`] = `
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -173,14 +173,14 @@ exports[`Launch when a launch is successful renders successful 1`] = `
 exports[`Launch when a launch is upcoming renders upcoming 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-231 launch"
+    class="Launch-launch-253 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-234 LaunchStatus-upcoming-236 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-256 LaunchStatus-upcoming-258 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-235"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-257"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -191,10 +191,10 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
       </svg>
     </div>
     <div
-      class="Launch-connector-233 connector"
+      class="Launch-connector-255 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-232 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-254 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
@@ -235,7 +235,7 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -258,14 +258,14 @@ exports[`Launch when a launch is upcoming renders upcoming 1`] = `
 exports[`Launch when launch does not have details does not render the details section 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-461 launch"
+    class="Launch-launch-505 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-464 LaunchStatus-success-467 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-508 LaunchStatus-success-511 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-465"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-509"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -276,10 +276,10 @@ exports[`Launch when launch does not have details does not render the details se
       </svg>
     </div>
     <div
-      class="Launch-connector-463 connector"
+      class="Launch-connector-507 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-462 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-506 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
@@ -315,7 +315,7 @@ exports[`Launch when launch does not have details does not render the details se
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -338,14 +338,14 @@ exports[`Launch when launch does not have details does not render the details se
 exports[`Launch when launch does not have mission ids does not render the mission ids info 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-576 launch"
+    class="Launch-launch-631 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-579 LaunchStatus-success-582 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-634 LaunchStatus-success-637 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-580"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-635"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -356,10 +356,10 @@ exports[`Launch when launch does not have mission ids does not render the missio
       </svg>
     </div>
     <div
-      class="Launch-connector-578 connector"
+      class="Launch-connector-633 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-577 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-632 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
@@ -395,7 +395,7 @@ exports[`Launch when launch does not have mission ids does not render the missio
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -418,14 +418,14 @@ exports[`Launch when launch does not have mission ids does not render the missio
 exports[`Launch when launch is in progress renders in progress 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-346 launch"
+    class="Launch-launch-379 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-349 LaunchStatus-inProgress-354 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-382 LaunchStatus-inProgress-387 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-350"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-383"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -436,10 +436,10 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
       </svg>
     </div>
     <div
-      class="Launch-connector-348 connector"
+      class="Launch-connector-381 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-347 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-380 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
@@ -480,7 +480,7 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
       >
         <a
           aria-disabled="false"
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
           href="/launches/1"
           role="button"
           tabindex="0"
@@ -503,14 +503,14 @@ exports[`Launch when launch is in progress renders in progress 1`] = `
 exports[`Launch when launch is tentative renders without actions 1`] = `
 <DocumentFragment>
   <div
-    class="Launch-launch-691 launch"
+    class="Launch-launch-757 launch"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-694 LaunchStatus-success-697 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 LaunchStatus-status-760 LaunchStatus-success-763 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root LaunchStatus-statusIcon-695"
+        class="MuiSvgIcon-root LaunchStatus-statusIcon-761"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -521,10 +521,10 @@ exports[`Launch when launch is tentative renders without actions 1`] = `
       </svg>
     </div>
     <div
-      class="Launch-connector-693 connector"
+      class="Launch-connector-759 connector"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-692 launchInfo MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root Launch-launchInfo-758 launchInfo MuiPaper-rounded"
     >
       <div
         class="MuiCardHeader-root"
