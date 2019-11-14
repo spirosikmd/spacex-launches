@@ -51,7 +51,7 @@
     "@types/node": "^12.12.7",
     "@types/reach__router": "^1.2.6",
     "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.9.3",
+    "@types/react-dom": "^16.9.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
